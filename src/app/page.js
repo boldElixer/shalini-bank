@@ -1,66 +1,85 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Head from 'next/head';
+import Image from 'next/image';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
+// import FeatureSection from '@/components/FeatureSection/FeatureSection';
+// import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <Head>
+        <title>SSB Bank - Financial Services</title>
+        <meta name="description" content="Customer centric banking" />
+      </Head>
+
+      <Header />
+
+      <main>
+        {/* Hero Section */}
+        <div className={styles.hero}>
+           {/* <Image 
+             src="https://placehold.co/1920x800/e0e0e0/555?text=Banking+Hero+Image" 
+             alt="Banking Hero"
+             fill
+             style={{ objectFit: 'cover' }}
+             priority
+           /> */}
+        </div>
+
+        {/* Features Loop */}
+        {/* <FeatureSection 
+          title="Customer-Centric & Trust-Focused"
+          points={[
+            "Your Trusted Partner in Financial Growth",
+            "Empowering individuals, businesses, and communities through smart banking solutions."
+          ]}
+          buttonText="Open Account"
+          imageSrc="https://placehold.co/600x450/png?text=Meeting"
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        <FeatureSection 
+          reverse={true}
+          title="Community & Financial Inclusion"
+          points={[
+            "Building Prosperity, One Family at a Time",
+            "Empowering rural and urban lives with inclusive financial services",
+            "From Microfinance to housing loans — we grow together"
+          ]}
+          buttonText="Apply for loan"
+          imageSrc="https://placehold.co/600x450/png?text=Family"
+        /> */}
+
+        {/* <FeatureSection 
+          title="Innovation & Accessibility"
+          points={[
+            "Banking Made Simple, Secure, and Seamless",
+            "Experience next-generation digital banking with personal care and trust",
+            "24/7 access to your finances — anytime, anywhere"
+          ]}
+          buttonText="Mobile Banking"
+          imageSrc="https://placehold.co/600x450/png?text=Digital+Banking"
+        />
+
+         <FeatureSection 
+          reverse={true}
+          title="Stability & Growth"
+          points={[
+            "Decades of Trust. Future-Ready Banking",
+            "Your financial journey starts here — reliable, transparent, and secure",
+            "Serving individuals, SMEs, and communities with excellence"
+          ]}
+          buttonText="Our Story"
+          imageSrc="https://placehold.co/600x450/png?text=Growth"
+        /> */}
+
+        {/* Why Choose Us */}
+        {/* <WhyChooseUs /> */}
+        
       </main>
-    </div>
+
+      <Footer />
+    </>
   );
 }

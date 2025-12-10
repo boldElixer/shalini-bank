@@ -1,42 +1,41 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Colors */
+  --color-primary-red: #D62F4A;
+  --color-primary-blue: #001F87;
+  --color-text-dark: #1F1F2E;
+  --color-text-light: #666666;
+  --color-bg-white: #FFFFFF;
+  --color-bg-light-gray: #F4F6F8;
+  
+  /* Spacing & Layout */
+  --container-width: 80rem; 
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --radius-card: 1rem;
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  /* The font is applied via the class in layout.jsx, 
+     but we can set a generic sans-serif fallback here */
+  font-family: sans-serif; 
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-white);
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  color: inherit;
 }
