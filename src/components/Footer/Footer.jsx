@@ -1,49 +1,89 @@
+import Image from 'next/image';
 import styles from './Footer.module.css';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
+        <Image src="/header.svg" alt="Shalini Bank Logo" width={248.75} height={70} />
         <div className={styles.grid}>
-          <div className={styles.col}>
-            <h4 style={{color:'#D62F4A'}}>SSB Bank</h4>
-            <p style={{color:'#666', fontSize:'0.85rem'}}>Trusted banking for everyone.</p>
-          </div>
           <div className={styles.col}>
             <h4>About</h4>
             <ul>
               <li>About Us</li>
               <li>Board of Directors</li>
-              <li>Career</li>
+              <li>Shareholders</li>
+              <li>Bank Holidays</li>
+              <li>Careers</li>
+              <li>Environment, Social & Governance</li>
             </ul>
           </div>
           <div className={styles.col}>
             <h4>Explore</h4>
             <ul>
-              <li>Savings Account</li>
+              <li>Become a Customer</li>
               <li>Loans</li>
-              <li>Digital Banking</li>
+              <li>Uncliamed Deposits</li>
+              <li>Know Your Customer</li>
+            </ul>
+          </div>
+          <div className={styles.col}>
+            <h4>Ways to Bank</h4>
+            <ul>
+              <li>SMS Banking</li>
+              <li>Mobile Banking</li>
+              <li>UPI</li>
             </ul>
           </div>
           <div className={styles.col}>
             <h4>Customer Service</h4>
             <ul>
               <li>Contact Us</li>
-              <li>Branch Locator</li>
-              <li>Support</li>
+              <li>Download Forms</li>
+              <li>Feedbacks & Complaints</li>
             </ul>
           </div>
           <div className={styles.col}>
-            <h4>Mobile App</h4>
-            <div className={styles.appBadges}>
-              <div className={styles.badge}>Google Play</div>
-              <div className={styles.badge}>App Store</div>
-            </div>
+            <h4>Investor Center</h4>
+            <ul>
+              <li>Annual Reports</li>
+              <li>Notices</li>
+              <li>Financials</li>
+            </ul>
+          </div>
+          <div className={styles.col}>
+            <h4>Regulatory Information</h4>
+            <ul>
+              <li>Safe Banking</li>
+              <li>RBI Awareness Campaign</li>
+              <li><Link href="https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=21110" target="_blank" rel="noopener noreferrer">RBI: Beware of Fictitious Offers</Link></li>
+              <li><Link href="https://www.rbi.org.in/commonperson/English/Scripts/rbikehtahai.aspx" target="_blank" rel="noopener noreferrer">RBI Kehta Hai</Link></li>
+              <li><Link href="https://udgam.rbi.org.in/unclaimed-deposits/#/login" target="_blank" rel="noopener noreferrer">RBI-UDGAM Portal</Link></li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.installApp}>
+          <div className={styles.appBadges}>
+            <h4>Install Mobile Banking App</h4>
+            <Image src="/footer/playstore.svg" alt="Google Play Store" width={147} height={44} />
+          </div>
+          <div className={styles.appBadges}>
+            <h4>Shalini Sahakari Bank Ltd. is<br/> registered with DICGC</h4>
+            <Image src="/footer/dicgc.png" alt="DICGC Logo" width={68} height={65} />
+            <Image src="/footer/dicgc_qr.png" alt="DICGC QR CODE" width={68} height={68} />
           </div>
         </div>
         <div className={styles.bottomBar}>
-          <div>Bank Code | Disclaimer | Sitemap | Privacy Policy</div>
-          <div>Copyright © 2024 SSB Bank Ltd.</div>
+          <div>
+            <ul style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+              <li>Bank Code</li>
+              <li>Disclaimer</li>
+              <li>Sitemap</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div>Copyright © 2025 Shalini Sahakari Bank Ltd.</div>
         </div>
       </div>
     </footer>

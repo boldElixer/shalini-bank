@@ -1,7 +1,6 @@
 .footer {
   background-color: var(--color-bg-light-gray);
-  padding: var(--spacing-xl) 0 var(--spacing-md);
-  margin-top: var(--spacing-xl);
+  padding: var(--spacing-md);
   font-size: 0.9rem;
 }
 .container {
@@ -12,26 +11,52 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
+  gap: var(--spacing-sm);
+  margin: var(--spacing-md) 0;
 }
 .col h4 {
   color: var(--color-primary-blue);
   margin-bottom: var(--spacing-sm);
-  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: var(--spacing-xs);
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: var(--color-primary-red);
+  font-size: 1rem;
+  font-weight: var(--semibold);
 }
-.col ul li { margin-bottom: 0.5rem; color: var(--color-text-light); }
-.appBadges { display: flex; gap: 0.5rem; margin-top: 1rem; }
-.badge {
-  background: #000; color: #fff;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  display: flex; align-items: center; gap: 0.3rem;
+.col ul li { margin-bottom: 0.5rem; color: var(--color-primary-blue); font-size: 0.8rem; }
+.col ul li:hover {
+    cursor: pointer;
+    color: var(--color-primary-blue);
+    font-weight: var(--semibold);
+}
+
+.installApp {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.appBadges { 
+  display: flex; 
+  gap: 1rem; 
+  align-items: center;
+}
+.appBadges h4 {
+  color: var(--color-text-dark);
+  font-weight: var(--semibold);
+  font-size: 1rem;
 }
 .bottomBar {
-  border-top: 1px solid #ddd;
-  padding-top: var(--spacing-sm);
-  display: flex; flex-wrap: wrap; justify-content: space-between;
-  color: var(--color-text-light); font-size: 0.8rem;
+  padding-top: var(--spacing-md);
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  color: var(--color-text-dark); 
+  font-weight: var(--semibold);
+  font-size: 1rem;
 }

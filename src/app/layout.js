@@ -9,8 +9,11 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'SSB Bank',
+  title: 'Shalini Bank',
   description: 'Customer centric banking solutions',
+  icons: {
+    icon: '/logo.svg',
+  },
 };
 
 export default function RootLayout({ children }) {

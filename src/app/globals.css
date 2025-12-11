@@ -1,15 +1,28 @@
 :root {
   /* Colors */
-  --color-primary-red: #D62F4A;
-  --color-primary-blue: #001F87;
-  --color-text-dark: #1F1F2E;
+  --color-primary-red: #D32B40;
+  --color-primary-blue: #081F9C;
+  --color-text-dark: #363940;
   --color-text-light: #666666;
   --color-bg-white: #FFFFFF;
-  --color-bg-light-gray: #F4F6F8;
+  --color-bg-light-gray: #E6E7EB;
+
+  /* Font Weights */
+  --thin: 100;
+  --extralight: 200;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+  --black: 900;
   
   /* Spacing & Layout */
   --container-width: 80rem; 
+  --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
+  --spacing-smm: 1.5rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
@@ -23,8 +36,6 @@
 }
 
 body {
-  /* The font is applied via the class in layout.jsx, 
-     but we can set a generic sans-serif fallback here */
   font-family: sans-serif; 
   color: var(--color-text-dark);
   background-color: var(--color-bg-white);
