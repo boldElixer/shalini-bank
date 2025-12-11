@@ -2,8 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
-// import FeatureSection from '@/components/FeatureSection/FeatureSection';
-// import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs';
+import FeatureSection from '@/components/FeatureSection/FeatureSection';
+import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -28,15 +28,14 @@ export default function Home() {
            /> */}
         </div>
 
-        {/* Features Loop */}
-        {/* <FeatureSection 
+        <FeatureSection 
           title="Customer-Centric & Trust-Focused"
           points={[
             "Your Trusted Partner in Financial Growth",
             "Empowering individuals, businesses, and communities through smart banking solutions."
           ]}
           buttonText="Open Account"
-          imageSrc="https://placehold.co/600x450/png?text=Meeting"
+          // imageSrc="https://placehold.co/600x450/png?text=Meeting"
         />
 
         <FeatureSection 
@@ -48,10 +47,10 @@ export default function Home() {
             "From Microfinance to housing loans — we grow together"
           ]}
           buttonText="Apply for loan"
-          imageSrc="https://placehold.co/600x450/png?text=Family"
-        /> */}
+          // imageSrc="https://placehold.co/600x450/png?text=Family"
+        />
 
-        {/* <FeatureSection 
+        <FeatureSection 
           title="Innovation & Accessibility"
           points={[
             "Banking Made Simple, Secure, and Seamless",
@@ -59,10 +58,10 @@ export default function Home() {
             "24/7 access to your finances — anytime, anywhere"
           ]}
           buttonText="Mobile Banking"
-          imageSrc="https://placehold.co/600x450/png?text=Digital+Banking"
+          // imageSrc="https://placehold.co/600x450/png?text=Digital+Banking"
         />
 
-         <FeatureSection 
+        <FeatureSection 
           reverse={true}
           title="Stability & Growth"
           points={[
@@ -71,11 +70,10 @@ export default function Home() {
             "Serving individuals, SMEs, and communities with excellence"
           ]}
           buttonText="Our Story"
-          imageSrc="https://placehold.co/600x450/png?text=Growth"
-        /> */}
+          // imageSrc="https://placehold.co/600x450/png?text=Growth"
+        />
 
-        {/* Why Choose Us */}
-        {/* <WhyChooseUs /> */}
+        <WhyChooseUs />
         
       </main>
 
