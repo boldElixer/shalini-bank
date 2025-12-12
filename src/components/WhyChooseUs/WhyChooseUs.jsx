@@ -1,8 +1,9 @@
+import Image from 'next/image';
 import styles from './WhyChooseUs.module.css';
 
 const FeatureIcon = ({ title, icon }) => (
   <div className={styles.featureItem}>
-    <div className={styles.iconCircle}>{icon}</div>
+    <Image src={`/chooseIcons/${icon}.png`} alt={title} width={60} height={60} className={styles.featureIcon} />
     <div className={styles.featureTitle}>{title}</div>
   </div>
 );
@@ -18,12 +19,12 @@ export default function WhyChooseUs() {
           </div>
           
           <div className={styles.features}>
-            <FeatureIcon title="Member Oriented" icon="👤" />
-            <FeatureIcon title="Community Impact" icon="📈" />
-            <FeatureIcon title="Ethical Banking" icon="🏛️" />
-            <FeatureIcon title="Trust & Integrity" icon="🤝" />
-            <FeatureIcon title="Tailored Solution" icon="📊" />
-            <FeatureIcon title="Innovative Access" icon="💳" />
+            <FeatureIcon title="Member Oriented" icon="1" />
+            <FeatureIcon title="Community Impact" icon="2" />
+            <FeatureIcon title="Ethical Banking" icon="3" />
+            <FeatureIcon title="Trust and Integrity" icon="4" />
+            <FeatureIcon title="Tailored Solution" icon="5" />
+            <FeatureIcon title="Innovative and Accessible" icon="6" />
           </div>
         </div>
       </div>
