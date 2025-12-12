@@ -1,0 +1,84 @@
+.carouselWrapper {
+  max-width: var(--container-width); /* Matches your 80rem header/content */
+  margin: 0 auto var(--spacing-xl) auto;
+  position: relative;
+  border-radius: var(--radius-card);
+  overflow: hidden; /* Clips the images to the rounded corners */
+}
+
+.swiperContainer {
+  width: 100%;
+  padding-bottom: 3rem; /* Extra space at bottom so dots don't overlap image */
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+
+/* --- PIXEL PERFECT ARROWS --- */
+
+.carouselWrapper :global(.swiper-button-next),
+.carouselWrapper :global(.swiper-button-prev) {
+  background-color: #ffffff !important;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  border-radius: 50% !important;
+  color: #333 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  
+  /* Centers them exactly in the middle of the IMAGE height */
+  top: 42% !important; 
+  margin: 0 !important;
+  transition: transform 0.2s ease;
+}
+
+.carouselWrapper :global(.swiper-button-next::after),
+.carouselWrapper :global(.swiper-button-prev::after) {
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+}
+
+.carouselWrapper :global(.swiper-button-prev) {
+  left: 1.5rem !important;
+}
+
+.carouselWrapper :global(.swiper-button-next) {
+  right: 1.5rem !important;
+}
+
+.carouselWrapper :global(.swiper-button-next:hover),
+.carouselWrapper :global(.swiper-button-prev:hover) {
+  transform: scale(1.1);
+}
+
+/* --- PAGINATION BLUE DOTS --- */
+
+.carouselWrapper :global(.swiper-pagination) {
+  bottom: 0 !important; /* Moves dots into that padding-bottom space */
+}
+
+.carouselWrapper :global(.swiper-pagination-bullet) {
+  width: 10px !important;
+  height: 10px !important;
+  background: #cbd5e0 !important; /* Light grey inactive */
+  opacity: 1 !important;
+  margin: 0 6px !important;
+}
+
+.carouselWrapper :global(.swiper-pagination-bullet-active) {
+  background: #001F87 !important; /* Your specific brand blue */
+  width: 25px !important; /* Elongated pill shape for active dot */
+  border-radius: 5px !important;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 1024px) {
+    .carouselWrapper {
+        max-width: 95%;
+    }
+    .imageContainer {
+        aspect-ratio: 16 / 9; /* Slightly taller for mobile readability */
+    }
+}

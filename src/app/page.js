@@ -5,6 +5,7 @@ import Footer from '@/components/Footer/Footer';
 import FeatureSection from '@/components/FeatureSection/FeatureSection';
 import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs';
 import styles from './page.module.css';
+import HeroCarousel from '@/components/HeroCarousel/HeroCarousel';
 
 export default function Home() {
   return (
@@ -19,13 +20,7 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <div className={styles.hero}>
-           {/* <Image 
-             src="https://placehold.co/1920x800/e0e0e0/555?text=Banking+Hero+Image" 
-             alt="Banking Hero"
-             fill
-             style={{ objectFit: 'cover' }}
-             priority
-           /> */}
+          <HeroCarousel />
         </div>
 
         <FeatureSection 
