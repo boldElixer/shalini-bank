@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './Header.module.css';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -10,8 +11,8 @@ export default function Header() {
         </div>
         <nav className={styles.nav}>
           <ul>
-            <li>Home</li>
-            <li>About</li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/about">About</Link></li>
             <li>Services</li>
             <li>Complaints</li>
             <li>Help</li>
