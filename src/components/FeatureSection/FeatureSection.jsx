@@ -5,7 +5,6 @@ export default function FeatureSection({ title, points, buttonText, imageSrc, re
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        {/* Adds 'reversed' class if prop is true */}
         <div className={`${styles.grid} ${reverse ? styles.reversed : ''}`}>
           
           <div className={styles.imageWrapper}>
@@ -18,11 +17,11 @@ export default function FeatureSection({ title, points, buttonText, imageSrc, re
           </div>
 
           <div className={styles.contentWrapper}>
-            <h2>{title}</h2>
+            <h2 className={styles.title}>{title}</h2>
             <div className={styles.checkList}>
               {points.map((point, index) => (
                 <div key={index} className={styles.checkItem}>
-                  <span className={styles.checkIcon}>✓</span>
+                  <span className={styles.checkIcon}><Image src="/checklist.svg" alt="Check" width={16.97} height={12.02} /></span>
                   <p>{point}</p>
                 </div>
               ))}

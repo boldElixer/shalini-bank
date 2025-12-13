@@ -18,7 +18,6 @@ export default function Home() {
       <Header />
 
       <main>
-        {/* Hero Section */}
         <div className={styles.hero}>
           <HeroCarousel />
         </div>
@@ -27,7 +26,7 @@ export default function Home() {
           title="Customer-Centric & Trust-Focused"
           points={[
             "Your Trusted Partner in Financial Growth",
-            "Empowering individuals, businesses, and communities through smart banking solutions."
+            "Empowering individuals, businesses, and communities through smart banking solutions"
           ]}
           buttonText="Open Account"
           // imageSrc="https://placehold.co/600x450/png?text=Meeting"

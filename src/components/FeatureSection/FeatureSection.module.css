@@ -1,4 +1,4 @@
-.section { padding: var(--spacing-lg) 0; }
+.section { padding: var(--spacing-xs) 0; }
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -38,32 +38,39 @@
 }
 
 .contentWrapper h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--color-primary-blue);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   line-height: 1.2;
 }
 .checkList { margin: var(--spacing-sm) 0 var(--spacing-md); }
 .checkItem {
-  display: flex; gap: 0.75rem; margin-bottom: 0.5rem;
-  color: var(--color-text-light); font-size: 0.95rem;
+  display: flex; 
+  gap: 0.75rem; 
+  margin-bottom: 0.75rem;
+  color: var(--color-text-light); 
+  font-size: 1rem;
 }
 .checkIcon {
   color: var(--color-primary-blue);
   background: #E6EAF8;
   border-radius: 50%;
-  width: 1.2rem; height: 1.2rem;
+  width: 1.6rem; 
+  height: 1.6rem;
   display: flex; align-items: center; justify-content: center;
-  font-size: 0.8rem; flex-shrink: 0;
+  flex-shrink: 0;
 }
 .button {
   display: inline-block;
   background-color: var(--color-primary-red);
   color: white;
-  padding: 0.8rem 2rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  border: none; cursor: pointer;
+  padding: 0.6rem 2rem;
+  border-radius: 0.9rem;
+  font-weight: var(--medium);
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
   transition: opacity 0.2s;
+  font-family: Poppins, sans-serif;
 }
 .button:hover { opacity: 0.9; }
