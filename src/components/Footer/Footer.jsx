@@ -11,8 +11,8 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>About</h4>
             <ul>
-              <li>About Us</li>
-              <li>Board of Directors</li>
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/about#BOD">Board of Directors</Link></li>
               <li>Shareholders</li>
               <li>Bank Holidays</li>
               <li>Careers</li>
@@ -42,6 +42,9 @@ export default function Footer() {
               <li>Contact Us</li>
               <li>Download Forms</li>
               <li>Feedbacks & Complaints</li>
+              <li>Grievance Redressal</li>
+              <li>Deposit Calculator</li>
+              <li>EMI Calculator</li>
             </ul>
           </div>
           <div className={styles.col}>
@@ -55,7 +58,6 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Regulatory Information</h4>
             <ul>
-              <li>Safe Banking</li>
               <li>RBI Awareness Campaign</li>
               <li><Link href="https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=21110" target="_blank" rel="noopener noreferrer">RBI: Beware of Fictitious Offers</Link></li>
               <li><Link href="https://www.rbi.org.in/commonperson/English/Scripts/rbikehtahai.aspx" target="_blank" rel="noopener noreferrer">RBI Kehta Hai</Link></li>

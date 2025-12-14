@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import styles from './about.module.css';
-import FeatureSection from '@/components/FeatureSection/FeatureSection';
 
 export default function About() {
   return (
@@ -90,10 +89,10 @@ export default function About() {
           </section>
 
 
-          <section className={styles.TeamSection}>
+          <section className={styles.TeamSection} id='BOD'>
             <h2 className={styles.sectionTitle}>Board of Directors</h2>
             <div className={styles.teamGrid}>
-               {[1, 2, 3, 1, 2, 3, 1, 2].map((item) => (
+               {[1, 1, 1, 1, 1, 1, 1, 1].map((item) => (
                   <div key={item} className={styles.teamMember}>
                     <div className={styles.memberImage}>
                       <Image 
