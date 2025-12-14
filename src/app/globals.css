@@ -2,6 +2,7 @@
   /* Colors */
   --color-primary-red: #D32B40;
   --color-primary-blue: #081F9C;
+  --color-primary-blue-light: #E5F3FF;
   --color-text-dark: #363940;
   --color-text-light: #666666;
   --color-bg-white: #FFFFFF;
@@ -24,8 +25,10 @@
   --spacing-sm: 1rem;
   --spacing-smm: 1.5rem;
   --spacing-md: 2rem;
+  --spacing-mdm: 3rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
+  --spacing-xxl: 7rem;
   --radius-card: 1rem;
 }
 
