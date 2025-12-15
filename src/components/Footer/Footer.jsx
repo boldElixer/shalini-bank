@@ -14,7 +14,7 @@ export default function Footer() {
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/about#BOD">Board of Directors</Link></li>
               <li><Link href="/shareholders">Shareholders</Link></li>
-              <li>Bank Holidays</li>
+              <li><Link href="/bank-holidays">Bank Holidays</Link></li>
               <li>Careers</li>
               <li><Link href="/esg">Environment, Social & Governance</Link></li>
             </ul>

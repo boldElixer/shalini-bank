@@ -1,0 +1,151 @@
+{
+  "holidays": [
+    {
+      "Sr. No.": 1,
+      "Holiday": "Chhatrapati Shivaji Maharaj Jayanti",
+      "Date": "19th February, 2025",
+      "Day": "Wednesday"
+    },
+    {
+      "Sr. No.": 2,
+      "Holiday": "Mahashivratri",
+      "Date": "26th February, 2025",
+      "Day": "Wednesday"
+    },
+    {
+      "Sr. No.": 3,
+      "Holiday": "Holi (Second Day)",
+      "Date": "14th March, 2025",
+      "Day": "Friday"
+    },
+    {
+      "Sr. No.": 4,
+      "Holiday": "Ramzan-Id (Id-UI-Fitra) (Shawal-1)",
+      "Date": "31st March, 2025",
+      "Day": "Monday"
+    },
+    {
+      "Sr. No.": 5,
+      "Holiday": "Mahavir Janmakalyanak",
+      "Date": "10th April, 2025",
+      "Day": "Thursday"
+    },
+    {
+      "Sr. No.": 6,
+      "Holiday": "Dr.Babasaheb Ambedkar Jayanti",
+      "Date": "14th April, 2025",
+      "Day": "Monday"
+    },
+    {
+      "Sr. No.": 7,
+      "Holiday": "Good Friday",
+      "Date": "18th April, 2025",
+      "Day": "Friday"
+    },
+    {
+      "Sr. No.": 8,
+      "Holiday": "Maharashtra Din",
+      "Date": "01st May, 2025",
+      "Day": "Thursday"
+    },
+    {
+      "Sr. No.": 9,
+      "Holiday": "Buddha Pournima",
+      "Date": "12th May, 2025",
+      "Day": "Monday"
+    },
+    {
+      "Sr. No.": 10,
+      "Holiday": "Bakri ID(Id-Uz-Zuha)",
+      "Date": "07th June, 2025",
+      "Day": "Saturday"
+    },
+    {
+      "Sr. No.": 11,
+      "Holiday": "Independence Day",
+      "Date": "15th August, 2025",
+      "Day": "Friday"
+    },
+    {
+      "Sr. No.": 12,
+      "Holiday": "Parsi New Year (Shahenahahi)",
+      "Date": "15th August, 2025",
+      "Day": "Friday"
+    },
+    {
+      "Sr. No.": 13,
+      "Holiday": "Ganesh Chaturthi",
+      "Date": "27th August, 2025",
+      "Day": "Wednesday"
+    },
+    {
+      "Sr. No.": 14,
+      "Holiday": "Id-E-Milad",
+      "Date": "05th September, 2025",
+      "Day": "Friday"
+    },
+    {
+      "Sr. No.": 15,
+      "Holiday": "Mahatma Gandhi Jayanti",
+      "Date": "02nd October, 2025",
+      "Day": "Thursday"
+    },
+    {
+      "Sr. No.": 16,
+      "Holiday": "Dasara",
+      "Date": "02nd October, 2025",
+      "Day": "Thursday"
+    },
+    {
+      "Sr. No.": 17,
+      "Holiday": "Diwali Amavasya (Laxmi Pujan)",
+      "Date": "21st October, 2025",
+      "Day": "Tuesday"
+    },
+    {
+      "Sr. No.": 18,
+      "Holiday": "Diwali (Bali Pratipada)",
+      "Date": "22nd October, 2025",
+      "Day": "Wednesday"
+    },
+    {
+      "Sr. No.": 19,
+      "Holiday": "Guru Nanak Jayanti",
+      "Date": "05th November, 2025",
+      "Day": "Wednesday"
+    },
+    {
+      "Sr. No.": 20,
+      "Holiday": "Christmas",
+      "Date": "25th December, 2025",
+      "Day": "Thursday"
+    }
+  ],
+
+  "sundays": [
+    {
+      "Sr. No.": 1,
+      "Holiday": "Republic Day",
+      "Date": "26th January, 2025",
+      "Day": "Sunday"
+    },
+    {
+      "Sr. No.": 2,
+      "Holiday": "Gudhi Padwa",
+      "Date": "30th March, 2025",
+      "Day": "Sunday"
+    },
+    {
+      "Sr. No.": 3,
+      "Holiday": "Ram Navami",
+      "Date": "06th April, 2025",
+      "Day": "Sunday"
+    },
+    {
+      "Sr. No.": 4,
+      "Holiday": "Moharum",
+      "Date": "06th July, 2025",
+      "Day": "Sunday"
+    }
+  ]
+}
