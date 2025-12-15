@@ -59,7 +59,7 @@
 
 .mvCard {
   background: var(--color-primary-blue-light);
-  padding: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-mdm);
   border-radius: var(--radius-card);
 }
 

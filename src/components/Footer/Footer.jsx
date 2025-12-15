@@ -16,7 +16,7 @@ export default function Footer() {
               <li>Shareholders</li>
               <li>Bank Holidays</li>
               <li>Careers</li>
-              <li>Environment, Social & Governance</li>
+              <li><Link href="/esg">Environment, Social & Governance</Link></li>
             </ul>
           </div>
           <div className={styles.col}>

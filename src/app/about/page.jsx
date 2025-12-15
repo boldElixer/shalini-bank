@@ -92,7 +92,7 @@ export default function About() {
           <section className={styles.TeamSection} id='BOD'>
             <h2 className={styles.sectionTitle}>Board of Directors</h2>
             <div className={styles.teamGrid}>
-               {[1, 1, 1, 1, 1, 1, 1, 1].map((item) => (
+               {[1, 2, 3].map((item) => (
                   <div key={item} className={styles.teamMember}>
                     <div className={styles.memberImage}>
                       <Image 
