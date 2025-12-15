@@ -1,0 +1,280 @@
+/* Container & Layout */
+.wrapper {
+  min-height: 100vh;
+  padding-bottom: var(--spacing-xl);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+/* Header */
+.header {
+  padding: var(--spacing-md) 0;
+}
+.header h1 {
+  color: var(--color-primary-blue);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: var(--semibold);
+}
+
+/* --- Split Card Design --- */
+.card {
+  border-radius: var(--radius-card);
+  box-shadow: 0 0 var(--spacing-sm) var(--color-bg-light-gray);
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .card {
+    grid-template-columns: 1.4fr 1fr; /* 60% Input / 40% Result */
+  }
+}
+
+/* --- LEFT PANEL: INPUTS --- */
+.inputPanel {
+  padding: var(--spacing-mdm);
+}
+.disclaimer {
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    padding: var(--spacing-sm) 0;
+}
+.disclaimer p {
+    text-align: left;
+}
+/* Amount Field */
+.fieldLabel {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  font-weight: var(--semibold);
+}
+.currencyWrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--color-bg-light-gray);
+  transition: border-color 0.3s;
+}
+.currencyWrapper:focus-within {
+  border-color: var(--color-primary-blue);
+}
+.currencySymbol {
+  font-size: 1.8rem;
+  font-weight: var(--bold);
+  color: var(--color-text-dark);
+  margin-right: 0.5rem;
+}
+.amountInput {
+  border: none;
+  font-size: 2rem;
+  font-weight: var(--bold);
+  width: 100%;
+  color: var(--color-text-dark);
+  outline: none;
+}
+.amountInput:focus {
+  color: var(--color-primary-blue);
+}
+
+/* Payout Buttons */
+.payoutGroup {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-top: var(--spacing-sm);
+}
+.payoutBtn {
+  flex: 1;
+  padding: var(--spacing-sm);
+  border: none;
+  border-radius: var(--radius-card);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: var(--medium);
+  font-family: var(--font-family);
+  color: var(--color-text-light);
+  min-width: 100px;
+  text-align: center;
+}
+.activePayout {
+  background-color: var(--color-primary-blue-light);
+  color: var(--color-primary-blue);
+  font-weight: var(--bold);
+  border: none;
+}
+
+/* Slider Section */
+.sliderSection {
+  margin-top: var(--spacing-mdm);
+}
+.sliderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+}
+.rateDisplay {
+  color: var(--color-primary-blue);
+  font-weight: var(--bold);
+  font-size: 1.2rem;
+}
+.slider {
+  width: 100%;
+  height: var(--spacing-xs);
+  background: var(--color-primary-blue-light);
+  border-radius: var(--radius-card);
+  outline: none;
+  -webkit-appearance: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: var(--spacing-smm);
+  height: var(--spacing-smm);
+  background: var(--color-primary-blue);
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.1s;
+}
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+/* --- RIGHT PANEL: RESULTS --- */
+.resultPanel {
+  background: var(--color-primary-blue);
+  padding: var(--spacing-mdm);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Summary Row */
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+}
+.summaryLabel {
+  font-size: 1rem;
+  color: white;
+}
+.summaryValue {
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  color: white;
+}
+
+/* Edit Box (The Grey/White containers) */
+.editBox {
+  background: var(--color-primary-blue-light);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-card);
+  margin: var(--spacing-xs) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.editContent {
+  flex: 1;
+}
+.editTitle {
+  font-size: 0.8rem;
+  color: var(--color-text-dark);
+  display: block;
+}
+.editMainText {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-primary-blue);
+}
+
+/* Edit Mode Inputs */
+.editModeContainer {
+  display: flex;
+  gap: var(--spacing-xs);
+  width: 100%;
+  align-items: center;
+}
+.dropdown {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--color-bg-white);
+  flex: 1;
+  font-size: 0.9rem;
+  font-family: var(--font-family);
+}
+.datePicker {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: var(--font-family);
+}
+.actionBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-xs);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.confirmBtn {
+  background: var(--color-primary-blue);
+  color: white;
+  width: var(--spacing-md);
+  height: var(--spacing-md);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Final Big Results */
+.finalResult {
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+.bigAmount {
+  font-size: 2.2rem;
+  font-weight: var(--bold);
+  color: var(--color-bg-white);
+  line-height: 1.2;
+}
+
+/* CTA Button */
+.ctaBtn {
+  margin-top: auto; /* Pushes to bottom */
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-primary-red);
+  width: fit-content;
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-card);
+  font-size: 1.1rem;
+  font-weight: var(--semibold);
+  cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.5;
+}

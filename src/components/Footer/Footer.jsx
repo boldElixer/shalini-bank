@@ -43,7 +43,7 @@ export default function Footer() {
               <li>Download Forms</li>
               <li>Feedbacks & Complaints</li>
               <li>Grievance Redressal</li>
-              <li>Deposit Calculator</li>
+              <li><Link href="/deposit-calculator">Deposit Calculator</Link></li>
               <li>EMI Calculator</li>
             </ul>
           </div>
