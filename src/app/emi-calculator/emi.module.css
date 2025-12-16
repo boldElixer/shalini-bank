@@ -1,41 +1,33 @@
-/* --- Global Container Styles (Matches FD Calculator) --- */
+/* Container & Layout */
 .wrapper {
-  background-color: #F5F7FA;
   min-height: 100vh;
-  padding-bottom: 4rem;
+  padding-bottom: var(--spacing-xl);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 var(--spacing-sm);
 }
 
+/* Header */
 .header {
-  text-align: center;
-  padding: 3rem 0;
+  padding-top: var(--spacing-md);
 }
 .header h1 {
   color: var(--color-primary-blue);
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-}
-.header p {
-  color: #666;
-  max-width: 600px;
-  margin: 0 auto;
+  font-weight: var(--semibold);
 }
 
-/* --- Split Card --- */
+/* --- Split Card Design --- */
 .card {
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  border-radius: var(--radius-card);
+  box-shadow: 0 0 var(--spacing-sm) var(--color-bg-light-gray);
   display: grid;
   grid-template-columns: 1fr;
   overflow: hidden;
-  border: 1px solid #eee;
-  margin-bottom: 2rem;
 }
 
 @media (min-width: 992px) {
@@ -46,52 +38,81 @@
 
 /* --- LEFT PANEL: INPUTS --- */
 .inputPanel {
-  padding: 2.5rem;
-  border-right: 1px solid #eee;
+  padding: var(--spacing-mdm);
+}
+.disclaimer {
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    padding: var(--spacing-sm) 0;
+}
+.disclaimer p {
+    text-align: left;
+}
+/* Amount Field */
+.fieldLabel {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  font-weight: var(--semibold);
+}
+.currencyWrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--color-bg-light-gray);
+  transition: border-color 0.3s;
+}
+.currencyWrapper:focus-within {
+  border-color: var(--color-primary-blue);
+}
+.currencySymbol {
+  font-size: 1.8rem;
+  font-weight: var(--bold);
+  color: var(--color-text-dark);
+  margin-right: 0.5rem;
+}
+.amountInput {
+  border: none;
+  font-size: 2rem;
+  font-weight: var(--bold);
+  width: 100%;
+  color: var(--color-text-dark);
+  outline: none;
+}
+.amountInput:focus {
+  color: var(--color-primary-blue);
 }
 
 .fieldGroup {
   margin-bottom: 2.5rem;
 }
 
-.fieldLabel {
-  display: block;
-  font-size: 0.95rem;
-  color: #888;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-/* Input Value Display (e.g., 50,000) */
+/* Value Display (For Interest/Tenure headers) */
 .inputHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
 }
 .valueDisplay {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: var(--bold);
   color: var(--color-primary-blue);
-  background: #E6EAF8;
-  padding: 0.2rem 1rem;
-  border-radius: 8px;
+  background: var(--color-primary-blue-light);
+  padding: 0.2rem 0.8rem;
+  border-radius: var(--radius-card);
 }
 
-/* Sliders */
+/* Sliders (Still used for Interest Rate) */
 .slider {
   width: 100%;
-  height: 6px;
-  background: #E0E0E0;
-  border-radius: 5px;
+  height: var(--spacing-xs);
+  background: var(--color-primary-blue-light);
+  border-radius: var(--radius-card);
   outline: none;
   -webkit-appearance: none;
-  cursor: pointer;
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 24px;
-  height: 24px;
+  width: var(--spacing-smm);
+  height: var(--spacing-smm);
   background: var(--color-primary-blue);
   border: 3px solid white;
   border-radius: 50%;
@@ -106,132 +127,124 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
-  color: #999;
-  margin-top: 0.5rem;
+  color: var(--color-text-light);
 }
 
 /* Tenure Buttons */
 .tenureGroup {
   display: flex;
-  gap: 10px;
+  gap: var(--spacing-sm);
 }
 .tenureBtn {
-  padding: 0.8rem 1.5rem;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  color: #555;
-  transition: all 0.2s;
   flex: 1;
+  padding: var(--spacing-xs);
+  border: none;
+  border-radius: var(--radius-card);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: var(--medium);
+  font-family: var(--font-family);
+  color: var(--color-text-light);
+  min-width: 100px;
+  text-align: center;
 }
 .activeTenure {
-  border-color: var(--color-primary-blue);
-  background-color: #E6EAF8;
+  background-color: var(--color-primary-blue-light);
   color: var(--color-primary-blue);
-  font-weight: 700;
+  font-weight: var(--bold);
+  border: none;
 }
 
-/* Custom Duration Input (Hidden unless Custom clicked) */
+/* Custom Duration Input */
 .customDurationWrapper {
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-top: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
   background: #f9f9f9;
-  border-radius: 8px;
-  border: 1px solid #eee;
+  border-radius: var(--radius-card);
 }
 
 /* --- RIGHT PANEL: RESULTS --- */
 .resultPanel {
-  background: #FAFAFA;
-  padding: 2.5rem;
+  background: var(--color-primary-blue);
+  padding: var(--spacing-md) var(--spacing-mdm);
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .emiLabel {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-bg-white);
   text-align: center;
-  margin-bottom: 0.5rem;
 }
 .emiValue {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--color-primary-blue);
+  font-size: 2.5rem;
+  font-weight: var(--bold);
+  color: var(--color-bg-white);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-sm);
 }
 
 .summaryItem {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.1rem;
+}
+.summaryLabel { 
   font-size: 1rem;
-}
-.summaryLabel { color: #666; }
-.summaryVal { font-weight: 700; color: #333; }
-
-.divider {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 1.5rem 0;
-}
+  color: white;
+ }
+.summaryVal { 
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  color: white;
+ }
 
 .applyBtn {
-  width: 100%;
+  margin-top: auto; /* Pushes to bottom */
+  margin-left: auto;
+  margin-right: auto;
   background: var(--color-primary-red);
+  width: fit-content;
   color: white;
-  padding: 1rem;
+  padding: var(--spacing-sm) var(--spacing-md);
   border: none;
-  border-radius: 30px;
+  border-radius: var(--radius-card);
+  font-family: var(--font-family);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: var(--semibold);
   cursor: pointer;
-  margin-top: auto;
-  box-shadow: 0 4px 15px rgba(214, 47, 74, 0.3);
-  transition: transform 0.2s;
 }
-.applyBtn:hover { transform: translateY(-2px); }
 
-/* --- AMORTIZATION SCHEDULE TABLE --- */
+/* --- AMORTIZATION TABLE --- */
 .scheduleSection {
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-  margin-top: 2rem;
+  margin-top: var(--spacing-md);
 }
 .scheduleHeader {
   font-size: 1.5rem;
   color: var(--color-primary-blue);
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-sm);
 }
-
 .table {
   width: 100%;
   border-collapse: collapse;
 }
 .table th {
   text-align: left;
-  padding: 1rem;
-  background: #F5F7FA;
-  color: #666;
-  font-weight: 600;
-  font-size: 0.9rem;
+  padding: var(--spacing-sm);
+  background: var(--color-bg-light-gray);
+  color: var(--color-text-dark);
+  font-weight: var(--semibold);
+  font-size: 1rem;
 }
 .yearRow {
-  background: #fff;
   cursor: pointer;
-  border-bottom: 1px solid #eee;
-  transition: background 0.2s;
+  border-bottom: 1px solid var(--color-bg-light-gray);
 }
 .yearRow:hover { background: #f9f9f9; }
 .yearCell {
-  padding: 1rem;
-  font-weight: 700;
+  padding: var(--spacing-sm);
+  font-weight: var(--bold);
   color: var(--color-primary-blue);
   display: flex;
   align-items: center;
@@ -242,17 +255,14 @@
   transition: transform 0.3s;
 }
 .rotated { transform: rotate(180deg); }
-
 .monthRow {
   background: #fff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-bg-light-gray);
   font-size: 0.9rem;
-  color: #555;
+  color: var(--color-text-light);
 }
-.monthRow td { padding: 0.8rem 1rem; }
-
-/* Sub-row styling */
+.monthRow td { padding: 0.8rem 1rem; color: var(--color-text-dark);}
 .monthRow td:first-child {
-  padding-left: 2.5rem; /* Indent for months */
-  color: #888;
+  padding-left: var(--spacing-md);
+  color: var(--color-text-light);
 }

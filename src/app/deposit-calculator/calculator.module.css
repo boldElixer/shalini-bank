@@ -264,6 +264,7 @@
   width: fit-content;
   color: white;
   padding: var(--spacing-sm) var(--spacing-md);
+  font-family: var(--font-family);
   border: none;
   border-radius: var(--radius-card);
   font-size: 1.1rem;
