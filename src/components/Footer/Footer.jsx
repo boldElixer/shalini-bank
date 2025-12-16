@@ -44,7 +44,7 @@ export default function Footer() {
               <li>Feedbacks & Complaints</li>
               <li>Grievance Redressal</li>
               <li><Link href="/deposit-calculator">Deposit Calculator</Link></li>
-              <li>EMI Calculator</li>
+              <li><Link href="/emi-calculator">EMI Calculator</Link></li>
             </ul>
           </div>
           <div className={styles.col}>

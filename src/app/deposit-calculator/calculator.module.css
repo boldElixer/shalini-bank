@@ -12,7 +12,7 @@
 
 /* Header */
 .header {
-  padding: var(--spacing-md) 0;
+  padding-top: var(--spacing-md);
 }
 .header h1 {
   color: var(--color-primary-blue);

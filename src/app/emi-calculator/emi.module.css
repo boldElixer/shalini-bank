@@ -1,0 +1,258 @@
+/* --- Global Container Styles (Matches FD Calculator) --- */
+.wrapper {
+  background-color: #F5F7FA;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  text-align: center;
+  padding: 3rem 0;
+}
+.header h1 {
+  color: var(--color-primary-blue);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.header p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Split Card --- */
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  border: 1px solid #eee;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .card {
+    grid-template-columns: 1.4fr 1fr; /* 60% Input / 40% Result */
+  }
+}
+
+/* --- LEFT PANEL: INPUTS --- */
+.inputPanel {
+  padding: 2.5rem;
+  border-right: 1px solid #eee;
+}
+
+.fieldGroup {
+  margin-bottom: 2.5rem;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Input Value Display (e.g., 50,000) */
+.inputHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.valueDisplay {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  background: #E6EAF8;
+  padding: 0.2rem 1rem;
+  border-radius: 8px;
+}
+
+/* Sliders */
+.slider {
+  width: 100%;
+  height: 6px;
+  background: #E0E0E0;
+  border-radius: 5px;
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  background: var(--color-primary-blue);
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.1s;
+}
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+/* Tenure Buttons */
+.tenureGroup {
+  display: flex;
+  gap: 10px;
+}
+.tenureBtn {
+  padding: 0.8rem 1.5rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #555;
+  transition: all 0.2s;
+  flex: 1;
+}
+.activeTenure {
+  border-color: var(--color-primary-blue);
+  background-color: #E6EAF8;
+  color: var(--color-primary-blue);
+  font-weight: 700;
+}
+
+/* Custom Duration Input (Hidden unless Custom clicked) */
+.customDurationWrapper {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* --- RIGHT PANEL: RESULTS --- */
+.resultPanel {
+  background: #FAFAFA;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.emiLabel {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.emiValue {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-primary-blue);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.summaryLabel { color: #666; }
+.summaryVal { font-weight: 700; color: #333; }
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1.5rem 0;
+}
+
+.applyBtn {
+  width: 100%;
+  background: var(--color-primary-red);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: auto;
+  box-shadow: 0 4px 15px rgba(214, 47, 74, 0.3);
+  transition: transform 0.2s;
+}
+.applyBtn:hover { transform: translateY(-2px); }
+
+/* --- AMORTIZATION SCHEDULE TABLE --- */
+.scheduleSection {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  margin-top: 2rem;
+}
+.scheduleHeader {
+  font-size: 1.5rem;
+  color: var(--color-primary-blue);
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th {
+  text-align: left;
+  padding: 1rem;
+  background: #F5F7FA;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.yearRow {
+  background: #fff;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+.yearRow:hover { background: #f9f9f9; }
+.yearCell {
+  padding: 1rem;
+  font-weight: 700;
+  color: var(--color-primary-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.toggleIcon {
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+.rotated { transform: rotate(180deg); }
+
+.monthRow {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #555;
+}
+.monthRow td { padding: 0.8rem 1rem; }
+
+/* Sub-row styling */
+.monthRow td:first-child {
+  padding-left: 2.5rem; /* Indent for months */
+  color: #888;
+}
