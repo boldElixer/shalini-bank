@@ -26,6 +26,7 @@ export default function Footer() {
               <li>Loans</li>
               <li>Uncliamed Deposits</li>
               <li>Know Your Customer</li>
+              <li><Link href="/dicgc">DICGC</Link></li>
             </ul>
           </div>
           <div className={styles.col}>
