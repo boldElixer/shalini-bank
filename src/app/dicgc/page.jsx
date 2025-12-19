@@ -25,10 +25,10 @@ export default function DicgcPage() {
                     Secure your financial records with ease by downloading Digit Insurance(DI) returns, ensuring transparency and accessibility under the DICGC coverage.
                 </p>
                 <p>
-                    <Link href="/DI/dicgc_sep25.pdf" locale={false} target="_blank" rel="noopener noreferrer" className={styles.link}>DI Half-Yearly Return ending 30/09/2025</Link>
+                    <Link href="/DI/dicgc_sep25.pdf" target="_blank" rel="noopener noreferrer" className={styles.link}>DI Half-Yearly Return ending 30/09/2025</Link>
                 </p>
                 <p>
-                    <Link href="/DI/dicgc_mar25.pdf" locale={false} target="_blank" rel="noopener noreferrer" className={styles.link}>DI Half-Yearly Return ending 31/03/2025</Link>
+                    <Link href="/DI/dicgc_mar25.pdf" target="_blank" rel="noopener noreferrer" className={styles.link}>DI Half-Yearly Return ending 31/03/2025</Link>
                 </p>
             </section>
         </div>

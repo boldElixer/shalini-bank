@@ -23,9 +23,10 @@ export default function Footer() {
             <h4>Explore</h4>
             <ul>
               <li>Become a Customer</li>
+              <li>Deposits</li>
               <li>Loans</li>
               <li>Uncliamed Deposits</li>
-              <li>Know Your Customer</li>
+              <li><Link href="/kyc">Know Your Customer</Link></li>
               <li><Link href="/dicgc">DICGC</Link></li>
             </ul>
           </div>

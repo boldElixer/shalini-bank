@@ -30,3 +30,8 @@
   text-decoration: none;
   font-family: var(--font-family);
 }
+
+.link:hover {
+  font-weight: var(--bold);
+  cursor: pointer;
+}
