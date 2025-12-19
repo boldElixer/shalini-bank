@@ -27,6 +27,7 @@ export default function Home() {
             "Your Trusted Partner in Financial Growth",
             "Empowering individuals, businesses, and communities through smart banking solutions"
           ]}
+          buttonLink="/"
           buttonText="Open Account"
           // imageSrc="https://placehold.co/600x450/png?text=Meeting"
         />
@@ -39,6 +40,7 @@ export default function Home() {
             "Empowering rural and urban lives with inclusive financial services",
             "From Microfinance to housing loans — we grow together"
           ]}
+          buttonLink="/"
           buttonText="Apply for loan"
           // imageSrc="https://placehold.co/600x450/png?text=Family"
         />
@@ -50,6 +52,7 @@ export default function Home() {
             "Experience next-generation digital banking with personal care and trust",
             "24/7 access to your finances — anytime, anywhere"
           ]}
+          buttonLink="/"
           buttonText="Mobile Banking"
           // imageSrc="https://placehold.co/600x450/png?text=Digital+Banking"
         />
@@ -62,6 +65,7 @@ export default function Home() {
             "Your financial journey starts here — reliable, transparent, and secure",
             "Serving individuals, SMEs, and communities with excellence"
           ]}
+          buttonLink="/financials"
           buttonText="Our Story"
           // imageSrc="https://placehold.co/600x450/png?text=Growth"
         />

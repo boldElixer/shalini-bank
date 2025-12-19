@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import styles from './FeatureSection.module.css';
+import Link from 'next/link';
 
-export default function FeatureSection({ title, points, buttonText, imageSrc, reverse }) {
+export default function FeatureSection({ title, points, buttonLink, buttonText, imageSrc, reverse }) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -26,7 +27,9 @@ export default function FeatureSection({ title, points, buttonText, imageSrc, re
                 </div>
               ))}
             </div>
-            <button className={styles.button}>{buttonText}</button>
+            <button className={styles.button}>
+              <Link href={buttonLink}>{buttonText}</Link>
+            </button>
           </div>
 
         </div>

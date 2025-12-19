@@ -54,7 +54,7 @@ export default function Footer() {
             <ul>
               <li>Annual Reports</li>
               <li>Notices</li>
-              <li>Financials</li>
+              <li><Link href="/financials">Financials</Link></li>
             </ul>
           </div>
           <div className={styles.col}>
