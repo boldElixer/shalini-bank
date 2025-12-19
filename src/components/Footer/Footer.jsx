@@ -53,7 +53,7 @@ export default function Footer() {
             <h4>Investor Center</h4>
             <ul>
               <li><Link href="/annual-reports">Annual Reports</Link></li>
-              <li>Notices</li>
+              <li><Link href="/notices">Notices</Link></li>
               <li><Link href="/financials">Financials</Link></li>
             </ul>
           </div>
