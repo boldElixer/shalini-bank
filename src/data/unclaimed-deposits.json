@@ -1,0 +1,51 @@
+[
+    {
+        "branch_code": "2",
+        "account_type": "DAILY DEPOSIT",
+        "account_number": "000201740006045",
+        "customer_name": "POOJA A SINGH",
+        "customer_address": ""
+    },
+    {
+        "branch_code": "2",
+        "account_type": "DAILY DEPOSIT",
+        "account_number": "000201740006046",
+        "customer_name": "AMARIK SINGH ADROK",
+        "customer_address": ""
+    },
+    {
+        "branch_code": "2",
+        "account_type": "DAILY DEPOSIT",
+        "account_number": "000201740006047",
+        "customer_name": "SHIKHA A SINGH",
+        "customer_address": ""
+    },
+    {
+        "branch_code": "2",
+        "account_type": "DAILY DEPOSIT",
+        "account_number": "000201740006057",
+        "customer_name": "JAGRUTI H MANDEVIYA",
+        "customer_address": ""
+    },
+    {
+        "branch_code": "2",
+        "account_type": "DAILY DEPOSIT",
+        "account_number": "000201740006058",
+        "customer_name": "HETAL R MANDEVIYA",
+        "customer_address": ""
+    },
+    {
+        "branch_code": "2",
+        "account_type": "DAILY DEPOSIT",
+        "account_number": "000201740007135",
+        "customer_name": "MANOHAR P RODRIGUES",
+        "customer_address": "102, PIRBHAI TERES J S S ROAD, GIRGAON, JALSA SNACKS, MUMBAI"
+    },
+    {
+        "branch_code": "2",
+        "account_type": "DAILY DEPOSIT",
+        "account_number": "000201740007252",
+        "customer_name": "NAVVIS RODREGS JOHN",
+        "customer_address": ""
+    }
+]
