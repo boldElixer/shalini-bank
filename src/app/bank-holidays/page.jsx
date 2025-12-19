@@ -30,13 +30,14 @@ export default function BankHolidaysPage() {
                                 textAlign: "center",
                                 backgroundColor: "var(--color-primary-blue)",
                                 color: "white",
+                                borderTopLeftRadius: "var(--radius-card)",
+                                borderTopRightRadius: "var(--radius-card)"
                             }}
                             >
                             List of Bank Holidays in 2025
                             </th>
                         </tr>
                         <tr>
-                            <th>Sr. No.</th>
                             <th>Holiday</th>
                             <th>Date</th>
                             <th>Day</th>
@@ -45,7 +46,6 @@ export default function BankHolidaysPage() {
                         <tbody>
                         {holidays.map((holiday) => (
                             <tr key={holiday["Sr. No."]}>
-                            <td>{holiday["Sr. No."]}</td>
                             <td>{holiday["Holiday"]}</td>
                             <td>{holiday["Date"]}</td>
                             <td>{holiday["Day"]}</td>
@@ -64,14 +64,12 @@ export default function BankHolidaysPage() {
                             </th>
                         </tr>
                         <tr>
-                            <th>Sr. No.</th>
                             <th>Holiday</th>
                             <th>Date</th>
                             <th>Day</th>
                         </tr>
                         {sundays.map((sunday, index) => (
                             <tr key={index}>
-                            <td>{sunday["Sr. No."]}</td>
                             <td>{sunday["Holiday"]}</td>
                             <td>{sunday["Date"]}</td>
                             <td>{sunday["Day"]}</td>
