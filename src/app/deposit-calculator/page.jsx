@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import Head from 'next/head';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
@@ -97,7 +97,7 @@ export default function FDCalculator() {
   };
 
   return (
-    <>
+    <Fragment>
       <Head>
         <title>Deposit Calculator - Shalini Sahakari Bank</title>
         <meta name="description" content="Deposit Calculator" />
@@ -179,12 +179,12 @@ export default function FDCalculator() {
                 
                 <div className={styles.editBox}>
                     {!editDate ? (
-                         <>
+                         <Fragment>
                             <div className={styles.editContent}><span className={styles.editTitle}>Maturity Date</span><div className={styles.editMainText}>{formatDate(maturityDate)}</div></div>
                             <button className={styles.actionBtn} onClick={() => setEditDate(true)}>
                                 <Image src="/calendar.svg" alt="Confirm" width={24} height={24} />
                             </button>
-                        </>
+                        </Fragment>
                     ) : (
                         <div className={styles.editModeContainer}>
                             <input type="date" className={styles.datePicker} value={maturityDate.toISOString().split('T')[0]} onChange={handleDateChange} />
@@ -216,6 +216,6 @@ export default function FDCalculator() {
         </div>
       </div>
       <Footer />
-    </>
+    </Fragment>
   );
 }

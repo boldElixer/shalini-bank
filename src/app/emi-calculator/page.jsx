@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, Fragment } from 'react';
 import Head from 'next/head';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
@@ -120,7 +120,7 @@ export default function EMICalculator() {
   };
 
   return (
-    <>
+    <Fragment>
       <Head><title>EMI Calculator - SSB Bank</title></Head>
       <Header />
       
@@ -253,7 +253,7 @@ export default function EMICalculator() {
                     </thead>
                     <tbody>
                         {calculation.schedule.map((yearData) => (
-                            <>
+                            <Fragment key={yearData.year}>
                                 <tr key={yearData.year} className={styles.yearRow} onClick={() => toggleYear(yearData.year)}>
                                     <td className={styles.yearCell}>
                                         <span className={`${styles.toggleIcon} ${expandedYears[yearData.year] ? styles.rotated : ''}`}>
@@ -275,7 +275,7 @@ export default function EMICalculator() {
                                         <td>{formatCurrency(row.balance)}</td>
                                     </tr>
                                 ))}
-                            </>
+                            </Fragment>
                         ))}
                     </tbody>
                 </table>
@@ -287,6 +287,6 @@ export default function EMICalculator() {
         </div>
       </div>
       <Footer />
-    </>
+    </Fragment>
   );
 }
