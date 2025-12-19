@@ -52,7 +52,7 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Investor Center</h4>
             <ul>
-              <li>Annual Reports</li>
+              <li><Link href="/annual-reports">Annual Reports</Link></li>
               <li>Notices</li>
               <li><Link href="/financials">Financials</Link></li>
             </ul>
