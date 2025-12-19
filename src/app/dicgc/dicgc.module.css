@@ -24,14 +24,50 @@
   text-align: justify;
 }
 
-.link {
-  color: var(--color-primary-blue);
-  font-weight: var(--medium);
-  text-decoration: none;
-  font-family: var(--font-family);
+
+.resultsTable {
+  overflow-x: auto; /* Responsive scroll for mobile */
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-top: var(--spacing-sm);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-bg-light-gray);
 }
 
-.link:hover {
-  font-weight: var(--bold);
-  cursor: pointer;
+.resultsTable th {
+  text-align: left;
+  padding: var(--spacing-xs);
+  background-color: var(--color-bg-light-gray);
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+  font-size: 0.9rem;
+}
+
+/* Table Body */
+.resultsTable td {
+  font-size: 0.8rem;
+  padding: var(--spacing-xs);
+  vertical-align: middle;
+  color: var(--color-text-dark);
+  border-bottom: 1px solid var(--color-bg-light-gray);
+}
+
+.resultsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.resultsTable tr:hover {
+  background-color: #fafafa;
+}
+
+.DownloadBtn {
+    font-weight: var(--semibold);
+}
+
+.DownloadBtn:hover {
+    cursor: pointer;
+    color: var(--color-primary-blue);
 }

@@ -24,12 +24,24 @@ export default function DicgcPage() {
                 <p>
                     Secure your financial records with ease by downloading Digit Insurance(DI) returns, ensuring transparency and accessibility under the DICGC coverage.
                 </p>
-                <p>
-                    <Link href="/DI/dicgc_sep25.pdf" target="_blank" rel="noopener noreferrer" className={styles.link}>DI Half-Yearly Return ending 30/09/2025</Link>
-                </p>
-                <p>
-                    <Link href="/DI/dicgc_mar25.pdf" target="_blank" rel="noopener noreferrer" className={styles.link}>DI Half-Yearly Return ending 31/03/2025</Link>
-                </p>
+                <table className={styles.resultsTable}>
+                    <thead>
+                        <tr>
+                            <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Return</th>
+                            <th style={{borderTopRightRadius: 'var(--radius-card)'}}>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DI Half-Yearly Return ending 30th Sep,2025</td>
+                            <td><Link href="/DI/dicgc_sep25.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                        </tr>
+                        <tr>
+                            <td>DI Half-Yearly Return ending 31st Mar,2025</td>
+                            <td><Link href="/DI/dicgc_mar25.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </div>
 

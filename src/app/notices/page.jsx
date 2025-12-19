@@ -23,7 +23,7 @@ export default function AnnualReportPage() {
                         <tr>
                             <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Date</th>
                             <th>Notice</th>
-                            <th style={{borderTopRightRadius: 'var(--radius-card)'}}>Download</th>
+                            <th style={{borderTopRightRadius: 'var(--radius-card)'}}>View</th>
                         </tr>
                     </thead>
                     <tbody>

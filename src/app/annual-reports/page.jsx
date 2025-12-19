@@ -25,7 +25,7 @@ export default function AnnualReportPage() {
                     <thead>
                         <tr>
                             <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Report</th>
-                            <th style={{borderTopRightRadius: 'var(--radius-card)'}}>Download</th>
+                            <th style={{borderTopRightRadius: 'var(--radius-card)'}}>View</th>
                         </tr>
                     </thead>
                     <tbody>

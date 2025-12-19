@@ -63,8 +63,11 @@
   background-color: #fafafa;
 }
 
+.DownloadBtn {
+    font-weight: var(--semibold);
+}
+
 .DownloadBtn:hover {
     cursor: pointer;
     color: var(--color-primary-blue);
-    font-weight: var(--semibold);
 }
