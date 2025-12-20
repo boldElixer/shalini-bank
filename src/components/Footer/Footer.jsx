@@ -81,13 +81,13 @@ export default function Footer() {
         <div className={styles.bottomBar}>
           <div>
             <ul style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <li><Link href="/bank-code">Bank Code</Link></li>
-              <li>Disclaimer</li>
               <li>Sitemap</li>
+              <li><Link href="/disclaimer">Disclaimer</Link></li>
               <li>Privacy Policy</li>
+              <li><Link href="/bank-code">Bank Code</Link></li>
             </ul>
           </div>
-          <div>Copyright © 2025 Shalini Sahakari Bank Ltd.</div>
+          <div>Copyright © 2026 Shalini Sahakari Bank Ltd.</div>
         </div>
       </div>
     </footer>
