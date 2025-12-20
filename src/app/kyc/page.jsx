@@ -26,7 +26,7 @@ export default function KycPage() {
                     <p>
                         All account holders with Shalini Sahakari Bank Ltd. are obliged to undergo a KYC refresher process as part of the bank's compliance and regulatory requirements.
                     </p>
-                    <Link href="/CKYC_FORM.pdf" className={styles.ctaButton} target='__blank' rel="noopener noreferrer">Complete KYC Now</Link>
+                    <Link href="/forms/CKYC_FORM.pdf" className={styles.ctaButton} target='__blank' rel="noopener noreferrer">Complete KYC Now</Link>
                 </div>
                 <div className={styles.imageWrapper}>
                     <Image

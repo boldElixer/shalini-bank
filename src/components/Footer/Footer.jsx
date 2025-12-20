@@ -42,7 +42,7 @@ export default function Footer() {
             <h4>Customer Service</h4>
             <ul>
               <li>Contact Us</li>
-              <li>Download Forms</li>
+              <li><Link href="/form-center">Downloan Forms</Link></li>
               <li>Feedbacks & Complaints</li>
               <li>Grievance Redressal</li>
               <li><Link href="/deposit-calculator">Deposit Calculator</Link></li>

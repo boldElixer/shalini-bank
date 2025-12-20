@@ -28,19 +28,14 @@ export default function AnnualReportPage() {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>20th Dec, 2025</td>
-                            <td>43rd Annual Report FY 2024-25</td>
-                            <td><Link href="/annual_reports/Shalini_Annual_Report_2024-25.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            <td>16th Sep, 2025</td>
+                            <td>43rd Annual General Meeting(AGM) notice</td>
+                            <td><Link href="/notices/AGM_2025.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
                         </tr>
                         <tr>
-                            <td>20th Dec, 2025</td>
-                            <td>42nd Annual Report FY 2023-24</td>
-                            <td><Link href="/annual_reports/Shalini_Annual_Report_2023-24.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
-                        </tr>
-                        <tr>
-                            <td>20th Dec, 2025</td>
-                            <td>41st Annual Report FY 2022-23</td>
-                            <td><Link href="/annual_reports/Shalini_Annual_Report_2022-23.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            <td>27th Sep, 2024</td>
+                            <td>42nd Annual General Meeting(AGM) notice</td>
+                            <td><Link href="/notices/AGM_2024.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
                         </tr>
                     </tbody>
                 </table>
