@@ -42,7 +42,7 @@ export default function Footer() {
             <h4>Customer Service</h4>
             <ul>
               <li>Contact Us</li>
-              <li><Link href="/form-center">Downloan Forms</Link></li>
+              <li><Link href="/form-center">Download Forms</Link></li>
               <li>Feedbacks & Complaints</li>
               <li>Grievance Redressal</li>
               <li><Link href="/deposit-calculator">Deposit Calculator</Link></li>
@@ -81,7 +81,7 @@ export default function Footer() {
         <div className={styles.bottomBar}>
           <div>
             <ul style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <li>Bank Code</li>
+              <li><Link href="/bank-code">Bank Code</Link></li>
               <li>Disclaimer</li>
               <li>Sitemap</li>
               <li>Privacy Policy</li>

@@ -11,6 +11,7 @@ export default function UnclaimedDepositsPage() {
     /* take input and set to state */
     const [searchInput, setSearchInput] = useState('');
     const [filteredResults, setFilteredResults] = useState([]);
+    const [searchClicked, setSearchClicked] = useState(false);
 
     
     /* Handle Search Functionality */
@@ -25,6 +26,7 @@ export default function UnclaimedDepositsPage() {
             item.customer_name.toLowerCase().includes(query)
         );
         setFilteredResults(filteredData);
+        setSearchClicked(true);
     };
 
   return (
@@ -54,7 +56,7 @@ export default function UnclaimedDepositsPage() {
             <section className={styles.searchSection}>
                 <h2>Search Unclaimed Deposits/Inoperative Accounts</h2>
                 <form className={styles.searchForm} onSubmit={handleSearch}>
-                    <input type="text" placeholder="Enter Account Name" className={styles.searchInput} value={searchInput} onChange={(e) => setSearchInput(e.target.value)} />
+                    <input type="text" placeholder="Enter Account Name" className={styles.searchInput} value={searchInput} onChange={(e) => {setSearchInput(e.target.value); setSearchClicked(false);}} />
                     <button type="submit" className={styles.searchButton}>Search</button>
                 </form>
                 {filteredResults.length > 0 && (
@@ -80,7 +82,7 @@ export default function UnclaimedDepositsPage() {
                         ))}
                     </tbody>
                 </table>)}
-                {filteredResults.length === 0 && searchInput && (
+                {filteredResults.length === 0 && searchInput && searchClicked &&(
                     <p className={styles.noResults}>No records found for "{searchInput}"</p>
                 )}
                 <p>* Records displayed would be inactive based on search criteria match found in database and must not be considered as final</p>

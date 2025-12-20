@@ -43,12 +43,12 @@
   background-color: var(--color-bg-light-gray);
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Table Body */
 .resultsTable td {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: var(--spacing-xs);
   vertical-align: middle;
   color: var(--color-text-dark);

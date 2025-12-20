@@ -94,7 +94,7 @@
 
 /* Table Body */
 .resultsTable td {
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: var(--spacing-xs);
   vertical-align: middle;
   color: var(--color-text-dark);
