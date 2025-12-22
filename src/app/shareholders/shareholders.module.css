@@ -23,3 +23,12 @@
   line-height: 1.5;
   text-align: justify;
 }
+
+.DownloadBtn {
+    font-weight: var(--semibold);
+}
+
+.DownloadBtn:hover {
+    cursor: pointer;
+    color: var(--color-primary-blue);
+}
