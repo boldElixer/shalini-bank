@@ -83,7 +83,7 @@ export default function Footer() {
             <ul style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <li>Sitemap</li>
               <li><Link href="/disclaimer">Disclaimer</Link></li>
-              <li>Privacy Policy</li>
+              <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               <li><Link href="/bank-code">Bank Code</Link></li>
             </ul>
           </div>
