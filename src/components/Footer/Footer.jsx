@@ -41,7 +41,7 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Customer Service</h4>
             <ul>
-              <li>Contact Us</li>
+              <li><Link href="/contact-us">Contact Us</Link></li>
               <li><Link href="/form-center">Download Forms</Link></li>
               <li>Feedbacks & Complaints</li>
               <li>Grievance Redressal</li>
