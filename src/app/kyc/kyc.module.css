@@ -24,6 +24,7 @@
   font-size: 3rem;
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
+  text-align: left;
 }
 
 .textWrapper p {
