@@ -1,0 +1,73 @@
+.wrapper {
+  padding-bottom: var(--spacing-xl);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.header {
+  padding: var(--spacing-md) 0;
+  text-align: justify;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-mdm);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Service Card */
+.card {
+  background: var(--color-bg-white);
+  padding: 2rem;
+  border-radius: var(--radius-card);
+  box-shadow: 0 0 20px var(--color-bg-light-gray);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+}
+
+.cardDesc {
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-weight: var(--regular);
+}
+
+.arrow {
+  margin-top: var(--spacing-smm);
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-primary-red);
+  width: 100%;
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-card);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: var(--medium);
+  cursor: pointer;
+}
+
+.arrow:hover {
+  font-weight: var(--semibold);
+}
