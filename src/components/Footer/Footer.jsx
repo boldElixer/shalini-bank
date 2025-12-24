@@ -43,7 +43,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/contact-us">Contact Us</Link></li>
               <li><Link href="/form-center">Download Forms</Link></li>
-              <li>Feedbacks & Complaints</li>
+              <li><Link href="/service-request">Feedbacks & Complaints</Link></li>
               <li>Grievance Redressal</li>
               <li><Link href="/deposit-calculator">Deposit Calculator</Link></li>
               <li><Link href="/emi-calculator">EMI Calculator</Link></li>
