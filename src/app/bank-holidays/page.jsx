@@ -34,7 +34,7 @@ export default function BankHolidaysPage() {
                                 borderTopRightRadius: "var(--radius-card)"
                             }}
                             >
-                            List of Bank Holidays in 2025
+                            List of Bank Holidays in 2026
                             </th>
                         </tr>
                         <tr>
