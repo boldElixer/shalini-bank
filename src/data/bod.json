@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Bhanudas Mahadev Jadhav",
+        "designation": "Chairman",
+        "photo": "/bod/bhanudas_mahadev_jadhav.jpg"
+    },
+    {
+        "name": "Sangita Arjun Gaikwad",
+        "designation": "Vice Chairman",
+        "photo": "/bod/sangita_arjun_gaikwad.jpg"
+    },
+    {
+        "name": "Varun Appasaheb Desai",
+        "designation": "Director",
+        "photo": "/bod/varun_appasaheb_desai.jpg"
+    },
+    {
+        "name": "Madhav Janardan Kalgaonkar",
+        "designation": "Director",
+        "photo": "/bod/madhav_janardan_kalgaonkar.jpg"
+    },
+    {
+        "name": "Shrirang Bhagu Sapkal",
+        "designation": "Director",
+        "photo": "/bod/shrirang_bhagu_sapkal.jpg"
+    },
+    {
+        "name": "Rahul Chandrakant Gaikwad",
+        "designation": "Director",
+        "photo": "/bod/rahul_chandrakant_gaikwad.jpg"
+    },
+    {
+        "name": "Ravindra Shivaji Kale",
+        "designation": "Director",
+        "photo": "/bod/ravindra_shivaji_kale.jpg"
+    },
+    {
+        "name": "Aarti Pratik Gaonkar",
+        "designation": "Director",
+        "photo": "/bod/aarti_pratik_gaonkar.jpg"
+    },
+    {
+        "name": "Hanmant Ganpat Pawar",
+        "designation": "Director",
+        "photo": "/bod/hanmant_ganpat_pawar.jpg"
+    },
+    {
+        "name": "Niranjan Ashok Karekar",
+        "designation": "Director",
+        "photo": "/bod/niranjan_ashok_karekar.jpg"
+    },
+    {
+        "name": "Prakash Krishna Beloshe",
+        "designation": "Director",
+        "photo": "/bod/prakash_krishna_beloshe.jpg"
+    },
+    {
+        "name": "Vishnu Sakharam Shelar",
+        "designation": "Director",
+        "photo": "/bod/vishnu_sakharam_shelar.jpg"
+    },
+    {
+        "name": "Yogish Ganapati Pawar",
+        "designation": "Expert Director",
+        "photo": "/bod/yogish_ganapati_pawar.jpg"
+    },
+    {
+        "name": "Dipak Sitaram Nazare",
+        "designation": "Expert Director",
+        "photo": "/bod/dipak_sitaram_nazare.jpg"
+    },
+    {
+        "name": "Ramesh Mahadeo Korade",
+        "designation": "General Manager",
+        "photo": "/bod/ramesh_mahadeo_korade.jpg"
+    }
+]

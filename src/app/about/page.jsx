@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import styles from './about.module.css';
+import jsonData from '@/data/bod.json';
 
 export default function About() {
   return (
@@ -92,18 +93,18 @@ export default function About() {
           <section className={styles.TeamSection} id='BOD'>
             <h2 className={styles.sectionTitle}>Board of Directors</h2>
             <div className={styles.teamGrid}>
-               {[1, 2, 3].map((item) => (
-                  <div key={item} className={styles.teamMember}>
+               {jsonData.map((member, index) => (
+                  <div key={index} className={styles.teamMember}>
                     <div className={styles.memberImage}>
                       <Image 
-                        src={`/chooseIcons/${item}.png`}
-                        alt="Director Name"
+                        src={member.photo}
+                        alt={member.name}
                         fill
                         style={{objectFit: 'cover'}}
                       />
                     </div>
-                    <div className={styles.memberName}>Director Name</div>
-                    <div className={styles.memberRole}>Post</div>
+                    <div className={styles.memberName}>{member.name}</div>
+                    <div className={styles.memberRole}>{member.designation}</div>
                   </div>
                ))}
             </div>
