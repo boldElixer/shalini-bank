@@ -14,7 +14,7 @@ export default function Header() {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
             <li>Services</li>
-            <li>Complaints</li>
+            <li><Link href="/service-request">Complaints</Link></li>
             <li><Link href="/help">Help</Link></li>
           </ul>
         </nav>
