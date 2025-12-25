@@ -60,7 +60,7 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Regulatory Information</h4>
             <ul>
-              <li>RBI Awareness Campaign</li>
+              <li><Link href="/awareness-campaign">RBI Awareness Campaign</Link></li>
               <li><Link href="https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=21110" target="_blank" rel="noopener noreferrer">RBI: Beware of Fictitious Offers</Link></li>
               <li><Link href="https://www.rbi.org.in/commonperson/English/Scripts/rbikehtahai.aspx" target="_blank" rel="noopener noreferrer">RBI Kehta Hai</Link></li>
               <li><Link href="https://udgam.rbi.org.in/unclaimed-deposits/#/login" target="_blank" rel="noopener noreferrer">RBI-UDGAM Portal</Link></li>
