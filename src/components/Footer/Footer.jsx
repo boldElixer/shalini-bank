@@ -81,7 +81,7 @@ export default function Footer() {
         <div className={styles.bottomBar}>
           <div>
             <ul style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <li>Sitemap</li>
+              <li><Link href="/sitemap">Sitemap</Link></li>
               <li><Link href="/disclaimer">Disclaimer</Link></li>
               <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               <li><Link href="/bank-code">Bank Code</Link></li>

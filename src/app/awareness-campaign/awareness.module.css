@@ -35,3 +35,26 @@
 .linkButton:hover {
   font-weight: var(--semibold);
 }
+
+.do_donts {
+  margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+}
+
+.do_donts h2 {
+  font-size: 2rem;
+  color: var(--color-primary-red);
+  font-weight: var(--semibold);
+}
+
+.do_donts li {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-light-gray);
+    margin: var(--spacing-xs) 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-card);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
