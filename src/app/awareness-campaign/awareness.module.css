@@ -24,12 +24,30 @@
   text-align: justify;
 }
 
+.notice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--spacing-sm);
+  border-radius: var(--radius-card);
+  align-items: center;
+  margin: var(--spacing-xs) 0 var(--spacing-lg) 0;
+}
+
 .linkButton {
-  display: inline-block;
-  color: var(--color-primary-blue);
-  text-decoration: none;
+  margin-top: var(--spacing-smm);
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-primary-red);
+  width: 100%;
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-card);
+  font-family: var(--font-family);
   font-size: 1rem;
   font-weight: var(--medium);
+  cursor: pointer;
+  text-align: center;
 }
 
 .linkButton:hover {
