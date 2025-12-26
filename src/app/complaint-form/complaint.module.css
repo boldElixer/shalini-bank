@@ -1,0 +1,133 @@
+.wrapper {
+  padding-bottom: var(--spacing-xl);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.header {
+  padding: var(--spacing-md) 0;
+  text-align: justify;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+}
+
+/* Form Card */
+.formCard {
+  background: var(--color-bg-white);
+  padding: var(--spacing-mdm) var(--spacing-lg);
+  border-radius: var(--radius-card);
+  box-shadow: 0 0 var(--spacing-sm) var(--color-bg-light-gray);
+}
+
+/* Form Groups */
+.formGroup {
+  margin-bottom: var(--spacing-md);
+}
+
+.label {
+  display: block;
+  font-weight: var(--semibold);
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-xs);
+  font-size: 1rem;
+}
+
+.required {
+  color: var(--color-primary-red);
+  margin-left: 2px;
+}
+
+/* Inputs */
+.input, .select, .textarea {
+  width: 100%;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--color-bg-light-gray);
+  border-radius: var(--radius-card);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--color-primary-blue);
+  box-shadow: 0 0 0 3px rgba(0, 31, 135, 0.1);
+}
+
+.textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+/* Radio Group (Customer Type) */
+.radioGroup {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  cursor: pointer;
+  color: var(--color-text-dark);
+  font-size: 1rem;
+}
+
+.radioInput {
+  accent-color: var(--color-primary-blue);
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Sensitive Data Warning */
+.warningBox {
+  background-color: #FFF8E1; /* Light yellow */
+  border-left: 4px solid #FFA000;
+  padding: var(--spacing-sm);
+  border-radius: 4px;
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+  color: #5D4037;
+}
+
+/* Submit Button */
+.submitBtn {
+  width: 100%;
+  background-color: var(--color-primary-blue);
+  color: var(--color-bg-white);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-card);
+  font-size: 1.2rem;
+  font-weight: var(--semibold);
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: var(--font-family);
+}
+
+.submitBtn:hover {
+  font-weight: var(--bold);
+}
+
+/* Responsive Grid for Dropdowns */
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
