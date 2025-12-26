@@ -35,7 +35,7 @@ export default function Footer() {
             <ul>
               <li>Mobile Banking</li>
               <li>ATM Card</li>
-              <li>SMS Banking</li>
+              <li><Link href="/sms-banking">SMS Banking</Link></li>
             </ul>
           </div>
           <div className={styles.col}>
