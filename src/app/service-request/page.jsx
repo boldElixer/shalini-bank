@@ -48,6 +48,8 @@ export default function ServiceRequestPage() {
             </div>
 
           </div>
+          <br/>
+          <p>*To know more about our Grievance Redressal Mechanism <Link href="/grievance-redressal"><strong>Click Here</strong></Link></p>
         </div>
       </div>
 

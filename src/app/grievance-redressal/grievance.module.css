@@ -1,0 +1,172 @@
+.wrapper {
+  padding-bottom: var(--spacing-lg);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+/* --- Header --- */
+.header {
+  padding: var(--spacing-md) 0;
+  text-align: justify;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+}
+
+/* --- Level Containers --- */
+.levelSection {
+  background: var(--color-bg-white);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-mdm);
+  margin-bottom: var(--spacing-mdm);
+  box-shadow: 0 0 var(--spacing-md) var(--color-bg-light-gray);
+  position: relative;
+}
+
+.levelBadge {
+  display: inline-block;
+  background-color: var(--color-primary-blue);
+  color: var(--color-bg-white);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-card);
+  font-weight: var(--semibold);
+  font-size: 1rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.levelTitle {
+  font-size: 1.5rem;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--semibold);
+}
+
+.levelDesc {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+
+.l1Grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .l1Grid {
+    grid-template-columns: 1fr 1px 1fr 1px 1fr; /* Columns with Separators */
+    align-items: center;
+  }
+}
+
+.channelBox {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.channelLabel {
+  font-weight: var(--semibold);
+  color: var(--color-primary-blue);
+  font-size: 1.2rem;
+}
+
+.formBtn {
+  background-color: var(--color-primary-red);
+  color: var(--color-bg-white);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-card);
+  font-weight: var(--medium);
+  transition: opacity 0.2s;
+}
+
+.formBtn:hover {
+  font-weight: var(--semibold);
+}
+
+/* Vertical Divider for Desktop */
+.verticalDivider {
+  display: none;
+}
+@media (min-width: 768px) {
+  .verticalDivider {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-bg-light-gray);
+    position: relative;
+  }
+  .orText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: var(--spacing-sm);
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    font-weight: var(--medium);
+  }
+}
+
+/* --- Level 2 & 3: Officer Cards --- */
+.officerCard {
+  background: var(--color-primary-blue-light);
+  border-radius: var(--radius-card);
+  padding: var(--spacing-md);
+}
+
+.officerDetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-sm);
+}
+
+@media (min-width: 768px) {
+  .officerDetails {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.detailRow {
+  margin-bottom: var(--spacing-xs);
+  font-size: 1rem;
+  color: var(--color-text-dark);
+}
+
+.detailRow strong {
+  color: var(--color-text-dark);
+  margin-right: var(--spacing-xs);
+}
+
+.postTitle {
+  color: var(--color-primary-blue);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.linkBox {
+    margin-top: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--spacing-xs);
+}

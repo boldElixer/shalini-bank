@@ -18,7 +18,7 @@ export default function CareersPage() {
             <section className={styles.section}>
                 <h1>Careers</h1>
                 <p>
-                    Coming Soon...
+                    No job openings available at the moment. Please check back later.
                 </p>
             </section>
         </div>

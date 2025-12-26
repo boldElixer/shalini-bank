@@ -33,9 +33,9 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Ways to Bank</h4>
             <ul>
-              <li>SMS Banking</li>
               <li>Mobile Banking</li>
-              <li>UPI</li>
+              <li>ATM Card</li>
+              <li>SMS Banking</li>
             </ul>
           </div>
           <div className={styles.col}>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li><Link href="/contact-us">Contact Us</Link></li>
               <li><Link href="/form-center">Download Forms</Link></li>
               <li><Link href="/service-request">Feedbacks & Complaints</Link></li>
-              <li>Grievance Redressal</li>
+              <li><Link href="/grievance-redressal">Grievance Redressal</Link></li>
               <li><Link href="/deposit-calculator">Deposit Calculator</Link></li>
               <li><Link href="/emi-calculator">EMI Calculator</Link></li>
             </ul>
