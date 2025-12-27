@@ -8,30 +8,34 @@
 
 .swiperContainer {
   width: 100%;
-  padding-bottom: 3rem; /* Extra space at bottom so dots don't overlap image */
+  position: relative;
 }
 
 .imageContainer {
   position: relative;
   width: 100%;
-  height: 20rem;
+  height: 25rem;
 }
 
 /* --- PIXEL PERFECT ARROWS --- */
 
 .carouselWrapper :global(.swiper-button-next),
 .carouselWrapper :global(.swiper-button-prev) {
-  background-color: #ffffff !important;
-  width: 3.5rem !important;
-  height: 3.5rem !important;
+  background-color: transparent !important;
+  width: var(--spacing-lg) !important;
+  height: var(--spacing-lg) !important;
   border-radius: 50% !important;
-  color: #333 !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  color: var(--color-text-dark) !important;
   
   /* Centers them exactly in the middle of the IMAGE height */
   top: 42% !important; 
   margin: 0 !important;
   transition: transform 0.2s ease;
+}
+
+.carouselWrapper :global(.swiper-navigation-icon) {
+  width: 1rem !important;
+  color: var(--color-primary-blue) !important;
 }
 
 .carouselWrapper :global(.swiper-button-next::after),
@@ -60,17 +64,17 @@
 }
 
 .carouselWrapper :global(.swiper-pagination-bullet) {
-  width: 10px !important;
-  height: 10px !important;
-  background: #cbd5e0 !important; /* Light grey inactive */
+  width: var(--spacing-xs) !important;
+  height: var(--spacing-xs) !important;
+  background: var(--color-primary-blue-light) !important;
   opacity: 1 !important;
-  margin: 0 6px !important;
+  margin: 0 var(--spacing-xs) !important;
 }
 
 .carouselWrapper :global(.swiper-pagination-bullet-active) {
-  background: #001F87 !important; /* Your specific brand blue */
-  width: 25px !important; /* Elongated pill shape for active dot */
-  border-radius: 5px !important;
+  background: var(--color-primary-blue) !important; /* Your specific brand blue */
+  width: var(--spacing-md) !important; /* Elongated pill shape for active dot */
+  border-radius: var(--radius-card) !important;
 }
 
 /* --- MOBILE --- */

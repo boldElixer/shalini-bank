@@ -15,17 +15,17 @@ const slides = [
   {
     id: 1,
     // Replace with your actual hero image
-    src: "/chooseIcons/1.png", 
+    src: "/goals/1.png", 
     alt: "Person using credit card on laptop",
   },
   {
     id: 2,
-    src: "/chooseIcons/2.png",
+    src: "/goals/2.png",
     alt: "Financial growth concept",
   },
   {
     id: 3,
-    src: "/chooseIcons/3.png",
+    src: "/goals/3.png",
     alt: "Secure online transactions",
   },
 ];
@@ -55,7 +55,7 @@ export default function HeroCarousel() {
                 alt={slide.alt}
                 fill
                 priority={slide.id === 1}
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'contain' }}
               />
             </div>
           </SwiperSlide>
