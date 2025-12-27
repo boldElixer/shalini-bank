@@ -92,22 +92,16 @@ export default function About() {
 
           <section className={styles.TeamSection} id='BOD'>
             <h2 className={styles.sectionTitle}>Board of Directors</h2>
-            <div className={styles.teamGrid}>
-               {jsonData.map((member, index) => (
-                  <div key={index} className={styles.teamMember}>
-                    <div className={styles.memberImage}>
-                      <Image 
-                        src={member.photo}
-                        alt={member.name}
-                        fill
-                        style={{objectFit: 'cover'}}
-                      />
-                    </div>
-                    <div className={styles.memberName}>{member.name}</div>
-                    <div className={styles.memberRole}>{member.designation}</div>
-                  </div>
-               ))}
-            </div>
+            <table className={styles.resultsTable}>
+              <tbody>
+                  {jsonData.map((item, index) => (
+                      <tr key={index}>
+                          <td>{item.name}</td>
+                          <td>{item.designation}</td>
+                      </tr>
+                  ))}
+              </tbody>
+          </table>
           </section>
 
           <section className={styles.section}>

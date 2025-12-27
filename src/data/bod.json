@@ -1,77 +1,62 @@
 [
     {
         "name": "Bhanudas Mahadev Jadhav",
-        "designation": "Chairman",
-        "photo": "/bod/bhanudas_mahadev_jadhav.jpg"
+        "designation": "Chairman"
     },
     {
         "name": "Sangita Arjun Gaikwad",
-        "designation": "Vice Chairman",
-        "photo": "/bod/sangita_arjun_gaikwad.jpg"
+        "designation": "Vice Chairman"
     },
     {
         "name": "Varun Appasaheb Desai",
-        "designation": "Director",
-        "photo": "/bod/varun_appasaheb_desai.jpg"
+        "designation": "Director"
     },
     {
         "name": "Madhav Janardan Kalgaonkar",
-        "designation": "Director",
-        "photo": "/bod/madhav_janardan_kalgaonkar.jpg"
+        "designation": "Director"
     },
     {
         "name": "Shrirang Bhagu Sapkal",
-        "designation": "Director",
-        "photo": "/bod/shrirang_bhagu_sapkal.jpg"
+        "designation": "Director"
     },
     {
         "name": "Rahul Chandrakant Gaikwad",
-        "designation": "Director",
-        "photo": "/bod/rahul_chandrakant_gaikwad.jpg"
+        "designation": "Director"
     },
     {
         "name": "Ravindra Shivaji Kale",
-        "designation": "Director",
-        "photo": "/bod/ravindra_shivaji_kale.jpg"
+        "designation": "Director"
     },
     {
         "name": "Aarti Pratik Gaonkar",
-        "designation": "Director",
-        "photo": "/bod/aarti_pratik_gaonkar.jpg"
+        "designation": "Director"
     },
     {
         "name": "Hanmant Ganpat Pawar",
-        "designation": "Director",
-        "photo": "/bod/hanmant_ganpat_pawar.jpg"
+        "designation": "Director"
     },
     {
         "name": "Niranjan Ashok Karekar",
-        "designation": "Director",
-        "photo": "/bod/niranjan_ashok_karekar.jpg"
+        "designation": "Director"
     },
     {
         "name": "Prakash Krishna Beloshe",
-        "designation": "Director",
-        "photo": "/bod/prakash_krishna_beloshe.jpg"
+        "designation": "Director"
     },
     {
         "name": "Vishnu Sakharam Shelar",
-        "designation": "Director",
-        "photo": "/bod/vishnu_sakharam_shelar.jpg"
+        "designation": "Director"
     },
     {
         "name": "Yogish Ganapati Pawar",
-        "designation": "Expert Director",
-        "photo": "/bod/yogish_ganapati_pawar.jpg"
+        "designation": "Expert Director"
     },
     {
         "name": "Dipak Sitaram Nazare",
-        "designation": "Expert Director",
-        "photo": "/bod/dipak_sitaram_nazare.jpg"
+        "designation": "Expert Director"
     },
     {
         "name": "Ramesh Mahadeo Korade",
-        "designation": "General Manager",
-        "photo": "/bod/ramesh_mahadeo_korade.jpg"
+        "designation": "General Manager"
     }
 ]
