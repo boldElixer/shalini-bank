@@ -68,8 +68,8 @@
     font-size: 1rem;
     color: var(--color-text-dark);
     background-color: var(--color-bg-light-gray);
-    margin: var(--spacing-xs) 0;
-    padding: var(--spacing-xs) var(--spacing-sm);
+    margin: var(--spacing-sm) 0;
+    padding: var(--spacing-sm);
     border-radius: var(--radius-card);
     display: flex;
     justify-content: flex-start;
