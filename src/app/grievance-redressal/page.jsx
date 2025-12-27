@@ -80,13 +80,10 @@ export default function GrievancePage() {
               <div className={styles.officerDetails}>
                 <div>
                   <div className={styles.detailRow}><strong>Name:</strong> Neha Sudesh Wedhikar</div>
-                  <div className={styles.detailRow}>
-                    <strong>Email:</strong> <a href="mailto:branchmanager@ssbbank.in">branchmanager@ssbbank.in</a>
-                  </div>
+                  <div className={styles.detailRow}><strong>Ph No:</strong> 022-23086805/23093179</div>
                 </div>
                 <div>
                    <div className={styles.detailRow}><strong>Address:</strong> 395, N M Joshi Marg, Chinchpokli, Mumbai 400011</div>
-                   <div className={styles.detailRow}><strong>Ph No:</strong> 022-23086805/23093179</div>
                    <div className={styles.detailRow}>
                      (Monday - Saturday: 10am to 5pm, excluding holidays)
                    </div>
