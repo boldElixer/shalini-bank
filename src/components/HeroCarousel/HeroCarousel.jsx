@@ -15,19 +15,24 @@ const slides = [
   {
     id: 1,
     // Replace with your actual hero image
-    src: "/goals/1.png", 
+    src: "/heroCarousel/1.png", 
     alt: "Person using credit card on laptop",
   },
   {
     id: 2,
-    src: "/goals/2.png",
+    src: "/heroCarousel/2.png",
     alt: "Financial growth concept",
   },
   {
     id: 3,
-    src: "/goals/3.png",
+    src: "/heroCarousel/3.png",
     alt: "Secure online transactions",
   },
+  {
+    id: 4,
+    src: "/heroCarousel/4.png",
+    alt: "Secure online transactions",
+  }
 ];
 
 export default function HeroCarousel() {
