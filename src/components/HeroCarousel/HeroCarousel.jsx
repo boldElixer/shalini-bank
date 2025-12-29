@@ -16,22 +16,22 @@ const slides = [
     id: 1,
     // Replace with your actual hero image
     src: "/heroCarousel/1.png", 
-    alt: "Person using credit card on laptop",
+    alt: "Start your financial journey with SSB Bank",
   },
   {
     id: 2,
     src: "/heroCarousel/2.png",
-    alt: "Financial growth concept",
+    alt: "Open a Fixed Deposit Account Today",
   },
   {
     id: 3,
     src: "/heroCarousel/3.png",
-    alt: "Secure online transactions",
+    alt: "Debit Card for Convenient Banking",
   },
   {
     id: 4,
     src: "/heroCarousel/4.png",
-    alt: "Secure online transactions",
+    alt: "Mobile Banking Made Easy",
   }
 ];
 

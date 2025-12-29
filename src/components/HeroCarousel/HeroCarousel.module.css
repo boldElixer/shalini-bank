@@ -34,22 +34,22 @@
 }
 
 .carouselWrapper :global(.swiper-navigation-icon) {
-  width: 1rem !important;
+  width: 1.5rem !important;
   color: var(--color-primary-blue) !important;
 }
 
 .carouselWrapper :global(.swiper-button-next::after),
 .carouselWrapper :global(.swiper-button-prev::after) {
-  font-size: 1.2rem !important;
+  font-size: 1.8rem !important;
   font-weight: bold !important;
 }
 
 .carouselWrapper :global(.swiper-button-prev) {
-  left: 1.5rem !important;
+  left: 1rem !important;
 }
 
 .carouselWrapper :global(.swiper-button-next) {
-  right: 1.5rem !important;
+  right: 1rem !important;
 }
 
 .carouselWrapper :global(.swiper-button-next:hover),
@@ -60,12 +60,12 @@
 /* --- PAGINATION BLUE DOTS --- */
 
 .carouselWrapper :global(.swiper-pagination) {
-  bottom: 0 !important; /* Moves dots into that padding-bottom space */
+  bottom: 2rem !important; /* Moves dots into that padding-bottom space */
 }
 
 .carouselWrapper :global(.swiper-pagination-bullet) {
-  width: var(--spacing-xs) !important;
-  height: var(--spacing-xs) !important;
+  width: var(--spacing-sm) !important;
+  height: var(--spacing-sm) !important;
   background: var(--color-primary-blue-light) !important;
   opacity: 1 !important;
   margin: 0 var(--spacing-xs) !important;
@@ -73,7 +73,7 @@
 
 .carouselWrapper :global(.swiper-pagination-bullet-active) {
   background: var(--color-primary-blue) !important; /* Your specific brand blue */
-  width: var(--spacing-md) !important; /* Elongated pill shape for active dot */
+  width: var(--spacing-mdm) !important; /* Elongated pill shape for active dot */
   border-radius: var(--radius-card) !important;
 }
 
