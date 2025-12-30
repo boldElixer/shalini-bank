@@ -30,7 +30,7 @@ export default function KycPage() {
                 </div>
                 <div className={styles.imageWrapper}>
                     <Image
-                        src="/about.png"
+                        src="/ckyc.png"
                         alt="About SSB Bank"
                         width={619}
                         height={575}

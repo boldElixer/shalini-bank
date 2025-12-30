@@ -24,7 +24,7 @@ export default function Footer() {
             <ul>
               <li>Become a Customer</li>
               <li>Deposits</li>
-              <li>Loans</li>
+              <li><Link href="/loans">Loans</Link></li>
               <li><Link href="/unclaimed-deposits">Unclaimed Deposits</Link></li>
               <li><Link href="/kyc">Know Your Customer</Link></li>
               <li><Link href="/dicgc">DICGC</Link></li>
