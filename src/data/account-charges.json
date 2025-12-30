@@ -1,0 +1,278 @@
+[
+  {
+    "Particulars": "Minimum Balance Charges for Saving Account",
+    "charges": ""
+  },
+  { 
+    "Particulars": "Saving Account without cheque book facility - Minimum Balance ₹500",
+    "charges": "₹30 + GST"
+  },
+  {    
+    "Particulars": "Saving Account with Cheque book Facility - Minimum Balance ₹1000",
+    "charges": "₹30 + GST"
+  },
+  {    
+    "Particulars": "Saving Account with Cheque book Facility, PDC & ECS - Minimum Balance ₹200000",
+    "charges": "Nil"
+  },
+  {   
+    "Particulars": "Saving Account with Cheque book Facility, ECS & PDC - Minimum Balance ₹3000",
+    "charges": "₹30 + GST"
+  },
+  {    
+    "Particulars": "Saving Account with Cheque book Facility & ATM facility- Minimum Balance ₹1000",
+    "charges": "₹30 + GST"
+  },
+  {    
+    "Particulars": "Account Closer Charges for Saving Account",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Account closed within a year",
+    "charges": "₹150 + GST"
+  },
+  {    
+    "Particulars": "Account closed after one year",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "Cheque Return Charges for Saving Account",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Inward Clearing return per Cheque up to 1 Lakh",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "Inward Clearing return per Cheque 1 Lakh to 10 Lakh",
+    "charges": "₹750 + GST"
+  },
+  {    
+    "Particulars": "Inward Clearing return per Cheque above 10 Lakh",
+    "charges": "₹1500 + GST"
+  },
+  {    
+    "Particulars": "Outward Clearing Return per cheque up to 1 Lakh",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "Outward Clearing Return per cheque above 1 Lakh to 10 Lakh",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Outward Clearing Return per cheque above 10 Lakh",
+    "charges": "₹1000 + GST"
+  },
+  {    
+    "Particulars": "Stop Payment Charges",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Cancellation of Stop payment per cheque",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Cheque Book Charges for Saving account",
+    "charges": ""
+  },
+  {    
+    "Particulars": "First Cheque book containing 15 Cheques",
+    "charges": "Nil"
+  },
+  {    
+    "Particulars": "From Second Cheque Book onwards",
+    "charges": "₹90 + GST"
+  },
+  {    
+    "Particulars": "Minimum Balance Charges for Current Account",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Current Account with cheque book facility - Minimum Balance ₹3000",
+    "charges": "₹200 + GST"
+  },
+  {    
+    "Particulars": "Current Account with cheque book facility, PDC & ECS - Minimum Balance ₹10000",
+    "charges": "₹200 + GST"
+  },
+  {    
+    "Particulars": "Duplicate Pass book",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Printing up to One Month Statement",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "Printing above One Month Statement (per month)",
+    "charges": "₹50 + GST"
+  },
+  {    
+    "Particulars": "Current Account Statement Charges - Folio Charges",
+    "charges": ""
+  },
+  {    
+    "Particulars": "1st time printing",
+    "charges": "Nil"
+  },
+  {    
+    "Particulars": "Duplicate Statement printing per month",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Folio Charges - half yearly/Annually",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Continues Minimum balance ₹500000 and above Folio Charges - half yearly/Annually",
+    "charges": "Nil"
+  },
+  {    
+    "Particulars": "Cheque Return Charges in Current A/c",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Inward Clearing return per Cheque up to 1 Lakh",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "Inward Clearing return per Cheque 1 Lakh to 10 Lakh",
+    "charges": "₹750 + GST"
+  },
+  {    
+    "Particulars": "Inward Clearing return per Cheque above 10 Lakh",
+    "charges": "₹1500 + GST"
+  },
+  {    
+    "Particulars": "Outward Clearing Return per cheque up to 1 Lakh",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "Outward Clearing Return per cheque above 1 Lakh to 10 Lakh",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Outward Clearing Return per cheque above 10 Lakh",
+    "charges": "₹1000 + GST"
+  },
+  {    
+    "Particulars": "Stop Payment Charges",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "Cancellation of Stop payment per cheque",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "Account Closer Charges for Current A/c",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Stop Payment Charges",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Cancellation of Stop payment per cheque",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Fixed Deposit",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Duplicate Receipt of Fixed deposit with indemnity bond",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "Cash Handling Charges in current Account",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Up to ₹2 Lakhs",
+    "charges": "Nil"
+  },
+  {    
+    "Particulars": "For next every One Lakh",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "NEFT/RTGS Charges",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Up to ₹200000",
+    "charges": "₹20 + GST"
+  },
+  {    
+    "Particulars": "Above ₹200000",
+    "charges": "₹50 + GST"
+  },
+  {    
+    "Particulars": "Current Account minimum balance ₹10,00,000",
+    "charges": "₹5 + GST"
+  },
+  {    
+    "Particulars": "Pay order/DD/Bill collection",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Up to ₹5000",
+    "charges": "₹25 + GST"
+  },
+  {    
+    "Particulars": "₹5001 to 20000",
+    "charges": "₹50 + GST"
+  },
+  {    
+    "Particulars": "₹20001 to ₹100000",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "₹100001 to ₹200000",
+    "charges": "₹125 + GST"
+  },
+  {    
+    "Particulars": "Above ₹2 Lakhs (per ₹1000)",
+    "charges": "₹125 + ₹2 per thousand + GST"
+  },
+  {    
+    "Particulars": "Cancellation of P O",
+    "charges": "₹50 + GST"
+  },
+  {    
+    "Particulars": "Cheque book charges for Current Account/Overdraft/Cash Credit",
+    "charges": ""
+  },
+  {    
+    "Particulars": "1st Cheque book of 30 pages at the time of Account opening",
+    "charges": "Nil"
+  },
+  {    
+    "Particulars": "For next leaf of Cheque",
+    "charges": "₹600 + GST"
+  },
+  {    
+    "Particulars": "CC/OD renewal charges (with existing facility only)",
+    "charges": "05% of Loan Amount + GST"
+  },
+  {    
+    "Particulars": "ECS/ACH/NACH/NECS Inward & Outward return Charges- Per Return Up to 1 Lakh",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "ECS/ACH/NACH/NECS Inward & Outward return Charges- Per Return Above 1 Lakh to 10 Lakh",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "ECS/ACH/NACH/NECS Inward & Outward return Charges- Per Return Above 10 Lakh",
+    "charges": "₹750 + GST"
+  },
+  {    
+    "Particulars": "Dormant A/c Charges - Half Yearly",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "SMS Charges - Monthly ",
+    "charges": "₹0.1271 + GST"
+  }
+]

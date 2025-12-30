@@ -27,7 +27,7 @@ export default function Home() {
             "Your Trusted Partner in Financial Growth",
             "Empowering individuals, businesses, and communities through smart banking solutions"
           ]}
-          buttonLink="/"
+          buttonLink="/become-a-customer"
           buttonText="Open Account"
           imageSrc="/features/customer.png"
         />
@@ -40,7 +40,7 @@ export default function Home() {
             "Empowering rural and urban lives with inclusive financial services",
             "From Microfinance to housing loans — we grow together"
           ]}
-          buttonLink="/"
+          buttonLink="/loans"
           buttonText="Apply for loan"
           imageSrc="/features/loan.png"
         />

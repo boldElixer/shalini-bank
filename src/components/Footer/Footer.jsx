@@ -22,8 +22,8 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Explore</h4>
             <ul>
-              <li>Become a Customer</li>
-              <li>Deposits</li>
+              <li><Link href="/become-a-customer">Become a Customer</Link></li>
+              <li><Link href="/deposits">Deposits</Link></li>
               <li><Link href="/loans">Loans</Link></li>
               <li><Link href="/unclaimed-deposits">Unclaimed Deposits</Link></li>
               <li><Link href="/kyc">Know Your Customer</Link></li>

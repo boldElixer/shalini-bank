@@ -1,0 +1,82 @@
+[
+  {    
+    "Particulars": "Loan application Form",
+    "charges": ""
+  },
+  {    
+    "Particulars": "Loan amount up to ₹5 Lakhs",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "Loan amount above ₹5 Lakhs",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "Loan processing charges (Excluding Gold Loan, Loan against FD, Loan Against NSC, Loan against Insurance and all type of Staff Loan)",
+    "charges": "1% of Loan Amount + GST"
+  },
+  {    
+    "Particulars": "Nominal Membership Charges",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "Visit Charges to the Borrower (within city)",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Visit Charges to the Borrower (Outside the city)",
+    "charges": "₹500 + GST or Actual + GST (whichever is higher)"
+  },
+  {    
+    "Particulars": "No objection certificate after closer of Loan",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "To take possession of movable property including Vehicle",
+    "charges": "₹5000 + GST or Actual cost + GST (whichever is higher)"
+  },
+  {    
+    "Particulars": "Auction of Gold/Vehicle Notice Charges",
+    "charges": "Actual Cost + GST"
+  },
+  {    
+    "Particulars": "Loan Recovery",
+    "charges": ""
+  },
+  {    
+    "Particulars": "1st Notice",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "2nd Notice",
+    "charges": "₹300 + GST"
+  },
+  {    
+    "Particulars": "3rd Notice/Last Notice",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Gold Loan Insurance at the time of loan processing",
+    "charges": "Nil"
+  },
+  {    
+    "Particulars": "U/s 101 Advocate Notice",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "U/s 101 Case Filing Charges",
+    "charges": "₹500 + GST"
+  },
+  {    
+    "Particulars": "Non-Filing of Stock Statement/Detailed Net working capital statements before 10th day of each month by the Borrower",
+    "charges": "150% of Loan Amount + GST"
+  },
+  {    
+    "Particulars": "Duplicate Share Certificate with indemnity bond",
+    "charges": "₹100 + GST"
+  },
+  {    
+    "Particulars": "Stamp Duty & Registration Charges in all cases of loans/Indemnity Bond/Declaration Undertaking/General power of Attorney/Continuing Security/Letter of lien and set off/Mortgage Deed/Equitable Mortgage Deed/Affidavit (As per circular - Government of Maharashtra)",
+    "charges": ""
+  }
+]
