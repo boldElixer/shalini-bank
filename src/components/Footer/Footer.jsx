@@ -34,7 +34,7 @@ export default function Footer() {
             <h4>Ways to Bank</h4>
             <ul>
               <li><Link href="/mobile-banking">Mobile Banking</Link></li>
-              <li>ATM Card</li>
+              <li><Link href="/atm-card">ATM Card</Link></li>
               <li><Link href="/sms-banking">SMS Banking</Link></li>
             </ul>
           </div>
