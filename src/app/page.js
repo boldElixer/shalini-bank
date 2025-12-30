@@ -29,7 +29,7 @@ export default function Home() {
           ]}
           buttonLink="/"
           buttonText="Open Account"
-          // imageSrc="https://placehold.co/600x450/png?text=Meeting"
+          imageSrc="/features/customer.png"
         />
 
         <FeatureSection 
@@ -42,7 +42,7 @@ export default function Home() {
           ]}
           buttonLink="/"
           buttonText="Apply for loan"
-          // imageSrc="https://placehold.co/600x450/png?text=Family"
+          imageSrc="/features/loan.png"
         />
 
         <FeatureSection 
@@ -52,9 +52,9 @@ export default function Home() {
             "Experience next-generation digital banking with personal care and trust",
             "24/7 access to your finances — anytime, anywhere"
           ]}
-          buttonLink="/"
+          buttonLink="/mobile-banking"
           buttonText="Mobile Banking"
-          // imageSrc="https://placehold.co/600x450/png?text=Digital+Banking"
+          imageSrc="/features/innovation.png"
         />
 
         <FeatureSection 
@@ -67,7 +67,7 @@ export default function Home() {
           ]}
           buttonLink="/financials"
           buttonText="Our Story"
-          // imageSrc="https://placehold.co/600x450/png?text=Growth"
+          imageSrc="/features/growth.png"
         />
 
         <WhyChooseUs />

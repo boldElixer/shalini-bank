@@ -18,24 +18,6 @@
   .reversed .contentWrapper { order: 1; }
 }
 
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4/3;
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  background-color: #f0f0f0;
-}
-/* Decorative blob */
-.imageWrapper::before {
-  content: '';
-  position: absolute;
-  top: -10%; left: -10%;
-  width: 50%; height: 50%;
-  background-color: rgba(214, 47, 74, 0.1);
-  border-radius: 50%;
-  z-index: 0;
-}
 
 .contentWrapper h2 {
   font-size: 2.5rem;

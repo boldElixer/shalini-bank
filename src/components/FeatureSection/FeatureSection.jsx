@@ -12,8 +12,8 @@ export default function FeatureSection({ title, points, buttonLink, buttonText, 
             <Image 
               src={imageSrc} 
               alt={title}
-              fill
-              style={{ objectFit: 'cover' }}
+              width={620}
+              height={550}
             />
           </div>
 
