@@ -71,6 +71,7 @@
 }
 .amountInput {
   border: none;
+  font-family: inherit;
   font-size: 2rem;
   font-weight: var(--bold);
   width: 100%;
@@ -78,6 +79,7 @@
   outline: none;
 }
 .amountInput:focus {
+  font-family: inherit;
   color: var(--color-primary-blue);
 }
 
