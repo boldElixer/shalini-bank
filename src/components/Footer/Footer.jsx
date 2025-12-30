@@ -33,7 +33,7 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Ways to Bank</h4>
             <ul>
-              <li>Mobile Banking</li>
+              <li><Link href="/mobile-banking">Mobile Banking</Link></li>
               <li>ATM Card</li>
               <li><Link href="/sms-banking">SMS Banking</Link></li>
             </ul>
