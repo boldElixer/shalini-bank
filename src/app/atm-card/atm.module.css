@@ -27,6 +27,13 @@
   text-align: left;
 }
 
+.faqTitle {
+    font-size: 2rem;
+    color: var(--color-primary-blue);
+    font-weight: var(--semibold);
+    text-align: left;
+}
+
 .textWrapper p {
   color: var(--color-text-light);
   max-width: 60ch;
@@ -80,7 +87,7 @@
   overflow-x: auto; /* Responsive scroll for mobile */
   border-collapse: separate;
   border-spacing: 0;
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
   font-size: 1rem;
   border-radius: var(--radius-card);
@@ -93,12 +100,12 @@
   background-color: var(--color-bg-light-gray);
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Table Body */
 .resultsTable td {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   padding: var(--spacing-xs);
   vertical-align: middle;
   color: var(--color-text-dark);

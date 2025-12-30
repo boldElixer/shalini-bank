@@ -100,34 +100,10 @@ export default function MobilePage() {
                 <p><strong>Safe & Secure</strong> - EMV chip-enabled card for enhanced transaction security</p>
                 <p><strong>Everyday Banking Made Simple</strong> - A reliable card for your daily banking needs</p>
              </div>
-        </section>
-         <section className={styles.section}>
-            <div className={styles.accordion}>
-            {faqData.map((item, index) => (
-              <div key={item.id} className={styles.item}>
-                <button 
-                  className={activeIndex === index ? `${styles.questionBtn} ${styles.open}` : styles.questionBtn}
-                  onClick={() => toggleQuestion(index)}
-                  aria-expanded={activeIndex === index}
-                >
-                  <span className={styles.questionText}>{item.question}</span>
-                  <span className={`${styles.icon} ${activeIndex === index ? styles.iconRotated : ''}`}>
-                    <Image src="/caret.svg" alt="Caret Icon" width={24} height={24} />
-                  </span>
-                </button>
-                
-                <div className={`${styles.answerWrapper} ${activeIndex === index ? styles.open : ''}`}>
-                  <div className={styles.answerContent}>
-                    <div dangerouslySetInnerHTML={{ __html: item.answer }} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <table className={styles.resultsTable}>
+             <table className={styles.resultsTable}>
                 <thead>
                     <tr>
-                        <th style={{borderTopLeftRadius: 'var(--radius-card)', borderTopRightRadius: 'var(--radius-card)', textAlign: 'center'}} colSpan={2}>
+                        <th style={{borderTopLeftRadius: 'var(--radius-card)', borderTopRightRadius: 'var(--radius-card)', textAlign: 'center', fontSize: '1.5rem'}} colSpan={2}>
                             ATM Charges w.e.f. 01/10/2025
                         </th>
                     </tr>
@@ -159,6 +135,32 @@ export default function MobilePage() {
                     </tr>
                 </tbody>
             </table>
+        </section>
+         <section className={styles.section}>
+            <h2 className={styles.faqTitle}>Frequently Asked Questions (FAQs)</h2>
+            <div className={styles.accordion}>
+            {faqData.map((item, index) => (
+              <div key={item.id} className={styles.item}>
+                <button 
+                  className={activeIndex === index ? `${styles.questionBtn} ${styles.open}` : styles.questionBtn}
+                  onClick={() => toggleQuestion(index)}
+                  aria-expanded={activeIndex === index}
+                >
+                  <span className={styles.questionText}>{item.question}</span>
+                  <span className={`${styles.icon} ${activeIndex === index ? styles.iconRotated : ''}`}>
+                    <Image src="/caret.svg" alt="Caret Icon" width={24} height={24} />
+                  </span>
+                </button>
+                
+                <div className={`${styles.answerWrapper} ${activeIndex === index ? styles.open : ''}`}>
+                  <div className={styles.answerContent}>
+                    <div dangerouslySetInnerHTML={{ __html: item.answer }} />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
         </section>
       </main>
 
