@@ -9,8 +9,8 @@ const servicesData = [
   {
     id: 'interest',
     icon: '/customer/ClockClockwise.svg',
-    title: 'Monthly Interest Credits',
-    desc: 'Earn interest every month and grow your savings balance faster with the benefit of compounding'
+    title: 'Quarterly Interest Credits',
+    desc: 'Earn interest every quarter and grow your savings balance faster with the benefit of compounding'
   },
   {
     id: 'options',
@@ -42,7 +42,7 @@ export default function CustomerPage() {
                 <div className={styles.textWrapper}>
                     <h1>Open Savings Account & Watch Your Money Grow</h1>
                     <p>
-                        <Image src="/customer/CalendarDots.svg" alt="calendar" width={36} height={36} /> Monthly interest credits
+                        <Image src="/customer/CalendarDots.svg" alt="calendar" width={36} height={36} /> Quarterly interest credits
                     </p>
                     <p>
                         <Image src="/customer/SealPercent.svg" alt="shield" width={36} height={36} /> Attractive interest rates
@@ -132,7 +132,7 @@ export default function CustomerPage() {
              <div className={styles.mvCard}>
                 <h3>Interest Rates on Savings Account</h3>
                 <p>
-                  At Shalini Sahakari Bank, your Savings Account earns <strong>2.5% p.a. interest</strong>, compounded monthly for both regular and senior citizen accounts.
+                  At Shalini Sahakari Bank, your Savings Account earns <strong>2.5% p.a. interest</strong>, compounded quarterly for both regular and senior citizen accounts.
                 </p>
                 <Link href="/become-a-customer/service-charges" className={styles.ctaButton} target='__blank' rel="noopener noreferrer">Know all fees and charges</Link>
              </div>
