@@ -6,6 +6,7 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import styles from './calculator.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const formatCurrency = (val) => 
   new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(val);
@@ -205,7 +206,7 @@ export default function FDCalculator() {
                     </div>
                 </div>
 
-                <button className={styles.ctaBtn}>Open Fixed Deposit</button>
+                <Link href="/forms/FD-Account.pdf" target="_blank" rel="noopener noreferrer" className={styles.ctaBtn}>Open Fixed Deposit</Link>
             </div>
           </div>
         <div className={styles.disclaimer}>

@@ -4,7 +4,6 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import styles from './customer.module.css';
 import Link from 'next/link';
-import feesData from '@/data/account-charges.json';
 
 const servicesData = [
   {
@@ -51,14 +50,16 @@ export default function CustomerPage() {
                     <p>
                         <Image src="/customer/CreditCard.svg" alt="trending up" width={36} height={36} /> Exclusive Shalini Bank Debit Card
                     </p>
-                    <Link href="/form-center" className={styles.ctaButton} target='__blank' rel="noopener noreferrer">Open an Account</Link>
+                    <p>
+                        <Link href="/form-center" className={styles.ctaButton} target='__blank' rel="noopener noreferrer">Open an Account</Link>
+                    </p>
                 </div>
                 <div className={styles.imageWrapper}>
                     <Image
                         src="/customer/1.png"
                         alt="Savings Account SSB Bank"
                         width={486}
-                        height={451.45}
+                        height={420}
                     />
                 </div>
             </div>
