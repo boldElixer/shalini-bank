@@ -3,108 +3,108 @@
     "id": "personal",
     "title": "Personal Loan",
     "icon": "/loans/1.png",
-    "link": "/personal-loan"
+    "link": "/loans/personal-loan"
   },
   {
     "id": "home",
     "title": "Home Loan",
     "icon": "/loans/2.png",
-    "link": "/home-loan"
+    "link": "/loans/home-loan"
   },
   {
     "id": "gold-silver-mortgage",
     "title": "Gold/Silver Mortgage Loan",
     "icon": "/loans/3.png",
-    "link": "/gold-silver-mortgage-loan"
+    "link": "/loans/gold-silver-mortgage-loan"
   },
   {
     "id": "gold-od",
     "title": "Gold Loan (OD)",
     "icon": "/loans/4.png",
-    "link": "/gold-loan-od"
+    "link": "/loans/gold-loan-od"
   },
   {
     "id": "loan-against-fd-rd-dd",
     "title": "Loans & OD against FD/RD/DD",
     "icon": "/loans/5.png",
-    "link": "/loan-against-fd-rd-dd"
+    "link": "/loans/loan-against-fd-rd-dd"
   },
   {
     "id": "loan-against-nsc-kvp",
     "title": "Loan against NSC/KVP",
     "icon": "/loans/6.png",
-    "link": "/loan-against-nsc-kvp"
+    "link": "/loans/loan-against-nsc-kvp"
   },
   {
     "id": "loan-against-lic",
     "title": "Loan against LIC",
     "icon": "/loans/7.png",
-    "link": "/loan-against-lic"
+    "link": "/loans/loan-against-lic"
   },
   {
     "id": "od-against-nsc-kvp-lic",
     "title": "OD against NSC, KVP, LIC",
     "icon": "/loans/8.png",
-    "link": "/od-against-nsc-kvp-lic"
+    "link": "/loans/od-against-nsc-kvp-lic"
   },
   {
     "id": "old-vehicle-loan",
     "title": "Old(Resale) Vehicle Loan",
     "icon": "/loans/9.png",
-    "link": "/old-vehicle-loan"
+    "link": "/loans/old-vehicle-loan"
   },
   {
     "id": "commercial-vehicle-loan",
     "title": "Commercial Vehicle Loan",
     "icon": "/loans/10.png",
-    "link": "/commercial-vehicle-loan"
+    "link": "/loans/commercial-vehicle-loan"
   },
   {
     "id": "car-loan",
     "title": "Car Loan",
     "icon": "/loans/11.png",
-    "link": "/car-loan"
+    "link": "/loans/car-loan"
   },
   {
     "id": "two-wheeler-loan",
     "title": "Two Wheeler Loan",
     "icon": "/loans/12.png",
-    "link": "/two-wheeler-loan"
+    "link": "/loans/two-wheeler-loan"
   },
   {
     "id": "education-loan",
     "title": "Education Loan",
     "icon": "/loans/13.png",
-    "link": "/education-loan"
+    "link": "/loans/education-loan"
   },
   {
     "id": "house-repair-renovation-loan",
     "title": "House Repair & Renovation Loan",
     "icon": "/loans/14.png",
-    "link": "/house-repair-renovation-loan"
+    "link": "/loans/house-repair-renovation-loan"
   },
   {
     "id": "plant-machinery-mortgage-loan",
     "title": "Plant/Machinery Mortgage Loan",
     "icon": "/loans/15.png",
-    "link": "/plant-machinery-mortgage-loan"
+    "link": "/loans/plant-machinery-mortgage-loan"
   },
   {
     "id": "cash-credit-loan",
     "title": "Cash Credit Loan",
     "icon": "/loans/16.png",
-    "link": "/cash-credit-loan"
+    "link": "/loans/cash-credit-loan"
   },
   {
     "id": "property-mortgage-loan-od",
     "title": "Property Mortgage Loan/OD",
     "icon": "/loans/17.png",
-    "link": "/property-mortgage-loan-od"
+    "link": "/loans/property-mortgage-loan-od"
   },
   {
     "id": "business-loan",
     "title": "Business Loan",
     "icon": "/loans/18.png",
-    "link": "/business-loan"
+    "link": "/loans/business-loan"
   }
 ]

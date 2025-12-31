@@ -2,15 +2,15 @@ import Head from 'next/head';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import styles from './fees.module.css';
-import feesData from '@/data/account-charges.json';
+import feesData from '@/data/loan-charges.json';
 
 
 export default function ChargesPage() {
   return (
     <>
       <Head>
-        <title>Account Service Charges - SSB Bank</title>
-        <meta name="description" content="Account Service Charges of Shalini Sahakari Bank Ltd." />
+        <title>Loan Service Charges - SSB Bank</title>
+        <meta name="description" content="Loan sevice charges for Shalini Sahakari Bank" />
       </Head>
 
       <Header />
@@ -18,7 +18,7 @@ export default function ChargesPage() {
       <main>
          <div className={styles.container}>
         <section className={styles.section}>
-            <h1>Fees and Charges</h1>
+            <h1>Loan Fees and Charges</h1>
             <table className={styles.resultsTable}>
                 <thead>
                     <tr>
