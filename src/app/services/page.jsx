@@ -13,7 +13,7 @@ const servicesData = [
     title: 'Become a Customer',
     icon: '/services/customer.png',
     desc: 'Join SSB Bank today and experience personalized banking solutions tailored to your needs. Enjoy competitive interest rates and exceptional customer service.',
-    link: '/savings-account'
+    link: '/become-a-customer'
   },
   {
     id: 'deposit',

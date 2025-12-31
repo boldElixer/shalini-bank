@@ -54,9 +54,20 @@ export default function LoanDetailPage({ params }) {
               <span className={styles.statValue}>{loan.maxTenure}</span>
             </div>
           </div>
-
-          {/* 3. DETAILS SECTIONS (Stacked Cards) */}
           
+          <div style={{
+            display: 'flex',
+            width: '100%',
+            alignItems: 'flex-end',
+            justifyContent: 'center',
+            marginBottom: 'var(--spacing-md)'
+          }}>
+          <Link href="/emi-calculator" target="_blank" rel="noopener noreferrer" className={styles.applyButton}>
+                Calculate your EMI now <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.16646 10L7.9998 8.79167L10.9581 5.83333H0.83313V4.16667H10.9581L7.9998 1.20833L9.16646 0L14.1665 5L9.16646 10Z" fill="white"></path>
+                        </svg>
+            </Link>
+            </div>
           
           <section className={styles.sectionCard}>
             <h2 className={styles.sectionTitle}>Key Highlights</h2>
@@ -102,7 +113,6 @@ export default function LoanDetailPage({ params }) {
             </div>
           </section>
 
-          {/* Security & Fees */}
           <section className={styles.sectionCard}>
             <h2 className={styles.sectionTitle}>Security & Fees</h2>
             <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
