@@ -35,7 +35,7 @@ const servicesData = [
     id: 'low-amount',
     icon: '/deposits/coin.svg',
     title: 'Low Booking Amount',
-    desc: 'Start investing with just ₹500 and earn up to 7.75% p.a. with safety and stability. Watch your money grow like never before!'
+    desc: 'Start investing with just ₹100 and earn up to 7.75% p.a. with safety and stability. Watch your money grow like never before!'
   },
   {
     id: 'overdraft',

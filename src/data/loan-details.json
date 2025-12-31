@@ -1,0 +1,643 @@
+[
+  {
+    "id": "personal-loan",
+    "title": "Personal Loan",
+    "icon": "/loans/1.png",
+    "interestRate": "15% p.a.",
+    "maxAmount": "₹5 Lakhs",
+    "maxTenure": "84 Months",
+    "purpose": "To meet non-priority purposes such as marriage, thread ceremony, birth or religious ceremonies, sickness, tours & travels, major medical expenses, repayment of debts, and business purposes. Priority purposes include higher education, housing, house repair/renovation/alteration/extension, construction of own house at native place, purchase of rental room, and repayment of private loans taken for the above purposes.",
+    "eligibility": [
+        "Salaried persons having permanent employment in reputed Public Ltd. Companies, Government, Semi-Government, Banks, Hospitals, Schools, Five-Star Hotels, or other reputed organizations.",
+        "Businessmen, self-employed persons, traders, and professionals having a regular source of income.",
+        "Applicant must be a regular member with share linking @5% of the borrowing.",
+        "Two personal sureties who are either regular or nominal members of the bank.",
+        "CIBIL compliance is compulsory."
+    ],
+    "documents": [
+        "KYC documents of applicant and sureties.",
+        "Salary slips for latest 3 months along with Form 16 (for salaried applicants).",
+        "IT Returns for last 3 years with computation of income, Balance Sheet, P&L Account and tax paid challans (for businessmen/professionals).",
+        "Business-related proof such as Business License, Shop Act License, GST Registration, Rent Receipt, or other relevant licenses (for self-employed).",
+        "Bank statements for last 6 months.",
+        "Proof of residence such as Ration Card and any one of Aadhaar Card, Electricity Bill, Telephone Bill, Driving License, Election Card, PAN Card, Passport, or Rent Receipt.",
+        "Passport size photographs of applicant and sureties."
+    ],
+    "security": "Two personal sureties acceptable to the bank. Sureties should have permanent employment in the organized sector or be businessmen/professionals with a regular source of income, as per bank discretion.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Loan up to ₹5 Lakhs",
+        "Available for salaried and self-employed applicants",
+        "Flexible repayment options",
+        "Covers both priority and non-priority purposes"
+    ]
+  },
+  {
+    "id": "home-loan",
+    "title": "Home Loan",
+    "icon": "/loans/2.png",
+    "interestRate": "As per CIBIL Score (9.50% p.a. to 10.50% p.a.)",
+    "maxAmount": "₹140 Lakhs",
+    "maxTenure": "240 Months",
+    "purpose": "To purchase a flat in an existing or proposed Co-operative Society or Apartment Owners' Association, purchase of flat from builder/vendor/developer, construction of house on own land, purchase of house/flat from CIDCO/MHADA, construction on society/allotted land, purchase of resale flat, group purchase under package deal, and repayment of housing loan taken from banks, HDFC, LIC, NBFCs or private parties for purchase or construction of house/flat/bungalow.",
+    "eligibility": [
+        "Individuals, individual co-owners, or joint owners.",
+        "Regular membership of the bank with share linking @ 2.5% of the loan amount sanctioned.",
+        "Borrower's monthly net salary or business income should be sufficient to service EMI.",
+        "Businessmen and professionals must have filed IT Returns for the last 3 consecutive years.",
+        "Income of co-applicant and family members having permanent income may be considered.",
+        "Remaining service period of employed borrower should not be less than the loan repayment period."
+    ],
+    "documents": [
+        "KYC documents of applicant, co-applicant and sureties.",
+        "Income proof of applicant and sureties.",
+        "IT Returns for last 3 years with financial statements (for businessmen/professionals).",
+        "Last 6 months bank account statement of the applicant.",
+        "Residential proof (Aadhaar Card compulsory along with supporting documents).",
+        "Property documents as per bank checklist.",
+        "Legal Opinion and Title Search Report.",
+        "Approved building plan and construction permissions where applicable."
+    ],
+    "security": "Equitable Mortgage by deposit of title deeds or Registered Mortgage Deed along with original title documents of the property.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Loan up to ₹140 Lakhs",
+        "Repayment tenure up to 20 years",
+        "Eligible for purchase, construction, resale and takeover",
+        "Moratorium available during construction period"
+    ]
+  },
+  {
+    "id": "gold-silver-mortgage-loan",
+    "title": "Gold/Silver Mortgage Loan",
+    "icon": "/loans/3.png",
+    "interestRate": "9% p.a. (For women 8.75% p.a.)",
+    "maxAmount": "₹5 Lakhs",
+    "maxTenure": "36 Months",
+    "purpose": "For priority sector lending purposes or for all other purposes other than speculative purposes.",
+    "eligibility": [
+        "Loan up to ₹1 Lakh - Nominal Member eligible.",
+        "Loan above ₹1 Lakh - Regular Member required.",
+        "Borrower must declare ownership of the gold or silver ornaments pledged.",
+        "Borrower should be properly introduced and acceptable to the bank."
+    ],
+    "documents": [
+        "KYC documents of the borrower.",
+        "Declaration of ownership of gold/silver ornaments.",
+        "Valuation report issued by bank-authorized gold valuer.",
+        "Ornament receipt/certificate issued by the bank."
+    ],
+    "security": "Pledge of gold ornaments only, valued by bank-authorized appraisers as per RBI guidelines.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Loan against pledged gold ornaments",
+        "Bullet repayment at end of tenure",
+        "Interest charged at monthly rests",
+        "Valuation as per RBI and IBJA guidelines",
+        "Quick short-term liquidity solution"
+    ]
+  },
+  {
+    "id": "gold-loan-od",
+    "title": "Gold Loan (OD)",
+    "icon": "/loans/4.png",
+    "interestRate": "9% p.a.",
+    "maxAmount": "₹10 Lakhs",
+    "maxTenure": "12 Months (Renewable Annually)",
+    "purpose": "For business purposes only.",
+    "eligibility": [
+        "Loan up to ₹1 Lakh - Nominal Member eligible.",
+        "Loan above ₹1 Lakh - Regular Member required.",
+        "Borrower must submit a declaration confirming ownership of the gold/silver ornaments pledged.",
+        "Income proof of the borrower is mandatory."
+    ],
+    "documents": [
+        "KYC documents of the borrower.",
+        "Income proof of the borrower.",
+        "Declaration of ownership of gold/silver ornaments.",
+        "Valuation report issued by bank-authorized appraiser.",
+        "Ornament receipt/certificate issued by the bank."
+    ],
+    "security": "Pledge of gold ornaments valued by bank-authorized appraisers as per RBI guidelines and IBJA gold rates.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Overdraft facility against pledged gold ornaments",
+        "Loan limit up to ₹10 Lakhs",
+        "Renewable every year",
+        "Interest to be serviced regularly",
+        "Valuation strictly as per RBI norms",
+        "Adequate margin maintained at all times"
+    ]
+  },
+  {
+    "id": "loan-against-fd-rd-dd",
+    "title": "Loans & OD against FD/RD/DD",
+    "icon": "/loans/5.png",
+    "interestRate": "FD/RD Rate + 1% p.a.",
+    "maxAmount": "No Maximum Limit",
+    "maxTenure": "Up to 60 Months or Deposit Maturity (Whichever is Earlier)",
+    "purpose": "For priority sector lending purposes or for any other purpose which is not speculative.",
+    "eligibility": [
+        "Members and non-members of the bank are eligible.",
+        "Loan can be availed against own deposits or third-party deposits.",
+        "In case of minor's deposit, loan amount must be used for the benefit of the minor.",
+        "No overdraft facility is permitted against minor's deposits."
+    ],
+    "documents": [
+        "KYC documents of the borrower.",
+        "Original Fixed Deposit Receipt or Recurring Deposit Passbook.",
+        "Duly discharged deposit receipt/passbook with revenue stamp.",
+        "Consent and discharge of all joint depositors where applicable.",
+        "Letter from depositor in case of deposits in minor's name."
+    ],
+    "security": "Pledge of Fixed Deposit Receipt or Recurring Deposit Passbook duly discharged by the depositor(s).",
+    "processingFee": "NIL",
+    "highlights": [
+        "Loan and overdraft facility against FD/RD",
+        "No maximum loan limit",
+        "Lower interest compared to unsecured loans",
+        "Interest charged at only 1% above FD/RD rate",
+        "No penal charges",
+        "Quick and simple processing"
+    ]
+  },
+  {
+    "id": "loan-against-nsc-kvp",
+    "title": "Loan against NSC/KVP",
+    "icon": "/loans/6.png",
+    "interestRate": "As per Bank Schedule (Board Approved, RBI Directives)",
+    "maxAmount": "75% of Purchase Value (Subject to Bank Exposure Ceiling)",
+    "maxTenure": "Up to 36 Months or Security Maturity (Whichever is Earlier)",
+    "purpose": "For purposes under priority sector lending or for any other purposes other than speculative.",
+    "eligibility": [
+        "Loan up to ₹1 Lakh - Nominal Member eligible.",
+        "Loan above ₹1 Lakh - Regular Member required.",
+        "Borrower must be employed or have sufficient business income to repay loan installments.",
+        "Government securities should belong to the borrower or be properly guaranteed if held by a third party.",
+        "In case of securities held in the name of a minor, declaration from guardian confirming loan is for minor's benefit is mandatory."
+    ],
+    "documents": [
+        "KYC documents of the borrower.",
+        "Original NSC/KVP certificates.",
+        "Discharge and endorsement of certificates in favour of the bank.",
+        "Letter of guarantee or renunciation where securities stand in third-party names.",
+        "Declaration from guardian in case of minor-held securities."
+    ],
+    "security": "Pledge of NSC/KVP certificates with bank's charge registered with the issuing Post Office and securities endorsed in the bank's name.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Loan against Government-backed securities",
+        "Up to 75% of certificate purchase value",
+        "Lower risk secured lending",
+        "Repayment linked to maturity of NSC/KVP",
+        "Suitable for short to medium-term funding needs"
+    ]
+  },
+  {
+    "id": "loan-against-lic",
+    "title": "Loan against LIC",
+    "icon": "/loans/7.png",
+    "interestRate": "As per Bank Schedule (Board Approved, RBI Directives)",
+    "maxAmount": "75% of Policy Surrender Value",
+    "maxTenure": "Up to 36 Months or Policy Maturity (Whichever is Earlier)",
+    "purpose": "For purposes under priority sector lending or for any other purposes which are not speculative.",
+    "eligibility": [
+        "Loan up to ₹1 Lakh - Nominal Member eligible.",
+        "Loan above ₹1 Lakh - Regular Member required.",
+        "Borrower must be employed or have sufficient business income to repay loan installments and insurance premium.",
+        "Policy must be in force for more than 3 years and must have surrender value.",
+        "Only policies where age has been admitted shall be accepted."
+    ],
+    "documents": [
+        "KYC documents of the borrower.",
+        "Original Life Insurance Policy document.",
+        "Status report obtained from the Insurance Company.",
+        "Absolute assignment deed in favour of the bank duly witnessed.",
+        "Proof of assignment registration with the Insurance Company."
+    ],
+    "security": "Assignable Life Insurance Policy (excluding Whole Life policies, policies under Married Women's Property Act, and policies in the name of minors) having surrender value, duly assigned and registered in favour of the bank.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Loan against life insurance policy surrender value",
+        "Up to 75% of surrender value financing",
+        "Endowment policies preferred",
+        "Repayment linked to policy maturity",
+        "Bank-controlled security with registered assignment",
+        "Penal charges applicable only on default"
+    ]
+  },
+  {
+    "id": "od-against-nsc-kvp-lic",
+    "title": "OD against NSC, KVP, LIC",
+    "icon": "/loans/8.png",
+    "interestRate": "As applicable to corresponding Term Loan against the pledged / assigned security",
+    "maxAmount": "Subject to maximum limit prescribed for Term Loans against the respective securities",
+    "maxTenure": "Up to maturity of the last maturing security",
+    "purpose": "For purposes under priority sector lending or for any other purposes which are not speculative.",
+    "eligibility": [
+        "Nominal Member or Regular Member.",
+        "Borrower must already have an account with the Bank.",
+        "Borrower should be employed or having sufficient business income to pay interest.",
+        "In case securities stand in the name of third parties, consent letter must be obtained."
+    ],
+    "documents": [
+        "KYC documents of the borrower.",
+        "Original security documents (NSC / KVP / LIC Policy, etc.).",
+        "Consent letter in case of third-party securities.",
+        "Assignment / pledge documents as applicable."
+    ],
+    "security": "NSC, KVP, LIC Policy, or other acceptable securities pledged or assigned in favour of the Bank with charge noted with the issuing authority or transferred in the Bank's name.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Overdraft facility against financial securities",
+        "Margin and limits aligned with corresponding term loan rules",
+        "Bank-managed charge registration",
+        "Limit reduces automatically on maturity of securities",
+        "Applicable to NSC, KVP, LIC Policy, and similar securities"
+    ]
+  },
+  {
+    "id": "old-vehicle-loan",
+    "title": "Old(Resale) Vehicle Loan",
+    "icon": "/loans/9.png",
+    "interestRate": "As per quantum of loan, fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "Up to the exposure limit of the Bank, subject to vehicle age and valuation: (a) Up to 3 years old vehicle - 60% of valuation, (b) Above 3 years up to 5 years old vehicle - 50% of valuation, not exceeding insurance value.",
+    "maxTenure": "48 Months",
+    "purpose": "For purchase of old/resale vehicles for commercial transportation of goods or passengers, or for justified private (non-commercial) purposes.",
+    "eligibility": [
+        "Applicant must be a Regular Member with 2.5% share linking as per RBI guidelines.",
+        "Applicant must have sufficient income to pay monthly EMI.",
+        "Applicant must possess valid permits and licenses as applicable for the vehicle.",
+        "Two personal sureties with minimum monthly net salary income of ₹25,000 or businessmen with yearly income of ₹4 lakh.",
+        "Sureties must be Nominal or Regular Members of the Bank."
+    ],
+    "documents": [
+        "KYC documents of applicant and sureties.",
+        "Income proof of applicant and sureties.",
+        "Residential proof of applicant and sureties.",
+        "Valuation report from Bank-approved valuer (for old vehicles).",
+        "Insurance policy (comprehensive) in joint name of Bank and borrower.",
+        "Permit and license copies, wherever applicable.",
+        "Business proof such as Udyam Registration / GST Certificate (if applicable).",
+        "Photographs of the vehicle along with borrower.",
+        "TTO set duly signed by the borrower."
+    ],
+    "security": "Hypothecation of the vehicle in favour of the Bank with charge registered with the RTO and Insurance Company.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Finance available for resale commercial and private vehicles",
+        "Loan amount linked to vehicle age and valuation",
+        "Direct payment to seller or dealer",
+        "Moratorium facility available",
+        "Bank-registered hypothecation with RTO and insurer"
+    ]
+  },
+  {
+    "id": "commercial-vehicle-loan",
+    "title": "Commercial Vehicle Loan",
+    "icon": "/loans/10.png",
+    "interestRate": "As fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "Subject to the Bank's exposure limit. Up to 80% of the authorized dealer's pro-forma invoice price (including registration charges and insurance) and up to 80% of body building pro-forma wherever body building work is required.",
+    "maxTenure": "60 Months",
+    "purpose": "For purchase of new heavy or commercial vehicles for commercial transportation of goods or passengers, or for private purpose for own business where the need for a heavy vehicle is justified.",
+    "eligibility": [
+        "Applicant must be a Regular Member with 2.5% share linking as per RBI guidelines.",
+        "Applicant should have sufficient income and satisfactory business turnover to repay installments.",
+        "Applicant should have minimum 5 years' experience in the relevant field.",
+        "Applicant must possess valid permits and licenses as applicable.",
+        "Two personal guarantors with minimum monthly net income of ₹25,000 or above; salaried guarantor must be from an organized sector.",
+        "Sureties must be Nominal or Regular Members of the Bank."
+    ],
+    "documents": [
+        "KYC documents of applicant and sureties.",
+        "Residential proof of applicant and sureties (Aadhaar compulsory with supporting proof).",
+        "Income proof of applicant and sureties.",
+        "Profile of applicant with business experience details.",
+        "Driving license of applicant or appointed driver.",
+        "Last one year bank account statement.",
+        "Business assurance letters.",
+        "Pro-forma invoice from authorized dealer.",
+        "Body building quotation wherever applicable.",
+        "Visit reports of office/business premises and residence of applicant and sureties.",
+        "Photographs of the vehicle along with borrower.",
+        "TTO set duly signed by the borrower."
+    ],
+    "security": "Hypothecation of the vehicle in favour of the Bank with hypothecation charge registered with the RTO and Insurance Company.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Finance for new heavy and commercial vehicles",
+        "Funding up to 80% of invoice value subject to exposure limits",
+        "Direct dealer/manufacturer payment",
+        "Moratorium facility available",
+        "Bank-registered hypothecation with RTO and insurer"
+    ]
+  },
+  {
+    "id": "car-loan",
+    "title": "Car Loan",
+    "icon": "/loans/11.png",
+    "interestRate": "As per quantum of loan, fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "Up to 80% of the vehicle cost, subject to margin requirement and Bank's internal exposure norms.",
+    "maxTenure": "60 Months",
+    "purpose": "To purchase a new brand car or jeep for self and family use only, directly from an authorized showroom.",
+    "eligibility": [
+        "Applicant must be a Regular Share Member with 2.5% share linking as per RBI guidelines.",
+        "Loan applicable only for purchase of a new car/jeep for self use.",
+        "Applicant or applicant's personal driver must hold a valid driving license for the loan tenure.",
+        "If Learning License is submitted, Permanent License must be produced within 6 months or before expiry of Learning License, whichever is earlier.",
+        "Applicant must have sufficient income to repay EMIs.",
+        "One personal guarantor salaried or businessman with monthly net income of ₹25,000 p.m. or annual income of ₹4 lakh."
+    ],
+    "documents": [
+        "KYC documents of applicant and guarantor.",
+        "Salary slips for latest 3 months with Form 16 and previous year ITR (for salaried applicants).",
+        "ITR acknowledgements with computation of income, balance sheet and P&L account for last three years (for businessmen).",
+        "Estimated income statement in case of proposed tourist business.",
+        "Driving license of applicant or appointed driver.",
+        "Residential proof of applicant and guarantor (Aadhaar mandatory with supporting proof).",
+        "Income proof of guarantor.",
+        "Visit reports of office/business premises and residence of applicant and guarantor.",
+        "Pro-forma invoice confirmed with dealer.",
+        "Photographs of the vehicle along with borrower.",
+        "TTO set duly signed by the borrower."
+    ],
+    "security": "Hypothecation of the new brand car/jeep in favour of the Bank with hypothecation charge registered with the RTO and Insurance Company.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Special scheme for self-use new cars and jeeps",
+        "Funding up to 80% with fixed margin requirement",
+        "Direct dealer payment",
+        "Tenure up to 60 months",
+        "Bank-registered hypothecation with RTO and insurer"
+    ]
+  },
+  {
+    "id": "two-wheeler-loan",
+    "title": "Two Wheeler Loan",
+    "icon": "/loans/12.png",
+    "interestRate": "As per quantum of loan, fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "₹2 Lakhs",
+    "maxTenure": "36 Months",
+    "purpose": "To purchase a new motor bike or scooter directly from the showroom for personal use.",
+    "eligibility": [
+        "Applicant must be a Regular Member with 2.5% share linking of the loan amount.",
+        "Salaried applicant must have minimum 1 year confirmed service with net salary not less than ₹20,000 per month.",
+        "Businessman must have minimum annual income of ₹3 Lakh.",
+        "Applicant must possess a valid driving license for the loan tenure.",
+        "If Learning License is submitted, Permanent License must be produced within 6 months or before expiry of Learning License, whichever is earlier."
+    ],
+    "documents": [
+        "KYC documents of the applicant.",
+        "Salary slips for latest 3 months with Form 16 (for salaried applicants).",
+        "ITR acknowledgements with computation of income, balance sheet and P&L account for last three years (for businessmen).",
+        "Any one proof regarding business/profession.",
+        "Driving license of the applicant.",
+        "Residential proof of applicant (Aadhaar mandatory with supporting proof).",
+        "Visit report of office/business premises and residence of applicant.",
+        "Pro-forma invoice confirmed with dealer.",
+        "Photographs of the vehicle along with borrower.",
+        "TTO set duly signed by the borrower."
+    ],
+    "security": "Hypothecation of the two-wheeler in favour of the Bank with hypothecation charge registered with the RTO and Insurance Company.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Loan for purchase of new two-wheelers only",
+        "Maximum loan amount up to ₹2 Lakh",
+        "Tenure up to 36 months",
+        "No personal guarantor required",
+        "Direct dealer payment with bank-registered hypothecation"
+    ]
+  },
+  {
+    "id": "education-loan",
+    "title": "Education Loan",
+    "icon": "/loans/13.png",
+    "interestRate": "As per quantum of loan, fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "₹20 Lakhs",
+    "maxTenure": "120 Months",
+    "purpose": "For pursuing higher education in India or abroad, including education fees, hostel fees, books, and other incidental expenses.",
+    "eligibility": [
+        "Students pursuing Diploma, Graduation, Post-Graduation, Engineering, Medicine, Computer certificate courses (accredited institutes), MBA, MS, etc. in India or abroad.",
+        "Borrower or Co-borrower should have banking relationship with the Bank with deposit account for minimum 2-3 years with satisfactory operations (can be waived in deserving cases).",
+        "Applicant and Co-applicants must be Regular Members with 2.5% share linking as per RBI guidelines."
+    ],
+    "documents": [
+        "Proof of admission and course details.",
+        "Fee structure issued by the educational institution.",
+        "Documents relating to travel, hostel and incidental expenses.",
+        "Income proof of borrower and co-borrowers.",
+        "IT Returns for last 3 consecutive years (for businessmen/professionals).",
+        "Tax audited balance sheet or CA-certified financials where applicable.",
+        "KYC documents of borrower, co-borrowers and sureties."
+    ],
+    "security": "Immovable property as security with 40% of realizable value. 15% margin on Bank FDR. 25% margin on NSC, KVP, LIC (with surrender value) or other Government securities",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Loan available for education in India and abroad",
+        "Maximum loan limit ₹20 lakh",
+        "Moratorium covering course period plus 6 months",
+        "Repayment tenure up to 120 months",
+        "Flexible security options including property and liquid securities"
+    ]
+  },
+  {
+    "id": "house-repair-renovation-loan",
+    "title": "House Repair & Renovation Loan",
+    "icon": "/loans/14.png",
+    "interestRate": "As per quantum of loan, fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "₹20 Lakhs (₹5 Lakhs if borrower already has a housing loan with the Bank)",
+    "maxTenure": "10 Years or up to age of retirement / 70 years as applicable",
+    "purpose": "House repairing, renovation, furnishing, alteration, modification or addition (not eligible simultaneously with housing loan).",
+    "eligibility": [
+        "Regular membership with 2.5% share linking of loan amount as per RBI guidelines.",
+        "Loan eligibility limited to 60% of realizable value of the flat/house intended for repair or renovation.",
+        "Borrower cannot apply for Housing Loan and House Repair Loan at the same time."
+    ],
+    "documents": [
+        "Affidavit stating loan will be used only for sanctioned purpose.",
+        "Self-estimate or Contractor's estimate.",
+        "Income proof of applicant and sureties.",
+        "Residential proof (Aadhar Card mandatory plus supporting document).",
+        "Last 6 months bank account statement of applicant.",
+        "Property documents as per checklist.",
+        "Legal opinion and title search report.",
+        "Affidavit-cum-undertaking regarding authorized construction.",
+        "NOC from Employees Credit Co-op Society, if applicable.",
+        "Business proof such as Udyam, Shop Act, GST certificate where applicable."
+    ],
+    "security": "Equitable Mortgage by deposit of Title Deed or Registered Mortgage Deed along with original title documents. Loan limited to 60% of realizable value",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Loan for house repair, renovation and alteration",
+        "Maximum limit ₹20 Lakh",
+        "Maximum limit ₹5 Lakh if existing housing loan with the Bank",
+        "Mortgage-backed loan",
+        "Repayment up to 10 years"
+    ]
+  },
+  {
+    "id": "plant-machinery-mortgage-loan",
+    "title": "Plant/Machinery Mortgage Loan",
+    "icon": "/loans/15.png",
+    "interestRate": "As per quantum of loan, fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "Subject to Bank's Exposure Limit",
+    "maxTenure": "60 Months",
+    "purpose": "Financing new or second-hand plant and machinery for business expansion, new venture, diversification, construction and erection of machinery, or working capital needs against existing machinery.",
+    "eligibility": [
+        "Regular membership with 2.5% share linking as per RBI guidelines.",
+        "Applicant should have satisfactory banking relations and experience in the proposed business or project.",
+        "Exclusive banking relationship with the Bank, unless otherwise required.",
+        "Borrower must demonstrate capacity to generate sufficient income to service the loan."
+    ],
+    "documents": [
+        "Income proof of applicant and sureties.",
+        "PAN Card copy of applicant and sureties.",
+        "Project report as applicable.",
+        "Purpose proof and machinery quotation / proforma invoice.",
+        "Original purchase invoices of machinery.",
+        "Valuation report for second-hand or existing machinery.",
+        "MSME / SSI Registration Certificate, if applicable.",
+        "Partnership deed with registration certificate (for partnership firms).",
+        "MOA, AOA, Certificate of Commencement and Board Resolution (for companies).",
+        "Collateral security documents, if applicable.",
+        "Legal opinion and title search report where collateral is immovable property.",
+        "Business license.",
+        "No Objection Certificate from existing financing bank, if applicable.",
+        "KYC documents as per Bank policy."
+    ],
+    "security": "First charge hypothecation of plant and machinery financed or existing machinery. 25% for new machinery, 50% for second-hand or existing machinery",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Finance for new and second-hand machinery",
+        "Loan against existing machinery also available",
+        "Term loan facility",
+        "Flexible end-use for business growth",
+        "Hypothecation with first charge in favour of the Bank"
+    ]
+  },
+  {
+    "id": "cash-credit-loan",
+    "title": "Cash Credit",
+    "icon": "/loans/16.png",
+    "interestRate": "As per quantum of loan, fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "Depending upon the requirement of the borrower subject to Bank's Exposure Limit",
+    "maxTenure": "12 Months (renewable subject to satisfactory account operation)",
+    "purpose": "To meet working capital requirements of the business, including purchase of raw materials, stock-in-process, finished goods, and receivables management.",
+    "eligibility": [
+        "Regular membership with 2.5% share linking as per RBI guidelines.",
+        "Borrower must have sufficient business income to service the loan and pay monthly interest.",
+        "Borrower should have filed Income Tax Returns for the last three consecutive years or since incorporation if less than three years.",
+        "Two personal sureties with net monthly income of ₹25000 or ₹4 Lakhs annual income; one surety if secured by collateral property."
+    ],
+    "documents": [
+        "Balance Sheet, Profit & Loss account, and financial statements of the borrower.",
+        "Computation of Income Statement.",
+        "Income Tax Returns filed and tax paid challans.",
+        "Details of stock, stock-in-process, finished goods, and book debts.",
+        "KYC documents of borrower and sureties.",
+        "Collateral security documents if applicable (e.g., FDR, NSC, KVP, LIC, or immovable property documents).",
+        "Insurance policy covering stocks / mortgaged property with Bank clause."
+    ],
+    "security": "Hypothecation of stock of raw materials, stock-in-trade, stock-in-process, finished goods, and book debts (below 90 days). Adequate collateral security in form of immovable property or approved financial instruments. Personal sureties required as per eligibility.",
+    "processingFee": "As per prescribed Bank's Service Charges.",
+    "highlights": [
+        "Finance to support working capital needs.",
+        "Ad hoc limit available for temporary requirements.",
+        "End-use of funds strictly monitored to prevent diversion.",
+        "Drawing power determined after excluding unpaid stocks.",
+        "Hypothecation with first charge on stocks and book debts.",
+        "Collateral security or personal sureties required.",
+        "Comprehensive insurance required on stock/property.",
+        "Flexible renewal every 12 months subject to satisfactory account operation."
+    ]
+  },
+  {
+    "id": "property-mortgage-loan-od",
+    "title": "Property Mortgage Loan/OD",
+    "icon": "/loans/17.png",
+    "interestRate": "As per quantum of loan / policy fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
+    "maxAmount": "Subject to Bank's Exposure Limit",
+    "maxTenure": "120 Months for Term Loan / 12 Months for Overdraft (renewable)",
+    "purpose": "To raise finance for business needs, working capital, purchase of commercial/residential premises, or personal requirements.",
+    "eligibility": [
+        "Regular membership with 2.5% share linking as per RBI guidelines.",
+        "Borrower must have sufficient business income to service the loan / overdraft and pay monthly interest.",
+        "Borrower must have filed Income Tax Returns for the last three consecutive years or since business inception if less than three years.",
+        "Two personal sureties required; salaried employees with minimum net emoluments of ₹25000 per month, or business income of ₹4 Lakhs per annum. One surety may be acceptable if secured by collateral property.",
+        "Exclusive account operation with the Bank unless exceptional circumstances require otherwise."
+    ],
+    "documents": [
+        "Income proof of applicant and sureties",
+        "PAN Card copy of applicant and sureties",
+        "Balance Sheet, Profit & Loss account, and financial statements of the borrower",
+        "Computation of Income Statement",
+        "Property documents for mortgage",
+        "Valuation report for old property (if applicable)",
+        "Legal opinion and title search report",
+        "Memorandum & Articles of Association, Board Resolution (for companies)",
+        "Deed of Partnership with registration certificate (for partnership firms)",
+        "SSI / MSME Registration Certificate (if applicable)",
+        "Project report (if applicable)",
+        "Purpose proof",
+        "Business license",
+        "No Objection Certificate from existing financing banks (if applicable)",
+        "All KYC documents as per Bank policy"
+    ],
+    "security": "Equitable Mortgage of commercial/residential property (Title Deed / Registered Mortgage Deed) with first charge in favor of the Bank. Full value insurance of property in joint name of Bank and Borrower required. Display of Bank's Mortgage Board at prominent place and free access for Bank inspection.",
+    "processingFee": "As per prescribed Bank's Service Charges",
+    "highlights": [
+        "Finance for purchase of premises, business needs, and working capital",
+        "Term Loan up to 120 months or Overdraft up to 12 months, renewable",
+        "Margin: 40% of realizable value for existing property, 15% for new purchase",
+        "Hypothecation with first charge in favor of the Bank",
+        "Comprehensive insurance required on mortgaged property",
+        "Two personal sureties required; conditions as per eligibility",
+        "Banking association exclusive unless otherwise required",
+        "Penal charges of 2% p.a. on defaulted amount"
+    ]
+  },
+  {
+    "id": "business-loan",
+    "title": "Business Loan",
+    "icon": "/loans/18.png",
+    "interestRate": "12% p.a., fixed by the Board of Directors under the directives of the Reserve Bank of India. Interest up to 12% reimbursed by Annasaheb Patil Economic Backward Development Corp Ltd subject to regular repayment of loan.",
+    "maxAmount": "Term Loans up to ₹25 Lakhs (limit may be enhanced as per guidelines / policy of the Corporation)",
+    "maxTenure": "60 Months (may be extended as per guidelines / policy of the Corporation)",
+    "purpose": "To provide financial assistance to economically backward persons for business purposes, purchase of vehicles/machinery, mortgage of property, or other eligible business needs.",
+    "eligibility": [
+        "LOI certificate issued by Annasaheb Patil Economic Backward Development Corporation Ltd.",
+        "Annual income below ₹8 Lakhs",
+        "Regular repayment of loan for reimbursement of interest",
+        "Regular membership with 2.5% share linking as per RBI guidelines",
+        "Borrower must have sufficient business income to service the loan; IT Returns for last three years or project report for new business required"
+    ],
+    "documents": [
+        "LOI certificate from Annasaheb Patil Economic Backward Development Corporation Ltd.",
+        "Income proof of applicant and sureties",
+        "PAN Card copy of applicant and sureties",
+        "Project report (if new business)",
+        "Udyam Registration certificate (if applicable)",
+        "Property documents for mortgage",
+        "Valuation report of property",
+        "Legal opinion and title search report",
+        "Society / Builder NOC (if applicable)",
+        "Hypothecation / pledge / lien documents for vehicle, machinery, or financial instruments",
+        "Business assurance letter for commercial vehicles (Tempo, Trucks, Tanker, Tourist Bus, etc.)",
+        "Residential proof of applicant and sureties",
+        "KYC documents as per Bank policy"
+    ],
+    "security": "Loans secured by hypothecation of vehicle/machinery, mortgage of commercial/residential property, or pledge/assignment of approved instruments (LIC, NSC, KVP, FDR, Govt Securities). Full insurance in joint name of Bank and Borrower required. Bank has right to inspect and verify security periodically.",
+    "processingFee": "As per prescribed Bank's Service Charges",
+    "highlights": [
+        "Term Loan facility for economically backward persons",
+        "Interest reimbursement scheme by Annasaheb Patil Economic Backward Development Corporation Ltd.",
+        "Margin requirements: 80% for vehicles, 25% for new machinery, 40% for existing property",
+        "Repayment via EMI through borrower's bank account",
+        "Direct disbursement to dealer for vehicle/machinery purchase",
+        "Penal charges of 2% p.a. on defaulted amount",
+        "Exclusive banking association required unless exceptional circumstances apply",
+        "Visit reports of applicant and sureties' business and residence recorded for verification",
+        "All security and documentation requirements similar to term loan rules depending on type of facility"
+    ]
+  }
+]

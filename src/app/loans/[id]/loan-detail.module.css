@@ -1,0 +1,158 @@
+.wrapper {
+  padding-bottom: var(--spacing-xl);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+/* Breadcrumb */
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-weight: var(--semibold);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.backLink:hover { color: var(--color-primary-blue); }
+
+/* --- Header Section --- */
+.headerSection {
+  margin-bottom: var(--spacing-md);
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+  text-align: left;
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) 0;
+}
+
+/* --- Stats Grid (The "Key Info" Bar) --- */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-mdm);
+}
+
+.statCard {
+  background: var(--color-bg-white);
+  padding: var(--spacing-smm);
+  border-radius: var(--radius-card);
+  text-align: center;
+  box-shadow: 0 0 var(--spacing-sm) var(--color-bg-light-gray);
+  transition: transform 0.2s;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--semibold);
+}
+
+.statValue {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: var(--bold);
+  color: var(--color-primary-blue);
+}
+
+/* --- Main Content Sections --- */
+.sectionCard {
+  background: var(--color-bg-white);
+  margin-bottom: var(--spacing-mdm);
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  color: var(--color-primary-blue);
+  padding-bottom: var(--spacing-xs);
+  font-weight: var(--semibold);
+}
+
+/* Styling for Lists & Text */
+.listGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: var(--spacing-xs);
+}
+
+@media (min-width: 768px) {
+  .listGrid {
+    grid-template-columns: 1fr 1fr; /* 2 columns for lists on desktop */
+  }
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+  color: var(--color-text-dark);
+  font-size: 1.2rem;
+  padding: var(--spacing-xs) 0;
+}
+
+.textBlock {
+  color: var(--color-text-dark);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* --- Fee Box Special Style --- */
+.feeBox {
+  background: var(--color-primary-blue-light); /* Very light blue */
+  border: 1px dashed #BFDBFE;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-card);
+  color: var(--color-primary-blue);
+  font-weight: var(--medium);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* --- CTA Section --- */
+.ctaSection {
+  text-align: center;
+  margin-top: var(--spacing-md); 
+  font-size: 2rem;
+  color: var(--color-text-dark);
+}
+
+.applyButton {
+  background: var(--color-primary-red);
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: var(--color-primary-red);
+  color: var(--color-bg-white);
+  font-weight: var(--medium);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+}
+
+.applyButton:hover {
+  opacity: 0.9;
+}

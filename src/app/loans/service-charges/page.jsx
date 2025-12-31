@@ -10,7 +10,7 @@ export default function ChargesPage() {
     <>
       <Head>
         <title>Loan Service Charges - SSB Bank</title>
-        <meta name="description" content="Loan sevice charges for Shalini Sahakari Bank" />
+        <meta name="description" content="Loan sevice charges of Shalini Sahakari Bank" />
       </Head>
 
       <Header />
