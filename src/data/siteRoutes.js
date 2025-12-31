@@ -12,6 +12,7 @@ export const siteRoutes = [
     category: "About Bank",
     links: [
       { name: "Overview", href: "/about" },
+      { name: "Board of Directors", href: "/about#BOD" },
       { name: "Careers", href: "/careers" },
       { name: "ESG", href: "/esg" },
       { name: "Bank Holidays", href: "/bank-holidays" },
@@ -117,9 +118,9 @@ export const siteRoutes = [
   {
     category: "Reports & Circulars (PDF)",
     links: [
-      { name: "Annual Report 2024–25", href: "/annual_reports/Shalini_Annual_Report_2024-25.pdf" },
-      { name: "Annual Report 2023–24", href: "/annual_reports/Shalini_Annual_Report_2023-24.pdf" },
-      { name: "Annual Report 2022–23", href: "/annual_reports/Shalini_Annual_Report_2022-23.pdf" },
+      { name: "Annual Report 2024-25", href: "/annual_reports/Shalini_Annual_Report_2024-25.pdf" },
+      { name: "Annual Report 2023-24", href: "/annual_reports/Shalini_Annual_Report_2023-24.pdf" },
+      { name: "Annual Report 2022-23", href: "/annual_reports/Shalini_Annual_Report_2022-23.pdf" },
       { name: "AGM Notice 2025", href: "/notices/AGM_2025.pdf" },
       { name: "AGM Notice 2024", href: "/notices/AGM_2024.pdf" },
       { name: "DICGC Sep 2025", href: "/DI/dicgc_sep25.pdf" },
