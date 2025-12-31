@@ -1,0 +1,80 @@
+.wrapper {
+  padding-bottom: var(--spacing-lg);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.header {
+  padding: var(--spacing-md) 0;
+  text-align: justify;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+}
+
+/* Masonry-like Grid Layout */
+.sitemapGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--spacing-mdm);
+}
+
+@media (min-width: 600px) {
+  .sitemapGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .sitemapGrid {
+    grid-template-columns: repeat(4, 1fr); /* 4 Columns like standard sitemaps */
+  }
+}
+
+/* Category Sections */
+.section {
+  break-inside: avoid; /* Keeps sections together if using masonry */
+  margin-bottom: var(--spacing-sm);
+}
+
+.categoryTitle {
+  font-size: 1.2rem;
+  color: var(--color-text-dark);
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-sm);
+  border-left: 3px solid var(--color-primary-red);
+  padding-left: var(--spacing-xs);
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkItem {
+  margin-bottom: var(--spacing-xs);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.link:hover {
+  color: var(--color-primary-blue);
+  text-decoration: underline;
+  transform: translateX(3px);
+}
