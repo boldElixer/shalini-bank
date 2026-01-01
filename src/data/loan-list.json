@@ -13,7 +13,7 @@
   },
   {
     "id": "gold-silver-mortgage",
-    "title": "Gold/Silver Mortgage Loan",
+    "title": "Gold/Silver Pledge Loan",
     "icon": "/loans/3.png",
     "link": "/loans/gold-silver-mortgage-loan"
   },
@@ -85,7 +85,7 @@
   },
   {
     "id": "plant-machinery-mortgage-loan",
-    "title": "Plant/Machinery Mortgage Loan",
+    "title": "Plant/Machinery Hypothecation Loan",
     "icon": "/loans/15.png",
     "link": "/loans/plant-machinery-mortgage-loan"
   },

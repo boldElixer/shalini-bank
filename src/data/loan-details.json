@@ -69,7 +69,7 @@
   },
   {
     "id": "gold-silver-mortgage-loan",
-    "title": "Gold/Silver Mortgage Loan",
+    "title": "Gold/Silver Pledge Loan",
     "icon": "/loans/3.png",
     "interestRate": "9% p.a. (For women 8.75% p.a.)",
     "maxAmount": "₹5 Lakhs",
@@ -477,7 +477,7 @@
   },
   {
     "id": "plant-machinery-mortgage-loan",
-    "title": "Plant/Machinery Mortgage Loan",
+    "title": "Plant/Machinery Hypothecation Loan",
     "icon": "/loans/15.png",
     "interestRate": "As per quantum of loan, fixed by the Board of Directors under the directives of the Reserve Bank of India from time to time.",
     "maxAmount": "Subject to Bank's Exposure Limit",
@@ -616,7 +616,7 @@
         "Income proof of applicant and sureties",
         "PAN Card copy of applicant and sureties",
         "Project report (if new business)",
-        "Udyam Registration certificate (if applicable)",
+        "Udyam Registration certificate",
         "Property documents for mortgage",
         "Valuation report of property",
         "Legal opinion and title search report",
