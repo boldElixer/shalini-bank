@@ -1,6 +1,4 @@
-'use client';
-
-import { use } from 'react';
+import { use } from "react";
 import { notFound } from 'next/navigation';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -8,11 +6,17 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import loansData from '@/data/loan-details.json';
 import styles from './loan-detail.module.css';
-import Image from 'next/image';
+
+export async function generateStaticParams() {
+  return loansData.map((loan) => ({
+    id: loan.id,
+  }));
+}
 
 export default function LoanDetailPage({ params }) {
   const resolvedParams = use(params);
   const loanId = resolvedParams.id;
+
   const loan = loansData.find((item) => item.id === loanId);
 
   if (!loan) return notFound();
