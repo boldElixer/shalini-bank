@@ -72,7 +72,7 @@ export default function GrievancePage() {
             <span className={styles.levelBadge}>Level 2</span>
             <h2 className={styles.levelTitle}>Not satisfied with the response?</h2>
             <p className={styles.levelDesc}>
-              You may take up the matter further with the <strong>Branch Manager</strong>.
+              You may take up the matter further with the <strong>Branch Manager</strong>, at our Head Office.
             </p>
 
             <div className={styles.officerCard}>

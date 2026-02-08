@@ -100,7 +100,7 @@ export default function MobilePage() {
                 <p><strong>Safe & Secure</strong> - EMV chip-enabled card for enhanced transaction security</p>
                 <p><strong>Everyday Banking Made Simple</strong> - A reliable card for your daily banking needs</p>
              </div>
-             <table className={styles.resultsTable}>
+             <table className={styles.resultsTable} id="atmChargesTable">
                 <thead>
                     <tr>
                         <th style={{borderTopLeftRadius: 'var(--radius-card)', borderTopRightRadius: 'var(--radius-card)', textAlign: 'center', fontSize: '1.5rem'}} colSpan={2}>

@@ -40,6 +40,10 @@ export default function BankCodePage() {
                             <td>Code of Bank's Commitment to Micro and Small Enterprises</td>
                             <td><Link href="/bank_code/mse_code_eng_aug2015.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
                         </tr>
+                        <tr>
+                            <td>Detection and Impounding of Counterfeit Notes</td>
+                            <td><Link href="https://www.rbi.org.in/commonman/English/scripts/Notification.aspx?Id=3005" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                        </tr>
                     </tbody>
                 </table>
             </section>

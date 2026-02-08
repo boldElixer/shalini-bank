@@ -43,6 +43,7 @@ export default function Footer() {
             <ul>
               <li><Link href="/contact-us">Contact Us</Link></li>
               <li><Link href="/form-center">Download Forms</Link></li>
+              <li><Link href="/service-charges-fees">Service Charges & Fees</Link></li>
               <li><Link href="/service-request">Feedbacks & Complaints</Link></li>
               <li><Link href="/grievance-redressal">Grievance Redressal</Link></li>
               <li><Link href="/deposit-calculator">Deposit Calculator</Link></li>
@@ -64,6 +65,7 @@ export default function Footer() {
               <li><Link href="https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=21110" target="_blank" rel="noopener noreferrer">RBI: Beware of Fictitious Offers</Link></li>
               <li><Link href="https://www.rbi.org.in/commonperson/English/Scripts/rbikehtahai.aspx" target="_blank" rel="noopener noreferrer">RBI Kehta Hai</Link></li>
               <li><Link href="https://udgam.rbi.org.in/unclaimed-deposits/#/login" target="_blank" rel="noopener noreferrer">RBI-UDGAM Portal</Link></li>
+              <li><Link href="https://paisaboltahai.rbi.org.in/" target="_blank" rel="noopener noreferrer">Paisa Bolta Hai</Link></li>
             </ul>
           </div>
         </div>
