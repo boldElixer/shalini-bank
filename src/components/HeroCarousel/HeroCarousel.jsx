@@ -60,7 +60,7 @@ export default function HeroCarousel() {
                 alt={slide.alt}
                 fill
                 priority={slide.id === 1}
-                style={{ objectFit: 'contain' }}
+                style={{ objectFit: 'contain', objectPosition: 'top' }}
               />
             </div>
           </SwiperSlide>

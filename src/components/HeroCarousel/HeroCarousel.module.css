@@ -77,12 +77,51 @@
   border-radius: var(--radius-card) !important;
 }
 
-/* --- MOBILE --- */
+/* --- MOBILE & TABLET RESPONSIVENESS --- */
+
+/* Tablet View */
 @media (max-width: 1024px) {
-    .carouselWrapper {
-        max-width: 95%;
-    }
-    .imageContainer {
-        aspect-ratio: 16 / 9; /* Slightly taller for mobile readability */
-    }
+  .carouselWrapper {
+    max-width: 95%;
+    margin-bottom: var(--spacing-lg); /* Slightly smaller bottom margin */
+  }
+  
+  .imageContainer {
+    height: auto; /* Unset the fixed desktop height */
+    aspect-ratio: 16 / 9; /* Use an aspect ratio so it scales perfectly with width */
+  }
+}
+
+/* Mobile Phone View */
+@media (max-width: 768px) {
+  .carouselWrapper {
+    max-width: 100%; /* Go full width on very small screens */
+    margin-bottom: var(--spacing-md);
+    border-radius: 0; /* Optional: Looks better edge-to-edge on mobile */
+  }
+
+  .imageContainer {
+    aspect-ratio: 16 / 9; /* Taller aspect ratio for mobile to make text readable */
+  }
+
+  /* Hide the large navigation arrows on small screens to save space */
+  .carouselWrapper :global(.swiper-button-next),
+  .carouselWrapper :global(.swiper-button-prev) {
+    display: none !important;
+  }
+
+  /* Adjust pagination dots to be smaller and tighter to the bottom */
+  .carouselWrapper :global(.swiper-pagination) {
+    bottom: 1rem !important;
+  }
+
+  .carouselWrapper :global(.swiper-pagination-bullet) {
+    width: 0.6rem !important;
+    height: 0.6rem !important;
+    margin: 0 0.3rem !important;
+  }
+
+  .carouselWrapper :global(.swiper-pagination-bullet-active) {
+    width: 1.5rem !important; /* Slightly shorter active pill for mobile */
+  }
 }
