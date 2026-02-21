@@ -1,5 +1,7 @@
+/* --- Mobile First Base Styles --- */
+
 .wrapper {
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg); /* Slightly reduced for mobile */
 }
 
 .container {
@@ -10,11 +12,11 @@
 
 .header {
   padding: var(--spacing-md) 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem; /* Scaled down from 3rem */
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
 }
@@ -26,13 +28,13 @@
 .questionBtn {
   width: 100%;
   text-align: left;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-sm); /* Tighter padding on mobile */
   background: var(--color-bg-white);
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  column-gap: var(--spacing-sm);
+  column-gap: var(--spacing-xs); /* Tighter gap so the text has more room to breathe */
   align-items: center;
   transition: background 0.2s;
   border-radius: var(--radius-card);
@@ -40,7 +42,7 @@
 }
 
 .open {
-    background-color: var(--color-bg-light-gray);
+  background-color: var(--color-bg-light-gray);
 }
 
 .questionBtn:hover {
@@ -48,7 +50,7 @@
 }
 
 .questionText {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Scaled down for mobile */
   font-weight: var(--semibold);
   color: var(--color-primary-blue);
 }
@@ -66,12 +68,43 @@
 }
 
 .answerWrapper.open {
-  max-height: 100rem; /* Arbitrary large height */
+  max-height: 100rem; /* Arbitrary large height to allow full expansion */
   transition: max-height 0.3s ease-in;
 }
 
 .answerContent {
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-sm); /* Tighter padding for mobile */
   color: var(--color-text-dark);
-  font-size: 1rem;
+  font-size: 0.95rem; /* Scaled down slightly */
+  text-align: justify; /* Keeps paragraph text cleanly aligned on small screens */
+  line-height: 1.6;
+}
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .wrapper {
+    padding-bottom: var(--spacing-xl); /* Restores massive padding */
+  }
+
+  .header {
+    text-align: left; /* Restores left alignment */
+  }
+
+  .title {
+    font-size: 3rem; /* Restores large title */
+  }
+
+  .questionBtn {
+    padding: var(--spacing-sm) var(--spacing-md); /* Restores generous padding */
+    column-gap: var(--spacing-sm);
+  }
+
+  .questionText {
+    font-size: 1.1rem; /* Restores larger text */
+  }
+
+  .answerContent {
+    padding: var(--spacing-sm) var(--spacing-md); /* Restores generous padding */
+    font-size: 1rem;
+  }
 }
