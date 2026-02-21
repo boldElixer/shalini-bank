@@ -21,31 +21,34 @@ export default function AnnualReportPage() {
                 <p>
                     The Annual Reports present a comprehensive snapshot of Shalini Sahakari Bank's performance, milestones, and financial strength over the years. They reflect our disciplined approach to growth, responsible management, and continued focus on serving our members and communities with trust and transparency.
                 </p>
-                <table className={styles.resultsTable}>
-                    <thead>
-                        <tr>
-                            <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Report</th>
-                            <th style={{borderTopRightRadius: 'var(--radius-card)'}}>View</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>43rd Annual Report FY 2024-25</td>
-                            <td><Link href="/annual_reports/Shalini_Annual_Report_2024-25.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
-                        </tr>
-                        <tr>
-                            <td>42nd Annual Report FY 2023-24</td>
-                            <td><Link href="/annual_reports/Shalini_Annual_Report_2023-24.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
-                        </tr>
-                        <tr>
-                            <td>41st Annual Report FY 2022-23</td>
-                            <td><Link href="/annual_reports/Shalini_Annual_Report_2022-23.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
-                        </tr>
-                    </tbody>
-                </table>
+                
+                {/* Added a wrapper div to handle mobile scrolling perfectly */}
+                <div className={styles.tableWrapper}>
+                    <table className={styles.resultsTable}>
+                        <thead>
+                            <tr>
+                                <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Report</th>
+                                <th style={{borderTopRightRadius: 'var(--radius-card)'}}>View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>43<sup>rd</sup> Annual Report FY 2024-25</td>
+                                <td><Link href="/annual_reports/Shalini_Annual_Report_2024-25.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            </tr>
+                            <tr>
+                                <td>42<sup>nd</sup> Annual Report FY 2023-24</td>
+                                <td><Link href="/annual_reports/Shalini_Annual_Report_2023-24.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            </tr>
+                            <tr>
+                                <td>41<sup>st</sup> Annual Report FY 2022-23</td>
+                                <td><Link href="/annual_reports/Shalini_Annual_Report_2022-23.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
-
       </main>
 
       <Footer />
