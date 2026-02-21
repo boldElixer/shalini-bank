@@ -1,5 +1,7 @@
+/* --- Mobile First Base Styles --- */
+
 .wrapper {
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg); /* Reduced for mobile */
 }
 
 .container {
@@ -8,7 +10,6 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* Breadcrumb */
 .backLink {
   display: inline-flex;
   align-items: center;
@@ -17,27 +18,26 @@
   text-decoration: none;
   font-weight: var(--semibold);
   margin-bottom: var(--spacing-sm);
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: color 0.2s;
 }
-.backLink:hover { color: var(--color-primary-blue); }
 
 /* --- Header Section --- */
 .headerSection {
   margin-bottom: var(--spacing-md);
+  text-align: left;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem; /* Scaled down for mobile */
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
-  text-align: left;
+  line-height: 1.2;
 }
 
 .subtitle {
   color: var(--color-text-light);
-  margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: justify;
   display: flex;
   align-items: center;
@@ -45,114 +45,170 @@
   padding: var(--spacing-xs) 0;
 }
 
-/* --- Stats Grid (The "Key Info" Bar) --- */
+/* --- Stats Grid --- */
 .statsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-sm);
+  grid-template-columns: 1fr; /* Stacked on mobile */
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
 }
 
 .statCard {
   background: var(--color-bg-white);
-  padding: var(--spacing-smm);
+  padding: var(--spacing-sm);
   border-radius: var(--radius-card);
   text-align: center;
   box-shadow: 0 0 var(--spacing-sm) var(--color-bg-light-gray);
-  transition: transform 0.2s;
 }
 
 .statLabel {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: var(--color-text-light);
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: 4px;
   font-weight: var(--semibold);
 }
 
 .statValue {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Scaled down for mobile */
   font-weight: var(--bold);
   color: var(--color-primary-blue);
 }
 
+.calculatorCta {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+}
+
 /* --- Main Content Sections --- */
 .sectionCard {
-  background: var(--color-bg-white);
-  margin-bottom: var(--spacing-mdm);
+  margin-bottom: var(--spacing-lg);
 }
 
 .sectionTitle {
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Scaled down */
   color: var(--color-primary-blue);
   padding-bottom: var(--spacing-xs);
   font-weight: var(--semibold);
+  border-bottom: 1px solid var(--color-bg-light-gray);
+  margin-bottom: var(--spacing-sm);
 }
 
-/* Styling for Lists & Text */
 .listGrid {
   display: grid;
-  grid-template-columns: 1fr;
-  column-gap: var(--spacing-xs);
-}
-
-@media (min-width: 768px) {
-  .listGrid {
-    grid-template-columns: 1fr 1fr; /* 2 columns for lists on desktop */
-  }
+  grid-template-columns: 1fr; /* Single column on mobile */
 }
 
 .listItem {
   display: flex;
   align-items: flex-start;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
   color: var(--color-text-dark);
-  font-size: 1.2rem;
+  font-size: 1rem; /* Scaled down */
   padding: var(--spacing-xs) 0;
+  text-align: justify;
 }
 
 .textBlock {
   color: var(--color-text-dark);
-  line-height: 1.8;
-  font-size: 1.05rem;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
-/* --- Fee Box Special Style --- */
+/* --- Fees & Security --- */
+.securityDetails {
+  display: flex; 
+  flex-direction: column; 
+  gap: var(--spacing-md);
+}
+
+.securitySubtitle {
+  font-size: 1.1rem; 
+  margin-bottom: 0.5rem; 
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
 .feeBox {
-  background: var(--color-primary-blue-light); /* Very light blue */
+  background: var(--color-primary-blue-light);
   border: 1px dashed #BFDBFE;
   padding: var(--spacing-md);
   border-radius: var(--radius-card);
   color: var(--color-primary-blue);
-  font-weight: var(--medium);
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
 }
 
+.feeIcon { font-size: 1.5rem; }
+.feeLabel { font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.5px; }
+.feeValue { font-size: 1.1rem; font-weight: 600; }
+
 /* --- CTA Section --- */
 .ctaSection {
   text-align: center;
-  margin-top: var(--spacing-md); 
-  font-size: 2rem;
+  margin-top: var(--spacing-lg); 
+  font-size: 1.2rem; /* Scaled down for mobile */
   color: var(--color-text-dark);
+  font-weight: var(--medium);
 }
 
 .applyButton {
-  background: var(--color-primary-red);
-  display: inline-block;
-  margin-top: var(--spacing-sm);
-  padding: var(--spacing-xs) var(--spacing-md);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-primary-red);
   color: var(--color-bg-white);
   font-weight: var(--medium);
   border-radius: var(--radius-card);
   text-decoration: none;
+  transition: opacity 0.2s;
+  text-align: center;
 }
 
-.applyButton:hover {
-  opacity: 0.9;
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .wrapper {
+    padding-bottom: var(--spacing-xl);
+  }
+
+  .headerSection {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .statValue {
+    font-size: 1.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .listGrid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--spacing-md);
+  }
+
+  .listItem {
+    font-size: 1.2rem;
+  }
+
+  .ctaSection {
+    font-size: 2rem;
+  }
 }

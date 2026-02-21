@@ -1,55 +1,45 @@
-.wrapper {
-  padding-bottom: var(--spacing-lg);
-}
-
+/* Container Utility */
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 var(--spacing-sm);
 }
 
-/* --- Header --- */
+.wrapper {
+  padding-bottom: var(--spacing-lg); /* Reduced for mobile */
+}
+
+/* --- Header Section (Mobile First) --- */
 .header {
   padding: var(--spacing-md) 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem; /* Scaled down from 3rem for mobile */
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
 }
 
-/* --- Loan Grid --- */
+/* --- Loan Grid (Mobile First) --- */
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Single column on mobile */
   gap: var(--spacing-md);
 }
 
-@media (min-width: 600px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 992px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* --- Loan Card --- */
+/* --- Loan Card (Mobile First) --- */
 .card {
   background: var(--color-bg-white);
   border-radius: var(--radius-card);
-  padding: var(--spacing-sm);
+  padding: var(--spacing-md); /* Increased padding for better internal spacing */
   box-shadow: 0 0 var(--spacing-sm) var(--color-bg-light-gray);
   border: none;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /* Center-align content on mobile */
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -71,22 +61,62 @@
 }
 
 .cardTitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem; /* Scaled for mobile */
   font-weight: var(--semibold);
   color: var(--color-primary-blue);
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
 }
 
-/* --- Action Link --- */
+/* --- Action Link (Mobile First) --- */
 .applyLink {
   background-color: var(--color-primary-red);
   color: var(--color-bg-white);
-  padding: var(--spacing-xs) var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md); /* Slightly larger tap target */
   border-radius: var(--radius-card);
   font-weight: var(--semibold);
+  text-decoration: none;
+  width: 100%; /* Full width button on mobile for easier thumb-tapping */
   transition: opacity 0.2s;
 }
 
 .applyLink:hover {
   opacity: 0.9;
+}
+
+/* --- Desktop Overrides --- */
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller tablets */
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    text-align: left; /* Restore left alignment for desktop */
+  }
+
+  .title {
+    font-size: 3rem; /* Restore original size */
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+  }
+
+  .card {
+    align-items: flex-start; /* Restore left alignment for desktop */
+    text-align: left;
+    padding: var(--spacing-sm);
+  }
+
+  .applyLink {
+    width: fit-content; /* Reset button width on desktop */
+    padding: var(--spacing-xs) var(--spacing-md);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+  }
 }
