@@ -54,12 +54,13 @@ export default function CustomerPage() {
                         <Link href="/form-center" className={styles.ctaButton} target='__blank' rel="noopener noreferrer">Open an Account</Link>
                     </p>
                 </div>
-                <div className={styles.imageWrapper}>
+                <div className={`${styles.imageWrapper} ${styles.hideOnMobile}`}>
                     <Image
                         src="/customer/1.png"
                         alt="Savings Account SSB Bank"
                         width={486}
                         height={420}
+                        className={styles.heroImage}
                     />
                 </div>
             </div>
@@ -70,6 +71,7 @@ export default function CustomerPage() {
                         alt="Savings Account SSB Bank"
                         width={466.37}
                         height={342.32}
+                        className={styles.heroImage}
                     />
                 </div>
                 <div className={styles.textWrapper}>
