@@ -1,6 +1,7 @@
 .headerWrapper {
   background: white;
 }
+
 .container {
   max-width: var(--container-width);
   margin: 1rem auto;
@@ -10,27 +11,95 @@
   align-items: center;
   border: 1px solid #E7E7E7;
   border-radius: var(--radius-card);
+  position: relative; /* Ensures the mobile dropdown positions correctly relative to the header */
 }
+
 .logo {
   color: var(--color-primary-blue);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.nav { display: none; }
+
+/* --- Mobile Hamburger Button --- */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-primary-blue);
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Hamburger Animation (Optional but looks nice) */
+.bar.open:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.bar.open:nth-child(2) { opacity: 0; }
+.bar.open:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* --- Navigation Styles --- */
+.nav { 
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: var(--spacing-md);
+  border: 1px solid #E7E7E7;
+  border-radius: var(--radius-card);
+  z-index: 99;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  margin-top: 0.5rem;
+}
+
+.navOpen {
+  display: block; /* Shows the menu when toggled on mobile */
+}
+
 .nav ul {
   display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
   gap: var(--spacing-smm);
   font-size: 1.2rem;
   font-weight: var(--medium);
   color: var(--color-primary-blue);
 }
+
 .nav ul li:hover {
-    text-decoration: underline;
-    text-underline-offset: var(--spacing-xs);
-    text-decoration-thickness: 0.2rem;
-    text-decoration-color: var(--color-primary-red);
-    cursor: pointer;
-    font-weight: var(--semibold);
+  text-decoration: underline;
+  text-underline-offset: var(--spacing-xs);
+  text-decoration-thickness: 0.2rem;
+  text-decoration-color: var(--color-primary-red);
+  cursor: pointer;
+  font-weight: var(--semibold);
 }
-@media (min-width: 768px) { .nav { display: block; } }
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) { 
+  .hamburger { 
+    display: none; /* Hide hamburger on desktop */
+  }
+  
+  .nav { 
+    display: block; /* Always show nav on desktop */
+    position: static;
+    width: auto;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    margin-top: 0;
+  } 
+  
+  .nav ul {
+    flex-direction: row; /* Horizontal layout for desktop */
+  }
+}
