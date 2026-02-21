@@ -16,7 +16,7 @@ export default function Header() {
     <header className={styles.headerWrapper}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <Image src="/header.svg" alt="Shalini Bank Logo" width={199} height={56} />
+          <Image src="/header.svg" alt="Shalini Bank Logo" width={199} height={56} className={styles.logoImage} />
         </div>
         
         {/* Hamburger Icon */}

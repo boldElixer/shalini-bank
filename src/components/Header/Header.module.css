@@ -4,8 +4,8 @@
 
 .container {
   max-width: var(--container-width);
-  margin: 1rem auto;
-  padding: var(--spacing-sm) var(--spacing-md);
+  margin: 1rem;
+  padding: 0.75rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +19,11 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.logoImage {
+  width: 150px; /* Smaller logo for mobile */
+  height: auto;
 }
 
 /* --- Mobile Hamburger Button --- */
@@ -87,6 +92,15 @@
 @media (min-width: 768px) { 
   .hamburger { 
     display: none; /* Hide hamburger on desktop */
+  }
+
+  .container {
+    margin: 1rem auto; /* Centers container on larger screens */
+    padding: var(--spacing-sm) var(--spacing-md); /* Original padding */
+  }
+
+  .logoImage {
+    width: 199px; /* Original logo size for desktop */
   }
   
   .nav { 

@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <Image src="/header.svg" alt="Shalini Bank Logo" width={248.75} height={70} />
+        <Image src="/header.svg" alt="Shalini Bank Logo" width={248.75} height={70} className={styles.footerLogo} />
         <div className={styles.grid}>
           <div className={styles.col}>
             <h4>About</h4>

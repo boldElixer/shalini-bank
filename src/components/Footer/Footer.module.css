@@ -3,6 +3,11 @@
   padding: var(--spacing-md);
   font-size: 0.9rem;
 }
+.footerLogo {
+  width: 248.75px;
+  height: auto;
+  margin-bottom: 1rem;
+}
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
@@ -70,6 +75,14 @@
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .footerLogo {
+    width: 180px; /* Smaller logo for mobile */
+  }
+
   .installApp {
     flex-direction: column; /* Stacks the app badges vertically */
     align-items: flex-start;
@@ -78,6 +91,8 @@
   
   .appBadges {
     flex-wrap: wrap; /* Allows text and images to wrap if needed */
+    justify-content: center; /* Centers the app badges on mobile */
+    text-align: center; /* Centers the text on mobile */
   }
 
   .bottomBar {
