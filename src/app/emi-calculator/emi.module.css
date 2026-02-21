@@ -1,7 +1,7 @@
 /* Container & Layout */
 .wrapper {
   min-height: 100vh;
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg); /* Slightly reduced for mobile */
 }
 
 .container {
@@ -10,13 +10,15 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* Header */
+/* Header (Mobile First) */
 .header {
   padding-top: var(--spacing-md);
+  text-align: left;
 }
+
 .header h1 {
   color: var(--color-primary-blue);
-  font-size: 2.5rem;
+  font-size: 2rem; /* Scaled down for mobile */
   margin-bottom: 0.5rem;
   font-weight: var(--semibold);
 }
@@ -30,79 +32,82 @@
   overflow: hidden;
 }
 
-@media (min-width: 992px) {
-  .card {
-    grid-template-columns: 1.4fr 1fr; /* 60% Input / 40% Result */
-  }
+/* --- LEFT PANEL: INPUTS (Mobile First) --- */
+.inputPanel {
+  padding: var(--spacing-md) var(--spacing-sm); /* Reduced padding for mobile */
 }
 
-/* --- LEFT PANEL: INPUTS --- */
-.inputPanel {
-  padding: var(--spacing-mdm);
-}
 .disclaimer {
-    color: var(--color-text-light);
-    font-size: 0.8rem;
-    padding: var(--spacing-sm) 0;
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+  padding: var(--spacing-sm) 0;
 }
+
 .disclaimer p {
-    text-align: left;
+  text-align: left;
 }
+
 /* Amount Field */
 .fieldLabel {
   font-size: 1rem;
   color: var(--color-text-light);
   font-weight: var(--semibold);
 }
+
 .currencyWrapper {
   display: flex;
   align-items: center;
   border-bottom: 2px solid var(--color-bg-light-gray);
   transition: border-color 0.3s;
 }
+
 .currencyWrapper:focus-within {
   border-color: var(--color-primary-blue);
 }
+
 .currencySymbol {
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Scaled down */
   font-weight: var(--bold);
   color: var(--color-text-dark);
   margin-right: 0.5rem;
 }
+
 .amountInput {
   border: none;
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 1.6rem; /* Scaled down so big numbers don't break */
   font-weight: var(--bold);
   width: 100%;
   color: var(--color-text-dark);
   outline: none;
+  background-color: transparent;
 }
+
 .amountInput:focus {
-  font-family: inherit;
   color: var(--color-primary-blue);
 }
 
 .fieldGroup {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem; /* Tighter gap for mobile */
 }
 
-/* Value Display (For Interest/Tenure headers) */
+/* Value Display */
 .inputHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .valueDisplay {
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Scaled down */
   font-weight: var(--bold);
   color: var(--color-primary-blue);
   background: var(--color-primary-blue-light);
-  padding: 0.2rem 0.8rem;
+  padding: 0.2rem 0.6rem;
   border-radius: var(--radius-card);
 }
 
-/* Sliders (Still used for Interest Rate) */
+/* Sliders */
 .slider {
   width: 100%;
   height: var(--spacing-xs);
@@ -111,10 +116,11 @@
   outline: none;
   -webkit-appearance: none;
 }
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: var(--spacing-smm);
-  height: var(--spacing-smm);
+  width: var(--spacing-sm); /* Smaller thumb on mobile */
+  height: var(--spacing-sm);
   background: var(--color-primary-blue);
   border: 3px solid white;
   border-radius: 50%;
@@ -122,9 +128,11 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: transform 0.1s;
 }
+
 .slider::-webkit-slider-thumb:hover {
   transform: scale(1.1);
 }
+
 .sliderLabels {
   display: flex;
   justify-content: space-between;
@@ -135,51 +143,53 @@
 /* Tenure Buttons */
 .tenureGroup {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs); /* Tighter gap */
+  flex-wrap: wrap; /* Allows wrapping on tiny screens */
 }
+
 .tenureBtn {
   flex: 1;
-  padding: var(--spacing-xs);
+  padding: var(--spacing-xs); /* Tighter padding */
   border: none;
   border-radius: var(--radius-card);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.85rem; /* Scaled down so all 3 fit */
   font-weight: var(--medium);
   font-family: var(--font-family);
   color: var(--color-text-light);
-  min-width: 100px;
   text-align: center;
 }
+
 .activeTenure {
   background-color: var(--color-primary-blue-light);
   color: var(--color-primary-blue);
   font-weight: var(--bold);
-  border: none;
 }
 
 /* Custom Duration Input */
 .customDurationWrapper {
   margin-top: var(--spacing-xs);
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-sm); /* Reduced padding */
   background: #f9f9f9;
   border-radius: var(--radius-card);
 }
 
-/* --- RIGHT PANEL: RESULTS --- */
+/* --- RIGHT PANEL: RESULTS (Mobile First) --- */
 .resultPanel {
   background: var(--color-primary-blue);
-  padding: var(--spacing-md) var(--spacing-mdm);
+  padding: var(--spacing-md) var(--spacing-sm); /* Reduced padding */
   display: flex;
   flex-direction: column;
 }
 
 .emiLabel {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Scaled down */
   color: var(--color-bg-white);
   text-align: center;
 }
+
 .emiValue {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Scaled down */
   font-weight: var(--bold);
   color: var(--color-bg-white);
   text-align: center;
@@ -190,60 +200,80 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--spacing-sm);
-  font-size: 1.1rem;
+  align-items: center;
 }
+
 .summaryLabel { 
-  font-size: 1rem;
+  font-size: 0.9rem; /* Scaled down */
   color: white;
- }
+}
+
 .summaryVal { 
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Scaled down */
   font-weight: var(--bold);
   color: white;
- }
+}
 
 .applyBtn {
-  margin-top: auto; /* Pushes to bottom */
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: var(--spacing-md); 
   background: var(--color-primary-red);
-  width: fit-content;
+  width: 100%; /* Full width button on mobile for better touch */
   color: white;
   padding: var(--spacing-sm) var(--spacing-md);
   border: none;
   border-radius: var(--radius-card);
   font-family: var(--font-family);
-  font-size: 1.1rem;
+  font-size: 1rem; /* Scaled down */
   font-weight: var(--semibold);
   cursor: pointer;
+  text-align: center;
 }
 
-/* --- AMORTIZATION TABLE --- */
+/* --- AMORTIZATION TABLE (Mobile First) --- */
 .scheduleSection {
   margin-top: var(--spacing-md);
 }
+
 .scheduleHeader {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Scaled down */
   color: var(--color-primary-blue);
   margin-bottom: var(--spacing-sm);
+  text-align: center; /* Centered on mobile */
 }
+
+/* Added Table Wrapper for horizontal scroll */
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-bg-light-gray);
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 600px; /* Forces slight scroll so the 5 columns don't squish */
+  font-size: 0.9rem;
 }
+
 .table th {
   text-align: left;
   padding: var(--spacing-sm);
   background: var(--color-bg-light-gray);
   color: var(--color-text-dark);
   font-weight: var(--semibold);
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
+
 .yearRow {
   cursor: pointer;
   border-bottom: 1px solid var(--color-bg-light-gray);
 }
-.yearRow:hover { background: #f9f9f9; }
+
+.yearRow:hover { 
+  background: #f9f9f9; 
+}
+
 .yearCell {
   padding: var(--spacing-sm);
   font-weight: var(--bold);
@@ -252,19 +282,131 @@
   align-items: center;
   gap: 0.5rem;
 }
+
 .toggleIcon {
   font-size: 0.8rem;
   transition: transform 0.3s;
+  display: flex;
 }
-.rotated { transform: rotate(180deg); }
+
+.rotated { 
+  transform: rotate(180deg); 
+}
+
 .monthRow {
   background: #fff;
   border-bottom: 1px solid var(--color-bg-light-gray);
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* Scaled down */
   color: var(--color-text-light);
 }
-.monthRow td { padding: 0.8rem 1rem; color: var(--color-text-dark);}
+
+.monthRow td { 
+  padding: 0.8rem var(--spacing-sm); 
+  color: var(--color-text-dark);
+}
+
 .monthRow td:first-child {
   padding-left: var(--spacing-md);
   color: var(--color-text-light);
+}
+
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .header {
+    text-align: left; /* Restores left alignment */
+  }
+
+  .header h1 {
+    font-size: 2.5rem; /* Restores large title */
+  }
+
+  .inputPanel {
+    padding: var(--spacing-mdm); /* Restores massive padding */
+  }
+
+  .currencySymbol {
+    font-size: 1.8rem;
+  }
+
+  .amountInput {
+    font-size: 2rem;
+  }
+
+  .fieldGroup {
+    margin-bottom: 2.5rem;
+  }
+
+  .valueDisplay {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .slider::-webkit-slider-thumb {
+    width: var(--spacing-smm);
+    height: var(--spacing-smm);
+  }
+
+  .tenureGroup {
+    gap: var(--spacing-sm);
+  }
+
+  .tenureBtn {
+    font-size: 1rem;
+    padding: var(--spacing-sm);
+    min-width: 100px;
+  }
+
+  .customDurationWrapper {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .resultPanel {
+    padding: var(--spacing-md) var(--spacing-mdm); /* Restores massive padding */
+  }
+
+  .emiLabel {
+    font-size: 1.1rem;
+  }
+
+  .emiValue {
+    font-size: 2.5rem;
+  }
+
+  .summaryLabel {
+    font-size: 1rem;
+  }
+
+  .summaryVal {
+    font-size: 1.5rem;
+  }
+
+  .applyBtn {
+    width: fit-content; /* Shrinks back to natural width on desktop */
+    font-size: 1.1rem;
+    margin-top: auto; 
+  }
+
+  .scheduleHeader {
+    font-size: 1.5rem;
+    text-align: left; /* Restores left alignment */
+  }
+
+  .table {
+    font-size: 1rem;
+  }
+  
+  .table th {
+    font-size: 1rem;
+  }
+  
+  .monthRow {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    grid-template-columns: 1.4fr 1fr; /* Triggers the 60% / 40% side-by-side view */
+  }
 }

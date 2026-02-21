@@ -241,44 +241,46 @@ export default function EMICalculator() {
           {calculation.schedule.length > 0 && (
             <div className={styles.scheduleSection}>
                 <h3 className={styles.scheduleHeader}>Loan Repayment Schedule</h3>
-                <table className={styles.table}>
-                    <thead>
-                        <tr>
-                            <th style={{width:'20%'}}>Year / Month</th>
-                            <th style={{width:'20%'}}>Principal Paid</th>
-                            <th style={{width:'20%'}}>Interest Charged</th>
-                            <th style={{width:'20%'}}>Total Payment</th>
-                            <th style={{width:'20%'}}>Balance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {calculation.schedule.map((yearData) => (
-                            <Fragment key={yearData.year}>
-                                <tr key={yearData.year} className={styles.yearRow} onClick={() => toggleYear(yearData.year)}>
-                                    <td className={styles.yearCell}>
-                                        <span className={`${styles.toggleIcon} ${expandedYears[yearData.year] ? styles.rotated : ''}`}>
-                                            <Image src="/caret.svg" alt="Caret Icon" width={24} height={24} />
-                                        </span>
-                                        {yearData.year}
-                                    </td>
-                                    <td style={{fontWeight:'bold'}}>{formatCurrency(yearData.totalPrincipal)}</td>
-                                    <td style={{fontWeight:'bold'}}>{formatCurrency(yearData.totalInterest)}</td>
-                                    <td style={{fontWeight:'bold'}}>{formatCurrency(yearData.totalPayment)}</td>
-                                    <td style={{fontWeight:'bold'}}>{formatCurrency(yearData.endBalance)}</td>
-                                </tr>
-                                {expandedYears[yearData.year] && yearData.rows.map((row, idx) => (
-                                    <tr key={`${yearData.year}-${idx}`} className={styles.monthRow}>
-                                        <td>{row.month}</td>
-                                        <td>{formatCurrency(row.principal)}</td>
-                                        <td>{formatCurrency(row.interest)}</td>
-                                        <td>{formatCurrency(row.total)}</td>
-                                        <td>{formatCurrency(row.balance)}</td>
+                <div className={styles.tableWrapper}>
+                    <table className={styles.table}>
+                        <thead>
+                            <tr>
+                                <th style={{width:'20%'}}>Year / Month</th>
+                                <th style={{width:'20%'}}>Principal Paid</th>
+                                <th style={{width:'20%'}}>Interest Charged</th>
+                                <th style={{width:'20%'}}>Total Payment</th>
+                                <th style={{width:'20%'}}>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {calculation.schedule.map((yearData) => (
+                                <Fragment key={yearData.year}>
+                                    <tr key={yearData.year} className={styles.yearRow} onClick={() => toggleYear(yearData.year)}>
+                                        <td className={styles.yearCell}>
+                                            <span className={`${styles.toggleIcon} ${expandedYears[yearData.year] ? styles.rotated : ''}`}>
+                                                <Image src="/caret.svg" alt="Caret Icon" width={24} height={24} />
+                                            </span>
+                                            {yearData.year}
+                                        </td>
+                                        <td style={{fontWeight:'bold'}}>{formatCurrency(yearData.totalPrincipal)}</td>
+                                        <td style={{fontWeight:'bold'}}>{formatCurrency(yearData.totalInterest)}</td>
+                                        <td style={{fontWeight:'bold'}}>{formatCurrency(yearData.totalPayment)}</td>
+                                        <td style={{fontWeight:'bold'}}>{formatCurrency(yearData.endBalance)}</td>
                                     </tr>
-                                ))}
-                            </Fragment>
-                        ))}
-                    </tbody>
-                </table>
+                                    {expandedYears[yearData.year] && yearData.rows.map((row, idx) => (
+                                        <tr key={`${yearData.year}-${idx}`} className={styles.monthRow}>
+                                            <td>{row.month}</td>
+                                            <td>{formatCurrency(row.principal)}</td>
+                                            <td>{formatCurrency(row.interest)}</td>
+                                            <td>{formatCurrency(row.total)}</td>
+                                            <td>{formatCurrency(row.balance)}</td>
+                                        </tr>
+                                    ))}
+                                </Fragment>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
           )}
         <div className={styles.disclaimer}>
