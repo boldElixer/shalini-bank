@@ -1,0 +1,51 @@
+.scrollWrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scrollTopBtn {
+  background-color: var(--color-primary-blue);
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.scrollTopBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.scrollTopBtn:hover {
+  background-color: var(--color-primary-red);
+  transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .scrollWrapper {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .scrollTopBtn {
+    width: 50px; /* Larger hit area for mobile thumbs */
+    height: 50px;
+    opacity: 0.9; /* Slightly transparent on mobile so it doesn't block content */
+  }
+}
