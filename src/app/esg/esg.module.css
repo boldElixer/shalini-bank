@@ -5,36 +5,69 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* --- Section Utilities --- */
+/* --- Section Utilities (Mobile First) --- */
 .section {
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-md) 0; /* Reduced padding for mobile */
 }
 
 .sectionTitle {
-  font-size: 2rem;
+  font-size: 1.8rem; /* Scaled down */
   font-weight: var(--semibold);
   color: var(--color-primary-blue);
   margin-bottom: var(--spacing-md);
   text-align: center;
+  line-height: 1.2;
+}
+
+/* --- Initiative Cards (Hero & Paperless) --- */
+.initiativeCard {
+  display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  text-align: left;
+}
+
+.heroTitle {
+  font-size: 2.2rem; /* Scaled down */
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.2;
+}
+
+.initiativeContent h3 {
+  font-size: 1.8rem; /* Scaled down */
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.initiativeContent p {
+  margin-bottom: var(--spacing-xs);
+  font-size: 1rem;
+  color: var(--color-text-light);
+  text-align: justify;
+}
+
+.fluidImage {
+  width: 100%;
+  height: auto;
+  max-width: 619px; /* Prevents blowing up past original resolution */
 }
 
 /* --- Vision & Philosophy Grid --- */
 .philosophyGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-mdm);
+  gap: var(--spacing-md);
   margin: var(--spacing-sm) 0;
-}
-
-@media (min-width: 768px) {
-  .philosophyGrid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .card {
   background: var(--color-primary-blue-light);
-  padding: var(--spacing-md) var(--spacing-mdm);
+  padding: var(--spacing-md);
   border-radius: var(--radius-card);
 }
 
@@ -42,12 +75,12 @@
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
 }
 
 .cardTitle h3 {
   color: var(--color-primary-blue);
-  font-size: 2rem;
+  font-size: 1.5rem; /* Scaled down */
   font-weight: var(--semibold);
 }
 
@@ -60,36 +93,77 @@
 
 /* --- UN Sustainable Development Goals (SDG) --- */
 .sdgSection {
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-md) 0;
 }
 
 .sdgGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on phones to ensure they fit */
   place-items: center;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
   margin-top: var(--spacing-md);
 }
 
-/* --- Paper Consumption Initiative --- */
-.initiativeCard {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-lg);
+.sdgImage {
+  width: 100%;
+  max-width: 120px; /* Slight scale down so 2 of them fit comfortably side-by-side */
+  height: auto;
 }
 
-.initiativeContent h3 {
-  font-size: 2rem;
-  color: var(--color-primary-blue);
-  font-weight: var(--semibold);
-  margin-bottom: var(--spacing-sm);
-}
 
-.initiativeContent p {
-  margin-bottom: var(--spacing-xs);
-  font-size: 1.1rem;
-  color: var(--color-text-light);
-  text-align: justify;
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .initiativeCard {
+    flex-direction: row; /* Restores side-by-side layout */
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    text-align: left; /* Restores left alignment */
+  }
+
+  .heroTitle {
+    font-size: 2.8rem; /* Restores original massive size */
+  }
+
+  .initiativeContent h3 {
+    font-size: 2rem;
+  }
+
+  .initiativeContent p {
+    font-size: 1.1rem;
+  }
+
+  .philosophyGrid {
+    grid-template-columns: 1fr 1fr; /* Restores 2-column layout */
+    gap: var(--spacing-mdm);
+  }
+
+  .card {
+    padding: var(--spacing-md) var(--spacing-mdm);
+  }
+
+  .cardTitle h3 {
+    font-size: 2rem;
+  }
+
+  .sdgSection {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .sdgGrid {
+    /* Restores natural row layout for larger screens */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .sdgImage {
+    max-width: 150px; /* Restores original 150px size */
+  }
 }

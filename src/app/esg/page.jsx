@@ -19,7 +19,7 @@ export default function ESGPage() {
             <section className={styles.section}>
                 <div className={styles.initiativeCard}>
                     <div className={styles.initiativeContent}>
-                        <h3 style={{fontSize: '2.8rem'}}>Being Responsible, Being Sustainable</h3>
+                        <h3 className={styles.heroTitle}>Being Responsible, Being Sustainable</h3>
                         <p>Driving sustainable finance with purpose, our ESG commitment puts people, planet, and principles at the heart of everything we do. We support responsible growth by financing greener initiatives, empowering communities, and upholding the highest standards of governance—building long-term value for our customers and a more resilient future for all.</p>
                     </div>
                     <Image 
@@ -27,6 +27,7 @@ export default function ESGPage() {
                         alt="Environmental, Social & Governance"
                         width={619}
                         height={575}
+                        className={styles.fluidImage} /* <-- Added fluid scaling */
                     />
                 </div>
             </section>
@@ -64,12 +65,12 @@ export default function ESGPage() {
           <div className={styles.container}>
             <h2 className={styles.sectionTitle}>Contributing to UN Sustainable Development Goals</h2>
             <div className={styles.sdgGrid}>
-                <Image src="/goals/1.png" alt="No Poverty" width={150} height={150} />
-                <Image src="/goals/2.png" alt="Good Health" width={150} height={150} />
-                <Image src="/goals/3.png" alt="Quality Education" width={150} height={150} />
-                <Image src="/goals/4.png" alt="Economic Growth" width={150} height={150} />
-                <Image src="/goals/5.png" alt="Industry, Innovation & Infrastructure" width={150} height={150} />
-                <Image src="/goals/6.png" alt="Reduced Inequalities" width={150} height={150} />
+                <Image src="/goals/1.png" alt="No Poverty" width={150} height={150} className={styles.sdgImage} />
+                <Image src="/goals/2.png" alt="Good Health" width={150} height={150} className={styles.sdgImage} />
+                <Image src="/goals/3.png" alt="Quality Education" width={150} height={150} className={styles.sdgImage} />
+                <Image src="/goals/4.png" alt="Economic Growth" width={150} height={150} className={styles.sdgImage} />
+                <Image src="/goals/5.png" alt="Industry, Innovation & Infrastructure" width={150} height={150} className={styles.sdgImage} />
+                <Image src="/goals/6.png" alt="Reduced Inequalities" width={150} height={150} className={styles.sdgImage} />
             </div>
           </div>
         </section>
@@ -83,6 +84,7 @@ export default function ESGPage() {
                         alt="Paperless Banking"
                         width={619}
                         height={529}
+                        className={styles.fluidImage} /* <-- Added fluid scaling */
                     />
                     <div className={styles.initiativeContent}>
                         <h3>Minimising Paper Consumption</h3>
