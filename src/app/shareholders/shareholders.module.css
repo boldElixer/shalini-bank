@@ -5,30 +5,71 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* --- Section Utilities --- */
+/* --- Section Utilities (Mobile First) --- */
 .section {
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-md) 0; /* Reduced padding for mobile */
+  text-align: left;
 }
 
 .section h1 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Scaled down from 2.5rem */
   font-weight: var(--semibold);
   color: var(--color-primary-blue);
   margin-bottom: var(--spacing-sm);
 }
 
 .section p {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Scaled down from 1.1rem */
   color: var(--color-text-light);
-  line-height: 1.5;
-  text-align: justify;
+  line-height: 1.6;
+  text-align: justify; /* Maintain clean text blocks */
+  margin-bottom: var(--spacing-sm);
 }
 
+/* --- Button Styling (Mobile First) --- */
 .DownloadBtn {
-    font-weight: var(--semibold);
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-primary-red);
+  color: var(--color-bg-white);
+  font-weight: var(--semibold);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+  width: 100%; /* Full width on mobile for easier tapping */
+  transition: background-color 0.2s;
 }
 
 .DownloadBtn:hover {
-    cursor: pointer;
-    color: var(--color-primary-blue);
+  cursor: pointer;
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .section {
+    padding: var(--spacing-lg) 0;
+    text-align: left; /* Restore left alignment for desktop */
+  }
+
+  .section h1 {
+    font-size: 2.5rem; /* Restore original size */
+  }
+
+  .section p {
+    font-size: 1.1rem; /* Restore original size */
+  }
+
+  .DownloadBtn {
+    width: fit-content; /* Reset button width to natural content size */
+    background-color: transparent; /* Maintain original "link-style" look for desktop */
+    color: var(--color-text-dark);
+    padding: 0;
+  }
+  
+  .DownloadBtn:hover {
+      background-color: transparent;
+      color: var(--color-primary-blue);
+  }
 }

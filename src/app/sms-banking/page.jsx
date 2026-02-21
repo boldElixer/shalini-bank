@@ -55,6 +55,7 @@ export default function SMSPage() {
                         alt="SMS Alerts for Banking Transactions"
                         width={486}
                         height={451.45}
+                        className={styles.heroImage}
                     />
                 </div>
             </div>
