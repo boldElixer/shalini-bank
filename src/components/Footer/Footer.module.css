@@ -60,3 +60,34 @@
   font-weight: var(--semibold);
   font-size: 1rem;
 }
+
+/* Replaced inline styles */
+.bottomLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .installApp {
+    flex-direction: column; /* Stacks the app badges vertically */
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .appBadges {
+    flex-wrap: wrap; /* Allows text and images to wrap if needed */
+  }
+
+  .bottomBar {
+    flex-direction: column; /* Stacks the bottom links and copyright */
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .bottomLinks {
+    justify-content: center; /* Centers the sitemap/policy links */
+  }
+}
