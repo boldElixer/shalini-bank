@@ -14,6 +14,7 @@ export default function FeatureSection({ title, points, buttonLink, buttonText, 
               alt={title}
               width={620}
               height={550}
+              className={styles.featureImage}
             />
           </div>
 

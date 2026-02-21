@@ -1,42 +1,107 @@
+/* --- Mobile First Base Styles --- */
+
 .wrapper {
   max-width: var(--container-width);
-  margin: var(--spacing-xl) auto;
+  margin: var(--spacing-md) auto; /* Reduced margin for mobile */
   padding: 0 var(--spacing-sm);
 }
+
 .card {
   background-color: var(--color-primary-blue);
   color: white;
-  padding: var(--spacing-xl);
+  padding: var(--spacing-md); /* Reduced padding for mobile */
   border-radius: var(--radius-card);
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-md); /* Reduced gap */
 }
-@media (min-width: 900px) {
-  .grid { grid-template-columns: 1fr 2fr; }
-}
-.content {
-  padding-right: var(--spacing-lg);
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
 
+.content {
+  /* On mobile, place border below the text instead of to the right */
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.content h2 { font-size: 2.5rem; margin-bottom: var(--spacing-sm); }
-.content p { opacity: 0.8; max-width: 30ch; }
+
+.content h2 { 
+  font-size: 2rem; /* Slightly smaller font for mobile */
+  margin-bottom: var(--spacing-sm); 
+  line-height: 1.2;
+}
+
+.content p { 
+  opacity: 0.8; 
+  max-width: 100%; /* Let text flow freely on mobile */
+}
+
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: var(--spacing-md) var(--spacing-xl);
+  /* Force exactly 2 columns on mobile */
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md) var(--spacing-xs); /* Tighter horizontal gap for mobile */
 }
+
 .featureItem {
-  display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 1rem;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; /* Center align the icons on mobile */
+  justify-content: flex-start; 
+  gap: 0.75rem;
+  text-align: center; /* Center the text beneath the icon */
 }
+
 .featureIcon { 
   border-radius: 50%;
-  /* align this image to left like the title */
   object-fit: contain;
-  align-self: flex-start;
-  
 }
-.featureTitle { font-weight: var(--bold); font-size: 1.2rem; }
+
+.featureTitle { 
+  font-weight: var(--bold); 
+  font-size: 1.15rem; /* Marginally smaller title for mobile */
+  line-height: 1.2;
+}
+
+
+/* --- Desktop Overrides --- */
+@media (min-width: 900px) {
+  .wrapper {
+    margin: var(--spacing-xl) auto; /* Restore large spacing */
+  }
+
+  .card {
+    padding: var(--spacing-xl); /* Restore large padding */
+  }
+
+  .grid { 
+    grid-template-columns: 1fr 2fr; 
+    gap: var(--spacing-xl);
+  }
+
+  .content {
+    /* Switch the border back to the right side for desktop */
+    padding-bottom: 0;
+    border-bottom: none;
+    padding-right: var(--spacing-lg);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .content h2 { 
+    font-size: 2.5rem; /* Restore large title */
+  }
+
+  .content p { 
+    max-width: 30ch; /* Restrict line length for readability on desktop */
+  }
+
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-md) var(--spacing-xl);
+  }
+
+  .featureTitle {
+    align-items: flex-start;
+    font-size: 1.2rem;
+  }
+}
