@@ -1,5 +1,6 @@
+/* Container Utility */
 .wrapper {
-  padding-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg); /* Slightly reduced for mobile */
 }
 
 .container {
@@ -8,31 +9,33 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* --- Header --- */
+/* --- Header (Mobile First) --- */
 .header {
   padding: var(--spacing-md) 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem; /* Scaled down for mobile */
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
 }
 
 .subtitle {
   color: var(--color-text-light);
-  font-size: 1.1rem;
+  font-size: 1rem; /* Scaled down */
+  margin-top: var(--spacing-xs);
 }
 
-/* --- Level Containers --- */
+/* --- Level Containers (Mobile First) --- */
 .levelSection {
   background: var(--color-bg-white);
   border-radius: var(--radius-card);
-  padding: var(--spacing-mdm);
-  margin-bottom: var(--spacing-mdm);
-  box-shadow: 0 0 var(--spacing-md) var(--color-bg-light-gray);
+  padding: var(--spacing-md) var(--spacing-sm); /* Reduced padding for mobile */
+  margin-bottom: var(--spacing-md);
+  box-shadow: 0 0 var(--spacing-sm) var(--color-bg-light-gray);
   position: relative;
+  text-align: center; /* Center aligns text inside cards on mobile */
 }
 
 .levelBadge {
@@ -42,34 +45,30 @@
   padding: var(--spacing-xs) var(--spacing-md);
   border-radius: var(--radius-card);
   font-weight: var(--semibold);
-  font-size: 1rem;
-  margin-bottom: var(--spacing-xs);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-sm);
 }
 
 .levelTitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Scaled down */
   color: var(--color-text-dark);
   margin-bottom: var(--spacing-xs);
   font-weight: var(--semibold);
+  line-height: 1.3;
 }
 
 .levelDesc {
   color: var(--color-text-light);
   margin-bottom: var(--spacing-md);
+  font-size: 0.95rem;
 }
 
 
+/* --- Level 1 Grid & OR Dividers (Mobile First) --- */
 .l1Grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--spacing-md);
-}
-
-@media (min-width: 768px) {
-  .l1Grid {
-    grid-template-columns: 1fr 1px 1fr 1px 1fr; /* Columns with Separators */
-    align-items: center;
-  }
+  gap: var(--spacing-sm); /* Tighter gap since we have horizontal dividers now */
 }
 
 .channelBox {
@@ -83,52 +82,55 @@
 .channelLabel {
   font-weight: var(--semibold);
   color: var(--color-primary-blue);
-  font-size: 1.2rem;
+  font-size: 1.1rem; /* Scaled down */
 }
 
 .formBtn {
+  display: inline-block;
   background-color: var(--color-primary-red);
   color: var(--color-bg-white);
-  padding: var(--spacing-xs) var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-card);
   font-weight: var(--medium);
   transition: opacity 0.2s;
+  width: 100%; /* Stretches button on mobile for better tapping */
+  text-align: center;
+  margin-top: var(--spacing-xs);
 }
 
 .formBtn:hover {
   font-weight: var(--semibold);
 }
 
-/* Vertical Divider for Desktop */
+/* Transforms the hidden desktop vertical divider into a horizontal one on mobile */
 .verticalDivider {
-  display: none;
-}
-@media (min-width: 768px) {
-  .verticalDivider {
-    display: block;
-    width: 1px;
-    height: 100%;
-    background-color: var(--color-bg-light-gray);
-    position: relative;
-  }
-  .orText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: var(--spacing-sm);
-    color: var(--color-text-light);
-    font-size: 0.8rem;
-    font-weight: var(--medium);
-  }
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-bg-light-gray);
+  position: relative;
+  margin: var(--spacing-sm) 0;
 }
 
-/* --- Level 2 & 3: Officer Cards --- */
+.orText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 0 var(--spacing-sm);
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  font-weight: var(--medium);
+}
+
+
+/* --- Level 2 & 3: Officer Cards (Mobile First) --- */
 .officerCard {
   background: var(--color-primary-blue-light);
   border-radius: var(--radius-card);
-  padding: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-sm); /* Reduced padding */
+  text-align: left; /* Keep officer details left-aligned for readability */
 }
 
 .officerDetails {
@@ -137,15 +139,9 @@
   gap: var(--spacing-sm);
 }
 
-@media (min-width: 768px) {
-  .officerDetails {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .detailRow {
   margin-bottom: var(--spacing-xs);
-  font-size: 1rem;
+  font-size: 0.95rem; /* Scaled down */
   color: var(--color-text-dark);
 }
 
@@ -157,16 +153,102 @@
 .postTitle {
   color: var(--color-primary-blue);
   font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 0.2rem;
+  font-size: 1.3rem; /* Scaled down */
+  margin-bottom: 0.5rem;
   display: block;
+  text-align: center; /* Center just the title on mobile */
 }
 
 .linkBox {
-    margin-top: var(--spacing-sm);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  margin-top: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretches the download buttons */
+  justify-content: flex-start;
+  gap: var(--spacing-sm);
+}
+
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .header {
+    text-align: left; /* Restores left alignment */
+  }
+
+  .title {
+    font-size: 3rem; /* Restores large title */
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .levelSection {
+    padding: var(--spacing-mdm); /* Restores generous padding */
+    margin-bottom: var(--spacing-mdm);
+    text-align: left; /* Restores left alignment */
+  }
+
+  .levelBadge {
+    font-size: 1rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .levelTitle {
+    font-size: 1.5rem;
+  }
+
+  .levelDesc {
+    font-size: 1rem;
+  }
+
+  .l1Grid {
+    grid-template-columns: 1fr 1px 1fr 1px 1fr; /* Columns with Separators */
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .channelLabel {
+    font-size: 1.2rem;
+  }
+
+  .formBtn {
+    width: auto; /* Shrinks button back to normal width */
+    padding: var(--spacing-xs) var(--spacing-md);
+    margin-top: 0;
+  }
+
+  /* Switches the horizontal divider back to a vertical one */
+  .verticalDivider {
+    width: 1px;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .orText {
+    padding: var(--spacing-sm);
+    font-size: 0.8rem;
+  }
+
+  .officerCard {
+    padding: var(--spacing-md); /* Restores padding */
+  }
+
+  .officerDetails {
+    grid-template-columns: 1fr 1fr; /* Restores side-by-side details */
+  }
+
+  .detailRow {
+    font-size: 1rem;
+  }
+
+  .postTitle {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .linkBox {
+    align-items: flex-start; /* Stops buttons from stretching */
     gap: var(--spacing-xs);
+  }
 }

@@ -72,18 +72,18 @@ export default function GrievancePage() {
             <span className={styles.levelBadge}>Level 2</span>
             <h2 className={styles.levelTitle}>Not satisfied with the response?</h2>
             <p className={styles.levelDesc}>
-              You may take up the matter further with the <strong>Branch Manager</strong>, at our Head Office.
+              You may take up the matter further with the <b>Branch Manager</b>, at our Head Office.
             </p>
 
             <div className={styles.officerCard}>
                 <span className={styles.postTitle}>Branch Manager</span>
               <div className={styles.officerDetails}>
                 <div>
-                  <div className={styles.detailRow}><strong>Name:</strong> Neha Sudesh Wedhikar</div>
-                  <div className={styles.detailRow}><strong>Ph No:</strong> 022-23086805/23093179</div>
+                  <div className={styles.detailRow}><b>Name:</b> Neha Sudesh Wedhikar</div>
+                  <div className={styles.detailRow}><b>Ph No:</b> 022-23086805/23093179</div>
                 </div>
                 <div>
-                   <div className={styles.detailRow}><strong>Address:</strong> 395, N M Joshi Marg, Chinchpokli, Mumbai 400011</div>
+                   <div className={styles.detailRow}><b>Address:</b> 395, N M Joshi Marg, Chinchpokli, Mumbai 400011</div>
                    <div className={styles.detailRow}>
                      (Monday - Saturday: 10am to 5pm, excluding holidays)
                    </div>
@@ -136,7 +136,7 @@ export default function GrievancePage() {
             <div className={styles.officerCard} style={{marginTop: 'var(--spacing-md)'}}>
               <div className={styles.officerDetails}>
                 <div>
-                  <div className={styles.detailRow}><strong>Complaints can be sent in physical mode to:</strong></div>
+                  <div className={styles.detailRow}><b>Complaints can be sent in physical mode to:</b></div>
                   <div className={styles.detailRow}>Centralised Receipt and Processing Centre(CRPC)<br/>Reserve Bank of India,<br/>4th Floor, Sector 17,<br/>Chandigarh - 160017</div>
                 </div>
                 <div className={styles.linkBox}>
