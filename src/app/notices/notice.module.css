@@ -5,51 +5,56 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* --- Section Utilities --- */
+/* --- Section Utilities (Mobile First) --- */
 .section {
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-md) 0; /* Reduced padding for mobile */
 }
 
 .section h1 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Scaled down for mobile */
   font-weight: var(--semibold);
   color: var(--color-primary-blue);
   margin-bottom: var(--spacing-sm);
 }
 
 .section p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-text-light);
   line-height: 1.5;
   text-align: justify;
 }
 
+/* --- Table Styles (Mobile First) --- */
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto; /* Handles horizontal scrolling safely for rounded corners */
+  margin-top: var(--spacing-sm);
+}
 
 .resultsTable {
-  overflow-x: auto; /* Responsive scroll for mobile */
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
+  min-width: 450px; /* Prevents text from squishing too much on tiny phones */
   margin: 0 auto;
-  font-size: 1rem;
-  margin-top: var(--spacing-sm);
+  font-size: 0.9rem; /* Slightly smaller text for mobile */
   border-radius: var(--radius-card);
   border: 1px solid var(--color-bg-light-gray);
 }
 
 .resultsTable th {
   text-align: left;
-  padding: var(--spacing-xs);
+  padding: var(--spacing-sm); /* Larger touch target for mobile */
   background-color: var(--color-bg-light-gray);
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 /* Table Body */
 .resultsTable td {
   font-size: 0.9rem;
-  padding: var(--spacing-xs);
+  padding: var(--spacing-sm); /* Larger touch target */
   vertical-align: middle;
   color: var(--color-text-dark);
   border-bottom: 1px solid var(--color-bg-light-gray);
@@ -63,11 +68,34 @@
   background-color: #fafafa;
 }
 
+/* Consistent link styling */
 .DownloadBtn {
-    font-weight: var(--semibold);
+  font-weight: var(--semibold);
+  color: var(--color-primary-blue);
 }
 
 .DownloadBtn:hover {
-    cursor: pointer;
-    color: var(--color-primary-blue);
+  cursor: pointer;
+  color: var(--color-primary-red);
+}
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .section h1 {
+    font-size: 2.5rem; /* Restored original size */
+  }
+
+  .resultsTable {
+    font-size: 1rem; /* Restored original size */
+  }
+
+  .resultsTable th,
+  .resultsTable td {
+    padding: var(--spacing-xs); /* Restored original tighter padding */
+    font-size: 1rem;
+  }
 }

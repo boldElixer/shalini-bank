@@ -18,27 +18,29 @@ export default function AnnualReportPage() {
         <div className={styles.container}>
             <section className={styles.section}>
                 <h1>Notices</h1>
-                <table className={styles.resultsTable}>
-                    <thead>
-                        <tr>
-                            <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Date</th>
-                            <th>Notice</th>
-                            <th style={{borderTopRightRadius: 'var(--radius-card)'}}>View</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>16th Sep, 2025</td>
-                            <td>43rd Annual General Meeting(AGM) notice</td>
-                            <td><Link href="/notices/AGM_2025.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
-                        </tr>
-                        <tr>
-                            <td>27th Sep, 2024</td>
-                            <td>42nd Annual General Meeting(AGM) notice</td>
-                            <td><Link href="/notices/AGM_2024.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className={styles.tableWrapper}>
+                    <table className={styles.resultsTable}>
+                        <thead>
+                            <tr>
+                                <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Date</th>
+                                <th>Notice</th>
+                                <th style={{borderTopRightRadius: 'var(--radius-card)'}}>View</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>16th Sep, 2025</td>
+                                <td>43rd Annual General Meeting(AGM) notice</td>
+                                <td><Link href="/notices/AGM_2025.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            </tr>
+                            <tr>
+                                <td>27th Sep, 2024</td>
+                                <td>42nd Annual General Meeting(AGM) notice</td>
+                                <td><Link href="/notices/AGM_2024.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
 
