@@ -87,6 +87,7 @@ export default function MobilePage() {
                         alt="Mobile Banking Services"
                         width={564.55}
                         height={344}
+                        className={styles.heroImage}
                     />
                 </div>
             </div>
@@ -100,41 +101,43 @@ export default function MobilePage() {
                 <p><strong>Safe & Secure</strong> - EMV chip-enabled card for enhanced transaction security</p>
                 <p><strong>Everyday Banking Made Simple</strong> - A reliable card for your daily banking needs</p>
              </div>
-             <table className={styles.resultsTable} id="atmChargesTable">
-                <thead>
-                    <tr>
-                        <th style={{borderTopLeftRadius: 'var(--radius-card)', borderTopRightRadius: 'var(--radius-card)', textAlign: 'center', fontSize: '1.5rem'}} colSpan={2}>
-                            ATM Charges w.e.f. 01/10/2025
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>New ATM Card issue</td>
-                        <td>₹150 + GST</td>
-                    </tr>
-                    <tr>
-                        <td>Duplicate ATM Card issue</td>
-                        <td>₹300 + GST</td>
-                    </tr>
-                    <tr>
-                        <td>Repin Generation Charges</td>
-                        <td>₹100 + GST</td>
-                    </tr>
-                    <tr>
-                        <td>ATM Maintenance Charges</td>
-                        <td>₹150 + GST</td>
-                    </tr>
-                    <tr>
-                        <td>ATM Financial Transaction Charges (1<sup>st</sup> Three Transactions Free)</td>
-                        <td>₹25 + GST</td>
-                    </tr>
-                    <tr>
-                        <td>ATM non-Financial Transaction Charges</td>
-                        <td>₹10 + GST</td>
-                    </tr>
-                </tbody>
-            </table>
+             <div className={styles.tableWrapper}>
+              <table className={styles.resultsTable} id="atmChargesTable">
+                  <thead>
+                      <tr>
+                          <th style={{borderTopLeftRadius: 'var(--radius-card)', borderTopRightRadius: 'var(--radius-card)', textAlign: 'center'}} colSpan={2}>
+                              ATM Charges w.e.f. 01/10/2025
+                          </th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>New ATM Card issue</td>
+                          <td>₹150 + GST</td>
+                      </tr>
+                      <tr>
+                          <td>Duplicate ATM Card issue</td>
+                          <td>₹300 + GST</td>
+                      </tr>
+                      <tr>
+                          <td>Repin Generation Charges</td>
+                          <td>₹100 + GST</td>
+                      </tr>
+                      <tr>
+                          <td>ATM Maintenance Charges</td>
+                          <td>₹150 + GST</td>
+                      </tr>
+                      <tr>
+                          <td>ATM Financial Transaction Charges (1<sup>st</sup> Three Transactions Free)</td>
+                          <td>₹25 + GST</td>
+                      </tr>
+                      <tr>
+                          <td>ATM non-Financial Transaction Charges</td>
+                          <td>₹10 + GST</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
         </section>
          <section className={styles.section}>
             <h2 className={styles.faqTitle}>Frequently Asked Questions (FAQs)</h2>

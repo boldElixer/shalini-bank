@@ -22,7 +22,7 @@
 }
 
 .textWrapper {
-  text-align: center; /* Centers the text on mobile */
+  text-align: left; /* Centers the text on mobile */
 }
 
 .textWrapper h1 {

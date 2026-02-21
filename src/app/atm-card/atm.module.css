@@ -5,46 +5,45 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* --- Hero Section --- */
+/* --- Hero Section (Mobile First) --- */
 .heroContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--spacing-lg);
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 var(--spacing-sm);
+  display: flex;
+  flex-direction: column; /* Stacks text and image vertically */
+  align-items: center;
+  gap: var(--spacing-md);
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
 }
+
 .hero {
   padding: var(--spacing-md) 0;
-  text-align: justify;
+  text-align: center; /* Center aligns text on mobile */
+}
+
+.textWrapper {
+  text-align: left; /* Centers the button and text on mobile */
 }
 
 .textWrapper h1 {
-  font-size: 3rem;
+  font-size: 2rem; /* Scaled down for mobile */
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
-  text-align: left;
-}
-
-.faqTitle {
-    font-size: 2rem;
-    color: var(--color-primary-blue);
-    font-weight: var(--semibold);
-    text-align: left;
+  margin-bottom: var(--spacing-sm);
 }
 
 .textWrapper p {
   color: var(--color-text-light);
-  max-width: 60ch;
-  margin: 0 auto;
-  font-size: 1.1rem;
+  max-width: 100%;
+  margin: 0 auto; /* Centers paragraph block on mobile */
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .ctaButton {
   display: inline-block;
-  margin-top: var(--spacing-sm);
-  padding: var(--spacing-xs) var(--spacing-md);
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-primary-red);
   color: var(--color-bg-white);
   font-weight: var(--medium);
@@ -52,85 +51,109 @@
   text-decoration: none;
 }
 
+/* Fluid Hero Image */
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 564px; /* Prevents blowing up past original size */
+  height: auto;
+}
+
+
+/* --- Content Sections (Mobile First) --- */
 .section {
-  padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+  /* ADDED: var(--spacing-sm) to the left and right padding to align with the header/hero */
+  padding: var(--spacing-md) var(--spacing-sm); 
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-mdm);
+  gap: var(--spacing-md);
   max-width: var(--container-width);
   margin: 0 auto;
-  margin-bottom: var(--spacing-mdm);
 }
 
 .mvCard {
   background: var(--color-primary-blue-light);
-  padding: var(--spacing-md) var(--spacing-mdm);
+  padding: var(--spacing-md); /* Reduced padding */
   border-radius: var(--radius-card);
 }
 
 .mvCard h3 {
   color: var(--color-primary-blue);
-  margin-bottom: var(--spacing-xs);
-  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.5rem; /* Scaled down */
   font-weight: var(--semibold);
 }
 
 .mvCard p {
   color: var(--color-text-light);
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
 }
 
+/* --- Table Styles (Mobile First) --- */
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto; /* Handles horizontal scrolling safely */
+}
 
 .resultsTable {
-  overflow-x: auto; /* Responsive scroll for mobile */
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: 0.85rem; /* Slightly smaller text so it fits beautifully on phones */
   border-radius: var(--radius-card);
   border: 1px solid var(--color-bg-light-gray);
 }
 
 .resultsTable th {
   text-align: left;
-  padding: var(--spacing-xs);
+  padding: var(--spacing-xs); /* Tighter padding to save horizontal space */
   background-color: var(--color-bg-light-gray);
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
-  font-size: 1.2rem;
+  font-size: 0.95rem;
 }
 
-/* Table Body */
 .resultsTable td {
-  font-size: 1.05rem;
-  padding: var(--spacing-xs);
+  font-size: 0.85rem;
+  padding: var(--spacing-xs); /* Tighter padding to save horizontal space */
   vertical-align: middle;
   color: var(--color-text-dark);
   border-bottom: 1px solid var(--color-bg-light-gray);
+  word-break: break-word; /* Forces long text like "Transaction Charges" to wrap to the next line instead of stretching the table */
 }
 
 .resultsTable tr:last-child td {
   border-bottom: none;
 }
 
-
-.item:last-child {
-  border-bottom: none;
+/* --- FAQ Section (Mobile First) --- */
+.faqTitle {
+  font-size: 1.8rem; /* Scaled down */
+  color: var(--color-primary-blue);
+  font-weight: var(--semibold);
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
 }
 
 .questionBtn {
   width: 100%;
   text-align: left;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-sm);
   background: var(--color-bg-white);
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  column-gap: var(--spacing-sm);
+  column-gap: var(--spacing-xs);
   align-items: center;
   transition: background 0.2s;
   border-radius: var(--radius-card);
@@ -138,7 +161,7 @@
 }
 
 .open {
-    background-color: var(--color-bg-light-gray);
+  background-color: var(--color-bg-light-gray);
 }
 
 .questionBtn:hover {
@@ -146,7 +169,7 @@
 }
 
 .questionText {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Scaled down for mobile */
   font-weight: var(--semibold);
   color: var(--color-primary-blue);
 }
@@ -155,7 +178,6 @@
   transform: rotate(180deg);
 }
 
-/* Answer Section */
 .answerWrapper {
   max-height: 0;
   overflow: hidden;
@@ -164,13 +186,92 @@
 }
 
 .answerWrapper.open {
-  max-height: 100rem; /* Arbitrary large height */
+  max-height: 100rem; 
   transition: max-height 0.3s ease-in;
 }
 
 .answerContent {
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm);
   color: var(--color-text-dark);
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-align: justify;
+}
+
+
+/* --- Desktop Overrides --- */
+@media (min-width: 900px) {
+  .heroContainer {
+    flex-direction: row; /* Restores side-by-side layout */
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+  }
+
+  /* ADDED: Forces the entire left column (h1, p, button) to align left */
+  .hero, .textWrapper {
+    text-align: left;
+  }
+
+  .textWrapper h1 {
+    font-size: 3rem; /* Restores large font */
+    text-align: left;
+  }
+  
+  .faqTitle {
+    font-size: 2rem;
+    text-align: left; /* Aligns FAQ title left on desktop too */
+  }
+
+  .textWrapper p {
+    font-size: 1.1rem;
+    max-width: 60ch;
+    margin: 0; /* ADDED: Removes center auto margin to snap paragraph to the left edge */
+  }
+
+  .ctaButton {
+    padding: var(--spacing-xs) var(--spacing-md);
+  }
+
+  .section {
+    /* ADDED: Maintains side padding on desktop so it lines up flawlessly with the hero container */
+    padding: var(--spacing-md) var(--spacing-sm) var(--spacing-lg) var(--spacing-sm);
+    gap: var(--spacing-mdm);
+    margin-bottom: var(--spacing-mdm);
+  }
+
+  .mvCard {
+    padding: var(--spacing-md) var(--spacing-mdm);
+  }
+
+  .mvCard h3 {
+    font-size: 2rem;
+  }
+
+  .mvCard p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .resultsTable th {
+    font-size: 1.2rem;
+    padding: var(--spacing-xs);
+  }
+
+  .resultsTable td {
+    font-size: 1.05rem;
+    padding: var(--spacing-xs);
+  }
+  
+  .questionBtn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    column-gap: var(--spacing-sm);
+  }
+
+  .questionText {
+    font-size: 1.1rem;
+  }
+
+  .answerContent {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1rem;
+  }
 }
