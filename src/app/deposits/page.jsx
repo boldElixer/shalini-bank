@@ -76,6 +76,7 @@ export default function DepositPage() {
                         alt="Deposit Account SSB Bank"
                         width={486}
                         height={420}
+                        className={styles.heroImage}
                     />
                 </div>
             </div>
@@ -100,7 +101,8 @@ export default function DepositPage() {
                 <p>
                   At Shalini Sahakari Bank, your FD earns up to <strong>7.75% p.a. interest</strong>, compounded quarterly for both regular and senior citizen accounts.
                 </p>
-                <table className={styles.resultsTable}>
+                <div className={styles.tableWrapper}>
+                  <table className={styles.resultsTable}>
                     <thead>
                         <tr>
                             <th colSpan={5} style={{borderTopLeftRadius: 'var(--radius-card)', borderTopRightRadius: 'var(--radius-card)', color: 'var(--color-bg-white)', background: 'var(--color-primary-blue)', textAlign: 'center'}}>
@@ -126,7 +128,8 @@ export default function DepositPage() {
                         </tr>
                         ))}
                     </tbody>
-                </table>
+                  </table>
+                </div>
              </div>
         </section>
       </main>
