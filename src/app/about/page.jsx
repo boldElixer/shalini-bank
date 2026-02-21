@@ -30,6 +30,7 @@ export default function About() {
                         alt="About SSB Bank"
                         width={619}
                         height={575}
+                        className={styles.heroImage}
                     />
                 </div>
             </div>
