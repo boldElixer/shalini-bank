@@ -60,28 +60,30 @@ export default function UnclaimedDepositsPage() {
                     <button type="submit" className={styles.searchButton}>Search</button>
                 </form>
                 {filteredResults.length > 0 && (
-                <table className={styles.resultsTable}>
-                    <thead>
-                        <tr>
-                            <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Branch Code</th>
-                            <th>Account Type</th>
-                            <th>Account Number</th>
-                            <th>Customer Name</th>
-                            <th style={{borderTopRightRadius: 'var(--radius-card)'}}>Customer Address</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {filteredResults.map((item, index) => (
-                            <tr key={index}>
-                                <td>{item.branch_code}</td>
-                                <td>{item.account_type}</td>
-                                <td>{item.account_number}</td>
-                                <td>{item.customer_name}</td>
-                                <td>{item.customer_address}</td>
+                    <div className={styles.tableWrapper}>
+                    <table className={styles.resultsTable}>
+                        <thead>
+                            <tr>
+                                <th style={{borderTopLeftRadius: 'var(--radius-card)'}}>Branch Code</th>
+                                <th>Account Type</th>
+                                <th>Account Number</th>
+                                <th>Customer Name</th>
+                                <th style={{borderTopRightRadius: 'var(--radius-card)'}}>Customer Address</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>)}
+                        </thead>
+                        <tbody>
+                            {filteredResults.map((item, index) => (
+                                <tr key={index}>
+                                    <td>{item.branch_code}</td>
+                                    <td>{item.account_type}</td>
+                                    <td>{item.account_number}</td>
+                                    <td>{item.customer_name}</td>
+                                    <td>{item.customer_address}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>)}
                 {filteredResults.length === 0 && searchInput && searchClicked &&(
                     <p className={styles.noResults}>No records found for "{searchInput}"</p>
                 )}
