@@ -5,39 +5,45 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* --- Hero Section --- */
+/* --- Hero Section (Mobile First) --- */
 .heroContainer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack vertically on mobile */
+    justify-content: center;
     align-items: center;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
 }
+
 .hero {
   padding: var(--spacing-md) 0;
-  text-align: justify;
+}
+
+.textWrapper {
+  text-align: left;
 }
 
 .textWrapper h1 {
-  font-size: 3rem;
+  font-size: 2rem; /* Scaled down from 3rem */
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
-  text-align: left;
+  margin-bottom: var(--spacing-sm);
 }
 
 .textWrapper p {
   color: var(--color-text-light);
-  max-width: 60ch;
-  margin: 0 auto;
-  font-size: 1.1rem;
+  max-width: 100%;
+  margin: 0 auto var(--spacing-sm) auto;
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .ctaButton {
   display: inline-block;
   margin-top: var(--spacing-sm);
-  padding: var(--spacing-xs) var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-primary-blue);
   color: var(--color-bg-white);
   font-weight: var(--medium);
@@ -45,31 +51,83 @@
   text-decoration: none;
 }
 
+/* Fluid Image Styles */
+.imageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  max-width: 619px; /* Prevents image from blowing up past original size */
+}
+
+/* --- Content Sections (Mobile First) --- */
 .section {
-  padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+  padding: var(--spacing-md) var(--spacing-sm); /* Adjusted padding */
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-mdm);
+  gap: var(--spacing-md);
   max-width: var(--container-width);
   margin: 0 auto;
-  margin-bottom: var(--spacing-mdm);
+  margin-bottom: var(--spacing-md);
 }
 
 .mvCard {
   background: var(--color-primary-blue-light);
-  padding: var(--spacing-md) var(--spacing-mdm);
+  padding: var(--spacing-md); /* Reduced from spacing-mdm */
   border-radius: var(--radius-card);
 }
 
 .mvCard h3 {
   color: var(--color-primary-blue);
   margin-bottom: var(--spacing-sm);
-  font-size: 2rem;
+  font-size: 1.5rem; /* Scaled down from 2rem */
   font-weight: var(--semibold);
 }
 
 .mvCard p {
   color: var(--color-text-light);
-  font-size: 1.05rem;
+  font-size: 1rem;
   text-align: justify;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .heroContainer {
+    flex-direction: row; /* Restore side-by-side */
+    justify-content: space-between;
+    text-align: left;
+    gap: var(--spacing-lg);
+  }
+
+  .textWrapper {
+    text-align: left;
+  }
+
+  .textWrapper h1 {
+    font-size: 3rem; /* Restore original size */
+  }
+
+  .textWrapper p {
+    font-size: 1.1rem;
+    max-width: 60ch;
+  }
+
+  .section {
+    padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+    gap: var(--spacing-mdm);
+    margin-bottom: var(--spacing-mdm);
+  }
+
+  .mvCard {
+    padding: var(--spacing-md) var(--spacing-mdm);
+  }
+
+  .mvCard h3 {
+    font-size: 2rem;
+  }
 }
