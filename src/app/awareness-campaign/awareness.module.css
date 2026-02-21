@@ -5,46 +5,49 @@
   padding: 0 var(--spacing-sm);
 }
 
-/* --- Section Utilities --- */
+/* --- Section Utilities (Mobile First) --- */
 .section {
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-md) 0; /* Reduced padding */
 }
 
 .section h1 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Scaled down for mobile */
   font-weight: var(--semibold);
   color: var(--color-primary-blue);
   margin-bottom: var(--spacing-sm);
 }
 
 .section p {
-  font-size: 1.1rem;
+  font-size: 1rem; /* Scaled down for mobile */
   color: var(--color-text-light);
   line-height: 1.5;
   text-align: justify;
 }
 
+/* --- Notice Buttons Grid (Mobile First) --- */
 .notice {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: var(--spacing-sm);
+  grid-template-columns: 1fr; /* Stacks the buttons vertically on mobile */
+  gap: var(--spacing-sm); /* Replaced column-gap with gap to handle both rows and cols */
   border-radius: var(--radius-card);
   align-items: center;
-  margin: var(--spacing-xs) 0 var(--spacing-lg) 0;
+  margin: var(--spacing-md) 0;
 }
 
 .linkButton {
-  margin-top: var(--spacing-smm);
-  margin-left: auto;
-  margin-right: auto;
+  /* Removed manual margins, the grid 'gap' handles spacing now */
   background: var(--color-primary-red);
   width: 100%;
+  height: 100%; /* Ensures buttons stretch to match row heights if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-sm);
   border: none;
   border-radius: var(--radius-card);
   font-family: var(--font-family);
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: var(--medium);
   cursor: pointer;
   text-align: center;
@@ -54,25 +57,83 @@
   font-weight: var(--semibold);
 }
 
+/* --- Do's and Don'ts Section (Mobile First) --- */
 .do_donts {
-  margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+  margin: var(--spacing-md) 0;
 }
 
 .do_donts h2 {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Scaled down for mobile */
   color: var(--color-primary-red);
   font-weight: var(--semibold);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+}
+
+.do_donts ul {
+  list-style: none; /* Failsafe to remove default bullets */
+  padding: 0;
 }
 
 .do_donts li {
+  font-size: 0.95rem; /* Scaled down */
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-light-gray);
+  margin: var(--spacing-sm) 0;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-card);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Aligns the icon to the top line of multiline text */
+  gap: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+/* Targets the Next.js Image inside the li */
+.do_donts li img {
+  flex-shrink: 0; /* Prevents the check/cross icons from getting squished if the text is long */
+  margin-top: 2px; /* Minor optical adjustment to align icon with the first line of text */
+}
+
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .section h1 {
+    font-size: 2.5rem; /* Restored original size */
+  }
+
+  .section p {
+    font-size: 1.1rem; /* Restored original size */
+  }
+
+  .notice {
+    grid-template-columns: 1fr 1fr; /* Restores side-by-side buttons on desktop */
+    margin: var(--spacing-lg) 0;
+  }
+
+  .linkButton {
+    padding: var(--spacing-sm) var(--spacing-md);
     font-size: 1rem;
-    color: var(--color-text-dark);
-    background-color: var(--color-bg-light-gray);
-    margin: var(--spacing-sm) 0;
-    padding: var(--spacing-sm);
-    border-radius: var(--radius-card);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: var(--spacing-xs);
+  }
+
+  .do_donts {
+    margin: var(--spacing-md) 0 var(--spacing-lg) 0;
+  }
+
+  .do_donts h2 {
+    font-size: 2rem; /* Restored original size */
+  }
+
+  .do_donts li {
+    font-size: 1rem;
+    align-items: center; /* Centers the icon vertically when text is mostly one line on desktop */
+  }
+  
+  .do_donts li img {
+    margin-top: 0;
+  }
 }
