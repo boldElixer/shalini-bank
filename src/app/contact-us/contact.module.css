@@ -1,5 +1,7 @@
+/* --- Mobile First Base Styles --- */
+
 .wrapper {
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg); /* Slightly less bottom padding for mobile */
 }
 
 .container {
@@ -9,31 +11,26 @@
 }
 
 .heading {
-  font-size: 3rem;
+  font-size: 2rem; /* Scaled down for mobile */
   color: var(--color-primary-blue);
   font-weight: var(--semibold);
-  padding: var(--spacing-md) 0;
+  padding: var(--spacing-md) 0 var(--spacing-sm) 0;
+  text-align: left;
 }
 
 .contentGrid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr; /* Stacks vertically on mobile */
+  /* Removed the gap here so the map sits flush with the text container */
   background: var(--color-bg-white);
   border-radius: var(--radius-card);
   overflow: hidden;
   box-shadow: 0 0 var(--spacing-sm) var(--color-bg-light-gray);
 }
 
-@media (min-width: 900px) {
-  .contentGrid {
-    grid-template-columns: 1fr 1.5fr; /* Info takes less space than map */
-  }
-}
-
 /* --- Left: Info Section --- */
 .infoSection {
-  padding: var(--spacing-mdm);
+  padding: var(--spacing-md) var(--spacing-sm); /* Drastically reduced padding for narrow screens */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,19 +43,24 @@
   margin-bottom: var(--spacing-sm);
 }
 
+.infoItem:last-child {
+  margin-bottom: 0; /* Removes extra spacing below the last item */
+}
+
 .details {
-  font-size: 1rem;
+  font-size: 0.95rem; /* Scaled down slightly for mobile */
   color: var(--color-text-dark);
 }
 
 .details strong {
   display: block;
   color: var(--color-primary-blue);
+  margin-bottom: 2px;
 }
 
 /* --- Right: Map Section --- */
 .mapSection {
-  min-height: 20rem;
+  min-height: 20rem; /* Perfect height for a mobile map */
   background: var(--color-bg-light-gray);
   position: relative;
 }
@@ -67,4 +69,34 @@
   width: 100%;
   height: 100%;
   border: none;
+  display: block; /* Prevents a tiny default HTML gap at the bottom of iframes */
+}
+
+/* --- Desktop Overrides --- */
+@media (min-width: 768px) {
+  .wrapper {
+    padding-bottom: var(--spacing-xl); /* Restores massive padding */
+  }
+
+  .heading {
+    font-size: 3rem; /* Restores large title */
+    text-align: left; /* Restores left alignment */
+    padding: var(--spacing-md) 0;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr 1.5fr; /* Info takes less space than map */
+  }
+
+  .infoSection {
+    padding: var(--spacing-mdm); /* Restores massive padding */
+  }
+
+  .details {
+    font-size: 1rem; /* Restores original font size */
+  }
+  
+  .mapSection {
+    min-height: auto; /* Lets the map stretch naturally to match the info section height */
+  }
 }
