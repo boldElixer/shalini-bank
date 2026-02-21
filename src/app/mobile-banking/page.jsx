@@ -31,6 +31,7 @@ export default function MobilePage() {
                         alt="Mobile Banking Services"
                         width={486}
                         height={451.45}
+                        className={styles.heroImage}
                     />
                 </div>
             </div>
