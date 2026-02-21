@@ -7,6 +7,7 @@ import holidaysData from "@/data/bank-holidays.json";
 export default function BankHolidaysPage() {
   const holidays = holidaysData.holidays;
   const sundays = holidaysData.sundays;
+  
   return (
     <>
       <Head>
@@ -20,12 +21,12 @@ export default function BankHolidaysPage() {
         <div className={styles.container}>
             <section className={styles.section}>
                 <h1>Bank Holidays</h1>
-                <div>
+                <div className={styles.responsiveScroll}>
                     <table className={styles.tableWrapper}>
                         <thead>
                         <tr>
                             <th
-                            colSpan="4"
+                            colSpan="3" /* Fixed to 3 */
                             style={{
                                 textAlign: "center",
                                 backgroundColor: "var(--color-primary-blue)",
@@ -53,7 +54,7 @@ export default function BankHolidaysPage() {
                         ))}
                         <tr>
                             <th
-                            colSpan="4"
+                            colSpan="3" /* Fixed to 3 */
                             style={{
                                 textAlign: "center",
                                 backgroundColor: "var(--color-primary-blue)",
@@ -77,10 +78,9 @@ export default function BankHolidaysPage() {
                         ))}
                         </tbody>
                     </table>
-                    </div>
+                </div>
             </section>
         </div>
-
       </main>
 
       <Footer />

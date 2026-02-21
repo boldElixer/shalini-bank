@@ -17,15 +17,22 @@
   margin-bottom: var(--spacing-sm);
 }
 
-/* --- The Table --- */
+/* --- NEW: Mobile Scroll Wrapper --- */
+.responsiveScroll {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: var(--spacing-sm);
+}
+
+/* --- The Table (Your exact original design) --- */
 .tableWrapper {
-  overflow-x: auto; /* Responsive scroll for mobile */
+  /* Removed overflow-x from here since it's now on the parent div */
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
+  min-width: 450px; /* Forces scroll on tiny phones instead of breaking the text */
   margin: 0 auto;
   font-size: 1rem;
-  margin-top: var(--spacing-sm);
   border-radius: var(--radius-card);
   border: 1px solid var(--color-bg-light-gray);
 }
@@ -57,4 +64,25 @@
 
 .tableWrapper tr:hover {
   background-color: #fafafa;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-md) 0; /* Slightly less padding on mobile */
+  }
+
+  .section h1 {
+    font-size: 2rem; /* Shrinks the giant title so it fits on a phone */
+  }
+
+  .tableWrapper th {
+    font-size: 0.9rem; /* Shrinks uppercase header text */
+    padding: var(--spacing-sm); /* Slightly larger tap area for mobile */
+  }
+
+  .tableWrapper td {
+    font-size: 0.9rem; /* Shrinks table text */
+    padding: var(--spacing-sm);
+  }
 }
