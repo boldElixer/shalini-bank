@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 import { siteRoutes } from '@/data/siteRoutes';
 
 export default function sitemap() {
