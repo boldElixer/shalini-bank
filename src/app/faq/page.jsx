@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 
 import { useState } from 'react';
 import Head from 'next/head';
@@ -60,15 +60,15 @@ const faqData = [
   }
 ];
 
-export const metadata = {
-  title: 'Frequently Asked Questions (FAQ)',
-  description: 'Find quick answers to common banking queries regarding KYC, CKYC, savings accounts, and more at Shalini Sahakari Bank.',
-  openGraph: {
-    title: 'FAQs | Shalini Sahakari Bank',
-    description: 'Got questions? We have answers. Check out our FAQ section for quick help.',
-    url: 'https://ssbbank.bank.in/faq',
-  }
-};
+// export const metadata = {
+//   title: 'Frequently Asked Questions (FAQ)',
+//   description: 'Find quick answers to common banking queries regarding KYC, CKYC, savings accounts, and more at Shalini Sahakari Bank.',
+//   openGraph: {
+//     title: 'FAQs | Shalini Sahakari Bank',
+//     description: 'Got questions? We have answers. Check out our FAQ section for quick help.',
+//     url: 'https://ssbbank.bank.in/faq',
+//   }
+// };
 
 export default function FAQPage() {
   const [activeIndex, setActiveIndex] = useState(0); // Default first one open
