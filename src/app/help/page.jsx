@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import Head from 'next/head';
 import Header from '@/components/Header/Header';
@@ -6,6 +6,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './help.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Help Center & Customer Support',
+  description: 'Need assistance? Access our Help Center for customer care, service requests, downloadable forms, and FAQs at Shalini Sahakari Bank.',
+  openGraph: {
+    title: 'Help Center | Shalini Sahakari Bank',
+    description: 'Get support, raise service requests, or contact our customer care team.',
+    url: 'https://ssbbank.bank.in/help',
+  }
+};
 
 export default function HelpPage() {
   return (

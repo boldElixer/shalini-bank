@@ -1,10 +1,20 @@
-'use client';
+// 'use client';
 import Head from 'next/head';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import styles from './unclaimed.module.css';
 import jsonData from '@/data/unclaimed-deposits.json';
 import { useState } from 'react';
+
+export const metadata = {
+  title: 'Search Unclaimed Deposits',
+  description: 'Search for unclaimed deposits and inoperative accounts at Shalini Sahakari Bank as per RBI guidelines. Check your account status easily online.',
+  openGraph: {
+    title: 'Unclaimed Deposits | Shalini Sahakari Bank',
+    description: 'Search for inactive accounts or unclaimed deposits easily using our secure online tool.',
+    url: 'https://ssbbank.bank.in/unclaimed-deposits',
+  }
+};
 
 export default function UnclaimedDepositsPage() {
 

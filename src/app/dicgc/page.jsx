@@ -4,6 +4,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './dicgc.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'DICGC Insurance Coverage',
+  description: 'Your deposits are safe with us. Learn about the Deposit Insurance and Credit Guarantee Corporation (DICGC) coverage provided by Shalini Sahakari Bank.',
+  openGraph: {
+    title: 'DICGC Coverage | Shalini Sahakari Bank',
+    description: 'Your funds are protected. Read about our DICGC insurance compliance and download DI returns.',
+    url: 'https://ssbbank.bank.in/dicgc',
+  }
+};
+
 export default function DicgcPage() {
   return (
     <>

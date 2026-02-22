@@ -27,7 +27,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Shalini Sahakari Bank Ltd.',
-    description: 'Providing secure banking solutions for a better future.',
+    description: 'Shalini Sahakari Bank Ltd. offers secure and reliable banking services including Savings, Loans, and Mobile Banking. Providing secure banking solutions for a better future.',
     url: 'https://ssbbank.bank.in',
     siteName: 'Shalini Sahakari Bank',
     images: [

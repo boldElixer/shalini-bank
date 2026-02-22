@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import Head from 'next/head';
 import Link from 'next/link';
@@ -30,6 +30,16 @@ const servicesData = [
     link: '/loans'
   }
 ];
+
+export const metadata = {
+  title: 'Banking Services',
+  description: 'Discover the wide range of banking services offered by Shalini Sahakari Bank, including Savings Accounts, Fixed Deposits, and instant money transfers.',
+  openGraph: {
+    title: 'Banking Services | Shalini Sahakari Bank',
+    description: 'Secure your future with our reliable banking services tailored for your personal and business needs.',
+    url: 'https://ssbbank.bank.in/services',
+  }
+};
 
 export default function ServicesPage() {
   return (

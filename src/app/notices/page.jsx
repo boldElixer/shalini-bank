@@ -4,6 +4,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './notice.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Official Notices & AGM Updates',
+  description: 'Stay updated with the latest official notices, Annual General Meeting (AGM) announcements, and bank circulars from Shalini Sahakari Bank.',
+  openGraph: {
+    title: 'Notices | Shalini Sahakari Bank',
+    description: 'Read the latest AGM notices and official announcements from SSB Bank.',
+    url: 'https://ssbbank.bank.in/notices',
+  }
+};
+
 export default function AnnualReportPage() {
   return (
     <>

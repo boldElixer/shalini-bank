@@ -5,6 +5,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './mobile.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Mobile Banking App',
+  description: 'Bank from anywhere with the Shalini Sahakari Bank Mobile App. Enjoy 24/7 access to your accounts, instant NEFT/RTGS transfers, and secure transactions.',
+  openGraph: {
+    title: 'Mobile Banking | Shalini Sahakari Bank',
+    description: 'Manage your accounts, transfer funds, and access essential banking services anytime, anywhere.',
+    url: 'https://ssbbank.bank.in/mobile-banking',
+  }
+};
+
 export default function MobilePage() {
   return (
     <>

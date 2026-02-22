@@ -5,6 +5,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './about.module.css';
 import jsonData from '@/data/bod.json';
 
+export const metadata = {
+  title: 'About Us | Shalini Sahakari Bank',
+  description: 'Learn about the history, mission, and management of Shalini Sahakari Bank Ltd. We are a trusted cooperative bank dedicated to empowering our community and fostering financial growth.',
+  openGraph: {
+    title: 'About Us | Shalini Sahakari Bank',
+    description: 'Discover the heritage, leadership, and community-driven mission of SSB Bank.',
+    url: 'https://ssbbank.bank.in/about',
+  }
+};
+
 export default function About() {
   return (
     <>

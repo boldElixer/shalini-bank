@@ -4,6 +4,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './sms.module.css';
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'SMS Banking Alerts',
+  description: 'Stay connected to your bank 24/7. Get real-time SMS alerts for transactions, cheque clearances, and term deposit maturities with SSB Bank.',
+  openGraph: {
+    title: 'SMS Banking | Shalini Sahakari Bank',
+    description: 'Bank smarter with real-time SMS alerts for all your critical account activities.',
+    url: 'https://ssbbank.bank.in/sms-banking',
+  }
+};
+
 export default function SMSPage() {
   return (
     <>

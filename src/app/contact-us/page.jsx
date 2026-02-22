@@ -1,10 +1,20 @@
-'use client';
+// 'use client';
 
 import Head from 'next/head';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import styles from './contact.module.css';
 import Image from 'next/image';
+
+export const metadata = {
+  title: 'Contact Us | Shalini Sahakari Bank',
+  description: 'Get in touch with Shalini Sahakari Bank. Find our head office details, branch network, customer care numbers, and IFSC codes for seamless banking support.',
+  openGraph: {
+    title: 'Contact Us | Shalini Sahakari Bank',
+    description: 'Locate an SSB Bank branch near you or reach out to our customer support team.',
+    url: 'https://ssbbank.bank.in/contact',
+  }
+};
 
 export default function ContactPage() {
   return (

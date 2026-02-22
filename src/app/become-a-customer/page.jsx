@@ -26,6 +26,16 @@ const servicesData = [
   }
 ];
 
+export const metadata = {
+  title: 'Become a Customer | Open an Account',
+  description: 'Join Shalini Sahakari Bank today. Experience seamless banking with our Savings and Current accounts, competitive interest rates, and excellent customer service.',
+  openGraph: {
+    title: 'Become a Customer | Shalini Sahakari Bank',
+    description: 'Open your account with SSB Bank and step into a world of secure, modern, and rewarding banking.',
+    url: 'https://ssbbank.bank.in/become-a-customer',
+  }
+};
+
 export default function CustomerPage() {
   return (
     <>

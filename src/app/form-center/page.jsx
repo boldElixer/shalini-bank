@@ -4,6 +4,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './forms.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Download Application Forms',
+  description: 'Easily download account opening forms, KYC forms, ATM applications, and membership forms from the Shalini Sahakari Bank Form Center.',
+  openGraph: {
+    title: 'Form Center | Shalini Sahakari Bank',
+    description: 'Download all essential banking forms in PDF format quickly and easily.',
+    url: 'https://ssbbank.bank.in/form-center',
+  }
+};
+
 export default function FormsPage() {
   return (
     <>

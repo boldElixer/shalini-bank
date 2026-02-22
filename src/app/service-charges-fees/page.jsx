@@ -4,6 +4,15 @@ import Footer from '@/components/Footer/Footer';
 import styles from './fees.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Service Fees & Charges',
+  description: 'Review the transparent fee structure and service charges for savings accounts, ATM usage, and other banking services at SSB Bank.',
+  openGraph: {
+    title: 'Fees & Charges | Shalini Sahakari Bank',
+    description: 'We believe in complete transparency. Review our account service fees and charges.',
+    url: 'https://ssbbank.bank.in/service-charges-fees',
+  }
+};
 
 export default function ChargesFeesPage() {
   return (

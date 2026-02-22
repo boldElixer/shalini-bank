@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from '@/components/Header/Header';
@@ -55,6 +55,16 @@ const faqData = [
     answer: "Yes. Customers must maintain sufficient balance in the linked account to cover withdrawals and service charges."
   }
 ];
+
+export const metadata = {
+  title: 'ATM & Debit Card Services',
+  description: 'Access your funds 24/7 with Shalini Sahakari Bank\'s ATM and Debit Card services. Learn about daily withdrawal limits, safety tips, and ATM service charges.',
+  openGraph: {
+    title: 'ATM Services | Shalini Sahakari Bank',
+    description: 'Enjoy secure and convenient cash withdrawals and transactions with SSB Bank ATM cards.',
+    url: 'https://ssbbank.bank.in/atm-card',
+  }
+};
 
 export default function MobilePage() {
     const [activeIndex, setActiveIndex] = useState(0); // Default first one open

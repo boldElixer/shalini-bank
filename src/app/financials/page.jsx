@@ -5,6 +5,16 @@ import styles from './financial.module.css';
 import jsonData from '@/data/financial.json';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Financial Performance & Growth',
+  description: 'Review the financial stability, growth, share capital, and deposit metrics of Shalini Sahakari Bank. We build trust through transparency.',
+  openGraph: {
+    title: 'Financials | Shalini Sahakari Bank',
+    description: 'Explore the financial growth, stability, and yearly performance metrics of SSB Bank.',
+    url: 'https://ssbbank.bank.in/financials',
+  }
+};
+
 export default function FinancialPage() {
   return (
     <>

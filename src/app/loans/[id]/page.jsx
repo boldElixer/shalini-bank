@@ -13,6 +13,26 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params; 
+  const loanId = resolvedParams.id;
+  const loan = loansData.find((item) => item.id === loanId);
+
+  if (!loan) {
+    return { title: 'Loan Not Found' };
+  }
+  
+  return {
+    title: `${loan.title}`,
+    description: `Apply for a ${loan.title} at Shalini Sahakari Bank. ${loan.purpose}. Enjoy competitive interest rates starting at ${loan.interestRate}.`,
+    openGraph: {
+      title: `${loan.title} | Shalini Sahakari Bank`,
+      description: `Get a ${loan.title} with up to ${loan.maxAmount} financing and flexible tenures.`,
+      url: `https://ssbbank.bank.in/loans/${loanId}`,
+    }
+  };
+}
+
 export default function LoanDetailPage({ params }) {
   const resolvedParams = use(params);
   const loanId = resolvedParams.id;

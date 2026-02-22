@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import { useState } from 'react';
 import Head from 'next/head';
@@ -6,7 +6,6 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import styles from './faq.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const faqData = [
   {
@@ -60,6 +59,16 @@ const faqData = [
     answer: "RBI has directed all banks to promptly detect, impound, and report counterfeit Indian currency notes and ensure that such notes are never returned to the tenderer nor re-circulated. All cash receipts of ₹100 and above must be machine-processed using note sorting/detection machines or UV lamps before re-issue. Branches must also educate customers and the public to check currency notes during routine transactions.<br/>When a counterfeit note is detected, it must be impounded and stamped “COUNTERFEIT BANKNOTE IMPOUNDED”, an acknowledgement receipt issued to the tenderer, and the case reported as per RBI norms. Detection of 5 or more counterfeit notes in a single transaction requires immediate police reporting and FIR, while cases involving less than 5 notes are to be reported through a monthly consolidated statement to the police. Banks must maintain records and submit prescribed periodic returns to RBI and other authorities.<br/>All procedures, reporting, and documentation must strictly follow the formats prescribed by RBI under its Master Circular dated April 03, 2023.<br/><br/><b>RBI Prescribed Annexures / Forms (Mandatory)</b>:<ul><li>Annex I - Format for Impounding of Counterfeit Notes</li><li>Annex II - Acknowledgement Receipt to the Tenderer</li><li>Annex III - Monthly Consolidated Report to Police</li><li>Annex IV - Format for Lodging FIR (for 5 or more notes in one transaction)</li><li>Annex V - Detection Report to RBI / Currency Chest (where applicable)</li><li>Annex VI - Monthly Statement of Counterfeit Notes Detected</li></ul> All Annexures available at <b>https://www.rbi.org.in/commonman/English/scripts/Notification.aspx?Id=3005</b>"
   }
 ];
+
+export const metadata = {
+  title: 'Frequently Asked Questions (FAQ)',
+  description: 'Find quick answers to common banking queries regarding KYC, CKYC, savings accounts, and more at Shalini Sahakari Bank.',
+  openGraph: {
+    title: 'FAQs | Shalini Sahakari Bank',
+    description: 'Got questions? We have answers. Check out our FAQ section for quick help.',
+    url: 'https://ssbbank.bank.in/faq',
+  }
+};
 
 export default function FAQPage() {
   const [activeIndex, setActiveIndex] = useState(0); // Default first one open

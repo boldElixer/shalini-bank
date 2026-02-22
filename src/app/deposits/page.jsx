@@ -45,6 +45,16 @@ const servicesData = [
   }
 ];
 
+export const metadata = {
+  title: 'Deposit Schemes | FD, RD & Savings',
+  description: 'Grow your wealth securely with Shalini Sahakari Bank\'s deposit schemes. Explore our Fixed Deposits (FD), Recurring Deposits (RD), and tax-saving options with attractive interest rates.',
+  openGraph: {
+    title: 'Deposit Schemes | Shalini Sahakari Bank',
+    description: 'Secure high returns with our range of Term Deposits and Savings options.',
+    url: 'https://ssbbank.bank.in/deposits',
+  }
+};
+
 export default function DepositPage() {
   return (
     <>

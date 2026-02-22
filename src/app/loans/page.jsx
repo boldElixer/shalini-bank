@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import Head from 'next/head';
 import Link from 'next/link';
@@ -8,6 +8,15 @@ import styles from './loans.module.css';
 import loansData from '@/data/loan-list.json';
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Loan Products & Interest Rates',
+  description: 'Achieve your goals with Shalini Sahakari Bank\'s flexible loan products. Explore Home, Car, Education, and Personal loans with competitive interest rates.',
+  openGraph: {
+    title: 'Loan Products | Shalini Sahakari Bank',
+    description: 'Explore our tailored loan products with attractive interest rates and easy repayment options.',
+    url: 'https://ssbbank.bank.in/loans',
+  }
+};
 
 export default function LoansPage() {
   return (

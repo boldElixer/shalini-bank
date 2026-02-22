@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import Head from 'next/head';
 import Header from '@/components/Header/Header';
@@ -6,6 +6,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './grievance.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Grievance Redressal & Support',
+  description: 'Submit a complaint or reach out to our Grievance Redressal Officers. Shalini Sahakari Bank is committed to resolving your issues promptly and fairly.',
+  openGraph: {
+    title: 'Grievance Redressal | Shalini Sahakari Bank',
+    description: 'Need help? Contact our Grievance Redressal team for prompt resolution of your banking concerns.',
+    url: 'https://ssbbank.bank.in/grievance',
+  }
+};
 
 export default function GrievancePage() {
   return (

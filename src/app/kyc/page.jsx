@@ -5,6 +5,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './kyc.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'KYC & CKYC Information',
+  description: 'Complete your Know Your Customer (KYC) formalities easily. Learn about Central KYC (CKYC) requirements and download necessary forms for SSB Bank.',
+  openGraph: {
+    title: 'KYC Information | Shalini Sahakari Bank',
+    description: 'Keep your account secure and compliant. Find all the details regarding KYC and CKYC updates.',
+    url: 'https://ssbbank.bank.in/kyc',
+  }
+};
+
 export default function KycPage() {
   return (
     <>

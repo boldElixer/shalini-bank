@@ -4,6 +4,16 @@ import Footer from '@/components/Footer/Footer';
 import styles from './shareholders.module.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Shareholders Information',
+  description: 'Information for Shalini Sahakari Bank shareholders. Learn about share value, minimum holdings, and download the membership form.',
+  openGraph: {
+    title: 'Shareholders | Shalini Sahakari Bank',
+    description: 'Important information and forms for the esteemed shareholders of SSB Bank.',
+    url: 'https://ssbbank.bank.in/shareholders',
+  }
+};
+
 export default function ShareholdersPage() {
   return (
     <>
