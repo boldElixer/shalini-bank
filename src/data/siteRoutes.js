@@ -93,6 +93,7 @@ export const siteRoutes = [
   {
     category: "Compliance & Awareness",
     links: [
+      { name: "Corporate Profile", href: "/corporate-profile" },
       { name: "DICGC", href: "/dicgc" },
       { name: "Awareness Campaign", href: "/awareness-campaign" },
       { name: "Bank Code", href: "/bank-code" },

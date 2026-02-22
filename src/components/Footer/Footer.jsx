@@ -61,6 +61,7 @@ export default function Footer() {
           <div className={styles.col}>
             <h4>Regulatory Information</h4>
             <ul>
+              <li><Link href="/corporate-profile">Corporate Profile</Link></li>
               <li><Link href="/awareness-campaign">RBI Awareness Campaign</Link></li>
               <li><Link href="https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=21110" target="_blank" rel="noopener noreferrer">RBI: Beware of Fictitious Offers</Link></li>
               <li><Link href="https://www.rbi.org.in/commonperson/English/Scripts/rbikehtahai.aspx" target="_blank" rel="noopener noreferrer">RBI Kehta Hai</Link></li>
@@ -84,7 +85,7 @@ export default function Footer() {
           <div>
             {/* Replaced inline styles with a class name */}
             <ul className={styles.bottomLinks}>
-              <li><Link href="/sitemap">Sitemap</Link></li>
+              <li><Link href="/site-map">Sitemap</Link></li>
               <li><Link href="/disclaimer">Disclaimer</Link></li>
               <li><Link href="/privacy-policy">Privacy Policy</Link></li>
               <li><Link href="/bank-code">Bank Code</Link></li>
