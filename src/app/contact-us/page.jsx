@@ -73,7 +73,7 @@ export default function ContactPage() {
             <div className={styles.mapSection}>
                 
                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.8335611983125!2d72.82943920991451!3d18.97877885494493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce5f6f103c0d%3A0x758e342190151618!2sShalini%20Sahakari%20Bank%20Limited!5e0!3m2!1sen!2sin!4v1766582740197!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3772.721888417383!2d72.8318!3d18.987886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDU5JzE2LjQiTiA3MsKwNDknNTQuNSJF!5e0!3m2!1sen!2sin!4v1772890674827!5m2!1sen!2sin"
                 className={styles.mapFrame} 
                 allowFullScreen="" 
                 loading="lazy" 
