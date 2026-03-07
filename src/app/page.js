@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>SSB Bank - Financial Services</title>
+        <title>Shalini Sahakari Bank</title>
         <meta name="description" content="Customer centric banking" />
       </Head>
 

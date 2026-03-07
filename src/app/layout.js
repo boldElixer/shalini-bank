@@ -11,6 +11,9 @@ const poppins = Poppins({
 
 export const metadata = {
   metadataBase: new URL('https://ssbbank.bank.in'),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: 'Shalini Sahakari Bank Ltd.',
     template: '%s | Shalini Sahakari Bank'
@@ -51,7 +54,7 @@ export default function RootLayout({ children }) {
         '@type': 'WebSite',
         '@id': 'https://ssbbank.bank.in/#website',
         'url': 'https://ssbbank.bank.in/',
-        'name': 'Shalini Sahakari Bank Ltd.', // Forces Google to use this name
+        'name': 'Shalini Sahakari Bank', // Forces Google to use this name
         'alternateName': 'SSB Bank',
       },
       {
