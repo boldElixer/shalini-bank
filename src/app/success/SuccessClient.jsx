@@ -15,7 +15,7 @@ function SuccessContent() {
       <section className={styles.section} style={{ textAlign: 'center', padding: '80px 20px' }}>
         <h1 style={{ color: 'var(--color-primary-blue)', marginBottom: '1rem' }}>Success</h1>
         <p style={{ fontSize: '1.1rem', color: 'var(--color-text-dark)', maxWidth: '600px', margin: '0 auto' }}>
-          Your complaint has been submitted successfully. We will review your submission and get back to you within 24 hours.
+          Your complaint has been submitted successfully. We will review your submission during banking hours and provide a response within 48 hours.
         </p>
 
         {ticket && (

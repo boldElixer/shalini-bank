@@ -106,19 +106,19 @@ export default function ComplaintForm() {
       ...formData, 
       ticketNumber: generatedTicket 
     };
-    console.log("Form Submitted:", finalSubmitData);
-    // const templateId = 'template_974hnco';
-    // const userId = 'AmnskYy5NaOdeqyN6';
-    // const serviceId = 'service_5wd05z8';
-    // emailjs.send(serviceId, templateId, finalSubmitData, userId)
-    //   .then((response) => {
-    //     //console.log('Email sent successfully', response);
-    //     router.replace(`/success?ticket=${generatedTicket}`);
-    //   })
-    //   .catch((error) => {
-    //     //console.error('Email could not be sent:', error);
-    //     router.replace('/error');
-    //   });
+    // console.log("Form Submitted:", finalSubmitData);
+    const templateId = 'template_k6hcttg';
+    const userId = '9DdleQFA9NumyclEY';
+    const serviceId = 'service_zc2c4lc';
+    emailjs.send(serviceId, templateId, finalSubmitData, userId)
+      .then((response) => {
+        //console.log('Email sent successfully', response);
+        router.replace(`/success?ticket=${generatedTicket}`);
+      })
+      .catch((error) => {
+        //console.error('Email could not be sent:', error);
+        router.replace('/error');
+      });
   };
 
   return (
