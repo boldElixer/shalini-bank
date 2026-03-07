@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import emailjs from '@emailjs/browser';
 import Head from 'next/head';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
@@ -52,6 +54,7 @@ const complaintCategories = {
 
 export default function ComplaintForm() {
   const [formData, setFormData] = useState({
+    ticketNumber: '',   // This will be generated on form submission
     name: '',
     customerType: 'customer', 
     accountNumber: '',
@@ -67,6 +70,8 @@ export default function ComplaintForm() {
   // --- DERIVED STATE FOR LOGIC ---
   const isApplicant = formData.customerType === 'applicant';
   const isEmployee = formData.customerType === 'employee';
+
+  const router = useRouter();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -96,8 +101,21 @@ export default function ComplaintForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert("Complaint Submitted Successfully!");
+    const generatedTicket = `SSB-${Math.floor(100000 + Math.random() * 900000)}`;
+    setFormData(prev => ({ ...prev, ticketNumber: generatedTicket }));
+    // console.log("Form Submitted:", formData);
+    const templateId = 'template_974hnco';
+    const userId = 'AmnskYy5NaOdeqyN6';
+    const serviceId = 'service_5wd05z8';
+    emailjs.send(serviceId, templateId, formData, userId)
+      .then((response) => {
+        //console.log('Email sent successfully', response);
+        router.replace(`/success?ticket=${generatedTicket}`);
+      })
+      .catch((error) => {
+        //console.error('Email could not be sent:', error);
+        router.replace('/error');
+      });
   };
 
   return (

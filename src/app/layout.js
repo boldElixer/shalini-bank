@@ -32,7 +32,7 @@ export const metadata = {
     siteName: 'Shalini Sahakari Bank',
     images: [
       {
-        url: '/header.svg',
+        url: 'https://ssbbank.bank.in/header.svg',
         width: 1200,
         height: 630,
         alt: 'Shalini Sahakari Bank Logo',
@@ -44,8 +44,40 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': 'https://ssbbank.bank.in/#website',
+        'url': 'https://ssbbank.bank.in/',
+        'name': 'Shalini Sahakari Bank Ltd.', // Forces Google to use this name
+        'alternateName': 'SSB Bank',
+      },
+      {
+        '@type': 'BankOrCreditUnion',
+        '@id': 'https://ssbbank.bank.in/#organization',
+        'name': 'Shalini Sahakari Bank Ltd.',
+        'url': 'https://ssbbank.bank.in/',
+        'logo': 'https://ssbbank.bank.in/logo.svg', // Points Google to your logo
+        'image': 'https://ssbbank.bank.in/header.svg',
+        'telephone': '+91-9920031925', // Add your actual customer care number
+        'address': {
+          '@type': 'PostalAddress',
+          'addressCountry': 'IN',
+        }
+      }
+    ]
+  };
   return (
     <html lang="en">
+      <head>
+        {/* Inject the JSON-LD script into the head */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={poppins.className}>
         {children}
         <ScrollToTop />

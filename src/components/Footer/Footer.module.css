@@ -73,6 +73,13 @@
   flex-wrap: wrap;
 }
 
+.sealWrapper {
+  margin-top: var(--spacing-md);
+  /* If you want it aligned to the right on desktop: */
+  display: flex;
+  justify-content: center; 
+}
+
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
   .footer {
@@ -104,5 +111,9 @@
   
   .bottomLinks {
     justify-content: center; /* Centers the sitemap/policy links */
+  }
+
+  .sealWrapper {
+    justify-content: flex-end; /* Pushes seal to the right side of the footer on large screens */
   }
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './Footer.module.css';
 import Link from 'next/link';
+import SecuritySeal from '../SecuritySeal/SecuritySeal';
 
 export default function Footer() {
   return (
@@ -81,6 +82,9 @@ export default function Footer() {
             <Image src="/footer/dicgc_qr.png" alt="DICGC QR CODE" width={68} height={68} />
           </div>
         </div>
+        <div className={styles.sealWrapper}>
+            <SecuritySeal />
+        </div>
         <div className={styles.bottomBar}>
           <div>
             {/* Replaced inline styles with a class name */}
@@ -91,7 +95,7 @@ export default function Footer() {
               <li><Link href="/bank-code">Bank Code</Link></li>
             </ul>
           </div>
-          <div className={styles.copyright}>Copyright © 2026 Shalini Sahakari Bank Ltd.</div>
+          <div className={styles.copyright}>Copyright © {new Date().getFullYear()} Shalini Sahakari Bank Ltd. All rights reserved.</div>
         </div>
       </div>
     </footer>
