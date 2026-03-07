@@ -102,20 +102,23 @@ export default function ComplaintForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const generatedTicket = `SSB-${Math.floor(100000 + Math.random() * 900000)}`;
-    setFormData(prev => ({ ...prev, ticketNumber: generatedTicket }));
-    // console.log("Form Submitted:", formData);
-    const templateId = 'template_974hnco';
-    const userId = 'AmnskYy5NaOdeqyN6';
-    const serviceId = 'service_5wd05z8';
-    emailjs.send(serviceId, templateId, formData, userId)
-      .then((response) => {
-        //console.log('Email sent successfully', response);
-        router.replace(`/success?ticket=${generatedTicket}`);
-      })
-      .catch((error) => {
-        //console.error('Email could not be sent:', error);
-        router.replace('/error');
-      });
+    const finalSubmitData = { 
+      ...formData, 
+      ticketNumber: generatedTicket 
+    };
+    console.log("Form Submitted:", finalSubmitData);
+    // const templateId = 'template_974hnco';
+    // const userId = 'AmnskYy5NaOdeqyN6';
+    // const serviceId = 'service_5wd05z8';
+    // emailjs.send(serviceId, templateId, finalSubmitData, userId)
+    //   .then((response) => {
+    //     //console.log('Email sent successfully', response);
+    //     router.replace(`/success?ticket=${generatedTicket}`);
+    //   })
+    //   .catch((error) => {
+    //     //console.error('Email could not be sent:', error);
+    //     router.replace('/error');
+    //   });
   };
 
   return (

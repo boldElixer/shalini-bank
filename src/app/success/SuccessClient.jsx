@@ -13,10 +13,7 @@ function SuccessContent() {
   return (
     <div className={styles.container}>
       <section className={styles.section} style={{ textAlign: 'center', padding: '80px 20px' }}>
-        <div style={{ fontSize: '4rem', color: '#28a745', marginBottom: '1rem' }}>✓</div>
-        
         <h1 style={{ color: 'var(--color-primary-blue)', marginBottom: '1rem' }}>Success</h1>
-        
         <p style={{ fontSize: '1.1rem', color: 'var(--color-text-dark)', maxWidth: '600px', margin: '0 auto' }}>
           Your complaint has been submitted successfully. We will review your submission and get back to you within 24 hours.
         </p>
