@@ -25,6 +25,7 @@ export default function SecuritySeal() {
       script.src = 'https://security-seal.emsign.com/generateSeal?width=175';
       script.async = true;
       script.type = 'text/javascript';
+      script.referrerPolicy = 'origin';
 
       // 4. Clean up: Restore the original functions once the script finishes loading
       script.onload = () => {
