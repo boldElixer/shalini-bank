@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google';
 import './globals.css';
 import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
+import OfficialNoticePopup from '@/components/Popup/OfficialNoticePopup';
 
 // Initialize the font with the necessary weights
 const poppins = Poppins({
@@ -82,6 +83,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={poppins.className}>
+        <OfficialNoticePopup />
         {children}
         <ScrollToTop />
       </body>
