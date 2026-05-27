@@ -98,3 +98,58 @@
     transform: translateY(0);
   }
 }
+
+/* Add these to your existing popup.module.css */
+
+.adModal {
+  position: relative;
+  background: transparent;
+  border-radius: 8px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Constrains the max size on large desktop screens */
+  height: auto;
+}
+
+.adImage {
+  width: 100%;
+  height: auto;
+  max-height: 85vh; /* Prevents vertical overflow on shorter screens */
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.closeAdButton {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.2s ease;
+}
+
+.closeAdButton:hover {
+  background-color: #f1f5f9;
+}

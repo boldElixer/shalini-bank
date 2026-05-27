@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './Footer.module.css';
 import Link from 'next/link';
 import SecuritySeal from '../SecuritySeal/SecuritySeal';
+import Script from 'next/script';
 
 export default function Footer() {
   return (
@@ -81,9 +82,6 @@ export default function Footer() {
             <Image src="/footer/dicgc.png" alt="DICGC Logo" width={68} height={65} />
             <Image src="/footer/dicgc_qr.png" alt="DICGC QR CODE" width={68} height={68} />
           </div>
-        </div>
-        <div className={styles.sealWrapper}>
-            <SecuritySeal />
         </div>
         <div className={styles.bottomBar}>
           <div>

@@ -1,57 +1,95 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import styles from './popup.module.css';
 
 export default function OfficialNoticePopup() {
-  const [isOpen, setIsOpen] = useState(false);
+  // Track the sequence: 'hidden', 'notice', or 'ad'
+  const [popupState, setPopupState] = useState('hidden');
 
   useEffect(() => {
-    // Check if the user has already seen the popup in this session
     const hasSeenNotice = sessionStorage.getItem('officialNoticeDismissed');
+    const hasSeenAd = sessionStorage.getItem('careersAdDismissed');
     
     if (!hasSeenNotice) {
-      // Small delay makes the entrance feel smoother after the page loads
-      const timer = setTimeout(() => setIsOpen(true), 500);
+      const timer = setTimeout(() => setPopupState('notice'), 500);
+      return () => clearTimeout(timer);
+    } else if (!hasSeenAd) {
+      // Optional: Show the ad if they previously closed the notice but not the ad
+      const timer = setTimeout(() => setPopupState('ad'), 500);
       return () => clearTimeout(timer);
     }
   }, []);
 
-  const handleClose = () => {
-    setIsOpen(false);
-    // Remember that the user closed it so it doesn't show again this session
+  const handleCloseNotice = () => {
     sessionStorage.setItem('officialNoticeDismissed', 'true');
+    setPopupState('ad'); // Transition to the advertisement
   };
 
-  if (!isOpen) return null;
+  const handleCloseAd = () => {
+    sessionStorage.setItem('careersAdDismissed', 'true');
+    setPopupState('hidden'); // Close completely
+  };
+
+  if (popupState === 'hidden') return null;
 
   return (
     <div className={styles.overlay}>
-      <div className={styles.modal} role="dialog" aria-modal="true">
-        <div className={styles.iconWrapper}>
-          <span className={styles.alertIcon}>⚠️</span>
+      
+      {/* --- POPUP 1: OFFICIAL NOTICE --- */}
+      {popupState === 'notice' && (
+        <div className={styles.modal} role="dialog" aria-modal="true">
+          <div className={styles.iconWrapper}>
+            <span className={styles.alertIcon}>⚠️</span>
+          </div>
+          
+          <h2 className={styles.title}>Official Website Notice</h2>
+          
+          <p className={styles.text}>
+            The only official website of Shalini Sahakari Bank is:
+          </p>
+          
+          <div className={styles.urlBox}>
+            <a href="https://ssbbank.bank.in" className={styles.url}>
+              https://ssbbank.bank.in
+            </a>
+          </div>
+          
+          <p className={styles.textWarning}>
+            Any other website claiming to represent the bank is fraudulent.
+          </p>
+          
+          <button onClick={handleCloseNotice} className={styles.closeButton}>
+            I Understand
+          </button>
         </div>
-        
-        <h2 className={styles.title}>Official Website Notice</h2>
-        
-        <p className={styles.text}>
-          The only official website of Shalini Sahakari Bank is:
-        </p>
-        
-        <div className={styles.urlBox}>
-          <a href="https://ssbbank.bank.in" className={styles.url}>
-            https://ssbbank.bank.in
-          </a>
+      )}
+
+      {/* --- POPUP 2: CAREERS ADVERTISEMENT --- */}
+      {popupState === 'ad' && (
+        <div className={styles.adModal} role="dialog" aria-modal="true">
+          <button 
+            onClick={handleCloseAd} 
+            className={styles.closeAdButton} 
+            aria-label="Close advertisement"
+          >
+            &times;
+          </button>
+          
+          <div className={styles.imageContainer}>
+            <Image
+              src="/careers.jpeg"
+              alt="Careers Advertisement"
+              width={968}
+              height={1280}
+              className={styles.adImage}
+              priority
+            />
+          </div>
         </div>
-        
-        <p className={styles.textWarning}>
-          Any other website claiming to represent the bank is fraudulent.
-        </p>
-        
-        <button onClick={handleClose} className={styles.closeButton}>
-          I Understand
-        </button>
-      </div>
+      )}
+      
     </div>
   );
 }
