@@ -1,5 +1,20 @@
 [
     {
+        "year": "2025-26",
+        "no_of_members": 11793,
+        "paid_up_share_capital": 195.01,
+        "reserves": 716.24,
+        "deposit": 3036.07,
+        "investment": 543.17,
+        "loans_and_advances": 1182.29,
+        "gross_npa_percentage": 9.53,
+        "net_npa_percentage": 0.00,
+        "profit": 39.84,
+        "working_capital": 4019.67,
+        "audit_class": "B",
+        "no_of_employee": 10
+    },
+    {
         "year": "2024-25",
         "no_of_members": 11552,
         "paid_up_share_capital": 191.40,

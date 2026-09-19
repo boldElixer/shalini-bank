@@ -33,6 +33,10 @@ export default function AnnualReportPage() {
                         </thead>
                         <tbody>
                             <tr>
+                                <td>44<sup>th</sup> Annual Report FY 2025-26</td>
+                                <td><Link href="/annual_reports/Shalini_Annual_Report_2025-26.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            </tr>
+                            <tr>
                                 <td>43<sup>rd</sup> Annual Report FY 2024-25</td>
                                 <td><Link href="/annual_reports/Shalini_Annual_Report_2024-25.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
                             </tr>

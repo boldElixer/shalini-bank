@@ -39,6 +39,11 @@ export default function AnnualReportPage() {
                         </thead>
                         <tbody>
                             <tr>
+                                <td>11th Sep, 2026</td>
+                                <td>44th Annual General Meeting(AGM) notice</td>
+                                <td><Link href="/notices/AGM_2026.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
+                            </tr>
+                            <tr>
                                 <td>16th Sep, 2025</td>
                                 <td>43rd Annual General Meeting(AGM) notice</td>
                                 <td><Link href="/notices/AGM_2025.pdf" target="_blank" rel="noopener noreferrer" className={styles.DownloadBtn}>Click Here</Link></td>
